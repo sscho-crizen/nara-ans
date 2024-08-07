@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용금고 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div class="modal modal-popup" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="badges">
+          <button type="button" class="btn btn-xs btn-outline-secondary">경매정보</button>
+          <button type="button" class="btn btn-xs btn-outline-secondary">이해관계확인서</button>
+          <button type="button" class="btn btn-xs btn-outline-secondary">재산정보</button>
+          <button type="button" class="btn btn-xs btn-outline-secondary">법조치</button>
+          <button type="button" class="btn btn-xs btn-outline-secondary">DM</button>
+          <button type="button" class="btn btn-xs btn-outline-secondary">DM현황</button>
+          <button type="button" class="btn btn-xs btn-outline-secondary">민원의뢰</button>
+          <button type="button" class="btn btn-xs btn-outline-secondary">동일인</button>
+          <button type="button" class="btn btn-xs btn-outline-secondary">보증인</button>
+          <button type="button" class="btn btn-xs btn-outline-secondary">상세정보</button>
+          <button type="button" class="btn btn-xs btn-outline-secondary">KCB</button>
+          <button type="button" class="btn btn-xs btn-outline-secondary">NICE</button>
+          <button type="button" class="btn btn-xs btn-outline-secondary">채무명세</button>
+          <button type="button" class="btn btn-xs btn-outline-secondary">조기경보1</button>
+          <button type="button" class="btn btn-xs btn-outline-secondary">조기경보2</button>
+          <button type="button" class="btn btn-xs btn-outline-secondary">원인서류</button>
+          <button type="button" class="btn btn-xs btn-outline-secondary">디에스원인서류</button>
+          <button type="button" class="btn btn-xs btn-outline-secondary">디에스추심보고서</button>
+        </div>
+        <button type="button" class="btn-close" onclick="window.close();"></button>
+      </div>
+      <div class="modal-body">
+        <!--Content-->
+        <div class="popup-h">
+          <h2 class="popup-title">담당사후관리</h2>
+          <div class="btns">
+            <button type="button" class="btn btn-outline-dark"><i class="ri-map-pin-line"></i>도로명주소</button>
+            <button type="button" class="btn btn-outline-dark"><i class="ri-building-4-line"></i>방문계획 통지</button>
+            <button type="button" class="btn btn-primary"><i class="ri-search-line"></i>조회</button>
+            <button type="button" class="btn btn-outline-dark"><i class="ri-file-excel-2-line"></i>엑셀</button>
+            <button type="button" class="btn btn-outline-dark"><i class="ri-file-list-line"></i>도움말</button>
+          </div>
+        </div>
+        <table class="table table-bordered table-form">
+          <tbody>
+            <tr>
+              <th>고객명</th>
+              <td>
+                <div class="input-group w-md">
+                  <input type="text" class="form-control" placeholder="" />
+                  <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+                </div>
+                <input type="text" class="form-control w-md" placeholder="" />
+              </td>
+              <th>부서명</th>
+              <td>
+                <select class="form-select w-auto">
+                  <option>선택해 주세요</option>
+                </select>
+              </td>
+              <th>위험등급</th>
+              <td></td>
+              <th>추심보류</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>조회조건</th>
+              <td>
+                <select class="form-select w-auto">
+                  <option>선택해 주세요</option>
+                </select>
+                <div class="input-group w-md">
+                  <input type="text" class="form-control" placeholder="" />
+                  <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+                </div>
+              </td>
+              <th>등록일</th>
+              <td>
+                <div class="input-group w-md">
+                  <input type="text" class="form-control" placeholder="" />
+                  <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+                </div>
+                <input type="text" class="form-control w-sm" placeholder="" />
+                <span>(02-0000-0000)</span>
+              </td>
+              <th>활동방법</th>
+              <td>
+                <select class="form-select w-auto">
+                  <option>선택해 주세요</option>
+                </select>
+              </td>
+              <th colspan="2">
+                1,576건
+                <select class="form-select form-select-sm w-auto">
+                  <option>1</option>
+                </select>
+                /2페이지
+                <button type="button" class="btn btn-dark btn-sm">멀티조회</button>
+              </th>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>검색</th>
+              <th>재연락일</th>
+              <th>활동방법</th>
+              <th>향후업무</th>
+              <th>고객명</th>
+              <th>재단명</th>
+              <th>채무자명</th>
+              <th>실명번호</th>
+              <th>상담내용</th>
+              <th>총금액(미수이자제외)</th>
+              <th>총불량건수</th>
+              <th>은행연합불량건수</th>
+              <th>조기변경일</th>
+              <th>채권등급</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="14">
+                <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="nav nav-tabs nav-dark mb-4">
+          <li class="nav-item">
+            <a href="#none" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">채무정보</a>
+          </li>
+          <li class="nav-item">
+            <a href="#none" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2">계좌정보</a>
+          </li>
+          <li class="nav-item">
+            <a href="#none" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3">관련인</a>
+          </li>
+          <li class="nav-item">
+            <a href="#none" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab4">주소이력</a>
+          </li>
+          <li class="nav-item">
+            <a href="#none" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab4">회수이력</a>
+          </li>
+          <li class="nav-item">
+            <a href="#none" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab4">DM이력</a>
+          </li>
+        </ul>
+        <table class="table table-bordered table-form">
+          <colgroup>
+            <col width="120px" />
+            <col width="" />
+            <col width="120px" />
+            <col width="" />
+            <col width="" />
+            <col width="120px" />
+            <col width="" />
+            <col width="120px" />
+            <col width="" />
+            <col width="120px" />
+            <col width="" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>최근입금일</th>
+              <td>0000-00-00</td>
+              <th>입금액</th>
+              <td class="text-end">000,000</td>
+              <td>
+                <select class="form-select w-auto">
+                  <option>총불량내역-0건/0</option>
+                </select>
+              </td>
+              <th>가상계좌</th>
+              <td>
+                <select class="form-select w-auto">
+                  <option>선택해 주세요</option>
+                </select>
+              </td>
+              <th>법착여부</th>
+              <td class="text-center">N</td>
+              <th><strong class="text-secondary">온라인고객</strong></th>
+              <td class="text-center">N</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-bordered table-form">
+          <colgroup>
+            <col width="120px" />
+            <col width="" />
+            <col width="120px" />
+            <col width="" />
+            <col width="120px" />
+            <col width="" />
+            <col width="120px" />
+            <col width="" />
+            <col width="120px" />
+            <col width="" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>실명번호</th>
+              <td>
+                40********
+              </td>
+              <th>채무자명</th>
+              <td>
+                (유)호암마트넷
+              </td>
+              <th>기준일</th>
+              <td>
+                <div class="input-group w-date">
+                  <input type="text" class="form-control" placeholder="" />
+                  <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                </div>
+                <button type="button" class="btn btn-outline-default">계산</button>
+              </td>
+              <th>보증인명</th>
+              <td>
+                <select class="form-select w-auto">
+                  <option>선택해 주세요</option>
+                </select>
+              </td>
+              <th>
+                핸드폰
+                <button type="button" class="btn btn-outline-default btn-icon btn-xs"><i class="ri-smartphone-line"></i></button>
+              </th>
+              <td>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span>000-0000-0000</span>
+                  <div class="ms-auto">
+                    <button type="button" class="btn btn-outline-default btn-icon btn-sm"><i class="ri-phone-line"></i></button>
+                    <button type="button" class="btn btn-dark btn-sm">추가</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>채무총액</th>
+              <td class="text-end">2,219,178</td>
+              <th>원금</th>
+              <td class="text-end">2,219,178</td>
+              <th>이자</th>
+              <td class="text-end">0</td>
+              <th>법적미수금</th>
+              <td class="text-end">0</td>
+              <th>자택/본사</th>
+              <td>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span>000-0000-0000</span>
+                  <div class="ms-auto">
+                    <button type="button" class="btn btn-outline-default btn-icon btn-sm"><i class="ri-phone-line"></i></button>
+                    <button type="button" class="btn btn-dark btn-sm">추가</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <button type="button" class="btn btn-outline-default btn-sm">DM주소</button>
+              </th>
+              <td colspan="5">(08378) 서울특별시 구로구 디지털로 306</td>
+              <th>최근발송일</th>
+              <td></td>
+              <th>직장/사업장</th>
+              <td>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span>000-0000-0000</span>
+                  <div class="ms-auto">
+                    <button type="button" class="btn btn-outline-default btn-icon btn-sm"><i class="ri-phone-line"></i></button>
+                    <button type="button" class="btn btn-dark btn-sm">추가</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>법정주소</th>
+              <td colspan="5">(08378) 서울특별시 구로구 디지털로 306</td>
+              <th>전입일(상태)</th>
+              <td></td>
+              <th>기타전화</th>
+              <td>
+                <div class="d-flex align-items-center justify-content-between">
+                  <span>000-0000-0000</span>
+                  <div class="ms-auto">
+                    <button type="button" class="btn btn-outline-default btn-icon btn-sm"><i class="ri-phone-line"></i></button>
+                    <button type="button" class="btn btn-dark btn-sm">추가</button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-bordered table-form">
+          <colgroup>
+            <col width="120px" />
+            <col width="" />
+            <col width="120px" />
+            <col width="" />
+            <col width="120px" />
+            <col width="" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>사업체 상태</th>
+              <td>
+                <select class="form-select w-auto">
+                  <option>선택해 주세요</option>
+                </select>
+                <button type="button" class="btn btn-dark"><i class="ri-save-line"></i>상태저장</button>
+              </td>
+              <th>상태처리일</th>
+              <td>
+                <div class="input-group w-date">
+                  <input type="text" class="form-control" placeholder="" />
+                  <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                </div>
+              </td>
+              <th>채권등급</th>
+              <td>
+                <input type="text" class="form-control w-md" placeholder="" />
+                <button type="button" class="btn btn-dark"><i class="ri-save-line"></i>등급저장</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-bordered table-form">
+          <colgroup>
+            <col width="120px" />
+            <col width="" />
+            <col width="120px" />
+            <col width="" />
+            <col width="120px" />
+            <col width="" />
+            <col width="120px" />
+            <col width="" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>위임사 LMS</th>
+              <td colspan="7">
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" checked />발송
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" />발송불가
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>상담일</th>
+              <td>
+                <div class="input-group w-date">
+                  <input type="text" class="form-control" placeholder="" />
+                  <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                </div>
+              </td>
+              <th>대상자</th>
+              <td colspan="3">
+                <select class="form-select w-auto">
+                  <option>선택해 주세요</option>
+                </select>
+              </td>
+              <th>관계</th>
+              <td>
+                <select class="form-select w-auto">
+                  <option>선택해 주세요</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th>활동방법</th>
+              <td>
+                <select class="form-select w-auto">
+                  <option>선택해 주세요</option>
+                </select>
+              </td>
+              <th>활동결과</th>
+              <td>
+                <select class="form-select w-auto">
+                  <option>선택해 주세요</option>
+                </select>
+              </td>
+              <th>향후업무</th>
+              <td>
+                <select class="form-select w-auto">
+                  <option>선택해 주세요</option>
+                </select>
+              </td>
+              <th>재연락일</th>
+              <td>
+                <div class="input-group w-date">
+                  <input type="text" class="form-control" placeholder="" />
+                  <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                </div>
+                <select class="form-select w-auto">
+                  <option>선택해 주세요</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th>입금약속일</th>
+              <td>
+                <div class="input-group w-date">
+                  <input type="text" class="form-control" placeholder="" />
+                  <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                </div>
+              </td>
+              <th>약속금액</th>
+              <td>
+                <input type="text" class="form-control" placeholder="" />
+              </td>
+              <th>접촉장소</th>
+              <td></td>
+              <th>주거구분</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>상담내역</th>
+              <td colspan="3">
+                <div class="d-flex align-items-center justify-content-between">
+                  <textarea class="form-control" rows="5"></textarea>
+                  <div class="form-check form-check-inline ms-2">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" />
+                      중요
+                    </label>
+                  </div>
+                  <select class="form-select form-select-sm w-auto">
+                    <option>대외</option>
+                  </select>                  
+                </div>
+              </td>
+              <th>상대주장</th>
+              <td colspan="3">
+                <div class="d-flex align-items-center justify-content-between">
+                  <textarea class="form-control" rows="5"></textarea>
+                  <div class="form-check form-check-inline ms-2">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" />
+                      민원예상
+                    </label>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="page-header-wrap">
+          <h2 class="page-header">추심활동내역</h2>
+          <button type="button" class="btn btn-sm btn-outline-default ms-3"><i class="ri-pencil-line"></i>메모보기</button>
+          <div class="btns">
+            <button type="button" class="btn btn-primary"><i class="ri-save-line"></i>저장</button>
+          </div>
+        </div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th></th>
+              <th>상담일</th>
+              <th>상담시간</th>
+              <th>상담내역</th>
+              <th>담당자명</th>
+              <th>첨부구분</th>
+              <th>첨부</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="7">
+                <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="page-header-wrap">
+          <h2 class="page-header">채권자정보</h2>
+        </div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>연락처</th>
+              <th>담당자</th>
+              <th>휴대폰</th>
+              <th>수수료구분</th>
+              <th>은행명</th>
+              <th>계좌번호</th>
+              <th>부가세여부</th>
+              <th>메일주소</th>
+              <th>팩스</th>
+              <th>수수료율1</th>
+              <th>수수료율2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="11">
+                <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!--//Content-->
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

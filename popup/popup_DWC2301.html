@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용금고 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div class="modal modal-popup" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" onclick="window.close();"></button>
+      </div>
+      <div class="modal-body">
+        <!--Content-->
+        <div class="popup-h">
+          <h2 class="popup-title">채권추심활동보고서</h2>
+          <p class="text-secondary mb-0 ms-3">※채권의 양이 많을 경우 보고서 출력에 많은 시간이 소요됩니다.</p>
+        </div>
+        <div class="mb-3">
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" checked />채권관리현황
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" />추심활동명세
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" />해지종결명세
+            </label>
+          </div>
+        </div>
+        <table class="table table-form">
+          <colgroup>
+            <col width="12%" />
+            <col width="" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>위임사</th>
+              <td>
+                <div class="input-group w-md">
+                  <input type="text" class="form-control" placeholder="" />
+                  <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+                </div>
+                <input type="text" class="form-control w-md" placeholder="" />
+              </td>
+            </tr>
+            <tr>
+              <th>수임기준일</th>
+              <td>
+                <div class="d-flex align-items-center gap-1">
+                  <div class="input-group w-date">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                  </div>
+                  ~
+                  <div class="input-group w-date">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>회수기준일</th>
+              <td>
+                <div class="d-flex align-items-center gap-1">
+                  <div class="input-group w-date">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                  </div>
+                  ~
+                  <div class="input-group w-date">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>상담이력기준일</th>
+              <td>
+                <div class="d-flex align-items-center gap-1">
+                  <div class="input-group w-date">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                  </div>
+                  ~
+                  <div class="input-group w-date">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>부서명</th>
+              <td>
+                <select class="form-select w-auto">
+                  <option>선택해 주세요</option>
+                </select>
+                <div class="form-check form-check-inline ms-2">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" />
+                    해당 부서만 출력
+                  </label>
+                </div>
+                <div class="form-check form-check-inline ms-2">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" />
+                    전체 부서 출력
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>담당자명</th>
+              <td>
+                <div class="input-group w-md">
+                  <input type="text" class="form-control" placeholder="" />
+                  <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+                </div>
+                <input type="text" class="form-control w-md" placeholder="" />
+                <div class="form-check form-check-inline ms-2">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" />
+                    DM내역포함여부
+                  </label>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>        
+        <!--//Content-->
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

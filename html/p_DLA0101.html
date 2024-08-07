@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용금고 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="layout-wrapper">    
+  <!-- Header -->
+  <div w3-include-html="../include/header.html"></div>
+  <section class="main-content">
+    <main class="page-content">
+      <div class="container-fixed">
+        <div class="content">
+          <!-- Content -->
+          <div class="page-header-wrap">
+            <h2 class="page-header">개별등록</h2>
+            <p class="text-danger mb-0 ms-3">※민상사채권의 경우 주민등록번호 사용불가</p>
+            <div class="btns">
+              <button type="button" class="btn btn-primary"><i class="ri-search-line"></i>조회</button>
+              <button type="button" class="btn btn-secondary"><i class="ri-check-line"></i>등록</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-tools-line"></i>수정</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-delete-bin-line"></i>삭제</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-task-line"></i>확정</button>
+            </div>
+          </div>
+          <table class="table table-form">
+            <colgroup>
+              <col width="10%" />
+              <col width="23%" />
+              <col width="10%" />
+              <col width="23%" />
+              <col width="10%" />
+              <col width="" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>고객명</th>
+                <td>
+                  <input type="text" class="form-control w-sm" placeholder="" />
+                  <input type="text" class="form-control w-md" placeholder="" />
+                </td>
+                <th>계약번호</th>
+                <td>
+                  <div class="input-group w-md">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+                  </div>
+                </td>
+                <th>수임일</th>
+                <td>
+                  <div class="input-group w-date">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>선택</th>
+                <th>고객명</th>
+                <th>실명번호</th>
+                <th>채무자명</th>
+                <th>기금구분</th>
+                <th>재단상세</th>
+                <th>대출과목</th>
+                <th>최초원금</th>
+                <th>신규일</th>
+                <th>만기일</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="10">
+                  <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="arr-list">
+            <li>신우편번호 등록시: ex) 35000와 같이 "-"없이 5자리로 등록 바랍니다.
+              <p>＊만약 350-00와 같이 등록시 등록한 주소정보가 DM에서 인식되지 않습니다.</p>
+            </li>
+            <li>채권원장 등록 시 <span class="text-danger">익영업일 수임사실통지서가 자동발송 신청됩니다.</span>
+              <p>＊수임통지 예외채권(수납,안내채권 등)인 경우 사전에 자동발송 제외 신청해 주시기 바랍니다.</p>
+            </li>
+          </ul>
+          <p class="text-secondary">(대량 데이터의 경우 IT지원부로 업무협의요청 하시기 바랍니다. 단, 엑셀자료 사전검증必)</p>
+          <!-- //Content -->
+        </div>
+        <!-- Quickmenu -->
+        <div w3-include-html="../include/quick_menu.html"></div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fixed">
+        <small class="text-muted">© 2024 - Nara Credit Service Co.,LTD. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </section>
+</div>
+<!-- END layout-wrapper -->
+</body>
+</html>

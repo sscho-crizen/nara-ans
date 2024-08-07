@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용금고 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div class="modal modal-popup" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" onclick="window.close();"></button>
+      </div>
+      <div class="modal-body">
+        <!--Content-->
+        <div class="popup-h">
+          <h2 class="popup-title">개인고객관리</h2>
+          <div class="btns">
+            <button type="button" class="btn btn-primary"><i class="ri-search-line"></i>조회</button>
+            <button type="button" class="btn btn-secondary"><i class="ri-save-line"></i>저장</button>
+            <button type="button" class="btn btn-outline-dark"><i class="ri-user-follow-line"></i>지인관리</button>
+            <button type="button" class="btn btn-outline-dark"><i class="ri-briefcase-line"></i>직장등록</button>
+            <button type="button" class="btn btn-outline-dark"><i class="ri-map-pin-line"></i>주소등록</button>
+            <button type="button" class="btn btn-outline-dark"><i class="ri-archive-line"></i>부서관리</button>
+            <button type="button" class="btn btn-outline-dark"><i class="ri-mail-check-line"></i>고객이메일등록</button>
+            <button type="button" class="btn btn-outline-dark"><i class="ri-phone-line"></i>고객명/실명번호 변경</button>
+            <button type="button" class="btn btn-outline-dark"><i class="ri-file-list-line"></i>원인서류</button>
+          </div>
+        </div>
+        <table class="table table-form"> 
+          <colgroup>
+            <col width="10%" />
+            <col width="24%" />
+            <col width="10%" />
+            <col width="23%" />
+            <col width="10%" />
+            <col width="" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>고객명</th>
+              <td>
+                <input type="text" class="form-control w-sm" placeholder="" />
+                <input type="text" class="form-control w-md" placeholder="" />
+              </td>
+              <th>고객약어명</th>
+              <td>
+                <input type="text" class="form-control" placeholder="" />
+              </td>
+              <th>개인/법인</th>
+              <td>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" checked />법인
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" />개인사업자
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" />개인
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>고객상태</th>
+              <td>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" checked />추심
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" />보증
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" />신용
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" />민원
+                  </label>
+                </div>
+              </td>
+              <th>등록일</th>
+              <td>2024-03-07</td>
+              <th>국내/국외</th>
+              <td>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" checked />국내
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" />국외
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>실명번호</th>
+              <td>
+                <span class="me-2">000000-0000000</span>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" checked />비실명
+                  </label>
+                </div>
+              </td>
+              <th>인격</th>
+              <td>
+                <select class="form-select">
+                  <option>선택해 주세요</option>
+                </select>
+              </td>
+              <th>주소구분</th>
+              <td>
+                <select class="form-select">
+                  <option>선택해 주세요</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th>주소</th>
+              <td colspan="3">
+                자택 532229 서울특별시 구로구 디지털로 306
+              </td>
+              <th>전화번호</th>
+              <td>010-00000-0000</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-form">
+          <colgroup>
+            <col width="10%" />
+            <col width="24%" />
+            <col width="10%" />
+            <col width="23%" />
+            <col width="10%" />
+            <col width="" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>핸드폰번호</th>
+              <td>010-0000-0000</td>
+              <th>팩스번호</th>
+              <td></td>
+              <th>이메일</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>성별</th>
+              <td>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" checked />남자
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" />여자
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" />기타
+                  </label>
+                </div>
+              </td>
+              <th>결혼상태</th>
+              <td>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" checked />미혼
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" />기혼
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" />기타
+                  </label>
+                </div>
+              </td>
+              <th>학력</th>
+              <td>
+                <select class="form-select">
+                  <option>선택해 주세요</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th>건강상태</th>
+              <td>
+                <select class="form-select">
+                  <option>선택해 주세요</option>
+                </select>
+              </td>
+              <th>사망여부</th>
+              <td>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" />Yes
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" checked />No
+                  </label>
+                </div>
+              </td>
+              <th>맞벌이여부</th>
+              <td>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" />Yes
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" checked />No
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>부동거여부</th>
+              <td>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" />Yes
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" checked />No
+                  </label>
+                </div>
+              </td>
+              <th>모동거여부</th>
+              <td>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" />Yes
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" checked />No
+                  </label>
+                </div>
+              </td>
+              <th>배우자동거여부</th>
+              <td>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" />Yes
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" checked />No
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>자녀수</th>
+              <td>
+                <input type="text" class="form-control" placeholder="" />
+              </td>
+              <th>형제자매수</th>
+              <td>
+                <input type="text" class="form-control" placeholder="" />
+              </td>
+              <th>기타가족수</th>
+              <td>
+                <input type="text" class="form-control" placeholder="" />
+              </td>
+            </tr>
+            <tr>
+              <th>직업명</th>
+              <td>
+                <input type="text" class="form-control" placeholder="" />
+              </td>
+              <th>월평균급여</th>
+              <td>
+                <input type="text" class="form-control w-auto text-end" placeholder="" value="0" />
+                <span class="ms-2">원</span>
+              </td>
+              <th>차량번호</th>
+              <td>
+                <input type="text" class="form-control" placeholder="" />
+              </td>
+            </tr>
+            <tr>
+              <th>주거형태</th>
+              <td>
+                <input type="text" class="form-control" placeholder="" />
+              </td>
+              <th>주거면적</th>
+              <td>
+                <input type="text" class="form-control" placeholder="" />
+              </td>
+              <th>종교</th>
+              <td>
+                <input type="text" class="form-control" placeholder="" />
+              </td>
+            </tr>
+            <tr>
+              <th>외모상특징</th>
+              <td colspan="5">
+                <input type="text" class="form-control" placeholder="" />
+              </td>
+            </tr> 
+            <tr>
+              <th>응대시주의사항</th>
+              <td colspan="5">
+                <input type="text" class="form-control" placeholder="" />
+              </td>
+            </tr> 
+          </tbody>
+        </table>
+        <table class="table table-form">
+          <colgroup>
+            <col width="10%" />
+            <col width="24%" />
+            <col width="10%" />
+            <col width="23%" />
+            <col width="10%" />
+            <col width="" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>매입/매출</th>
+              <td>
+                <select class="form-select">
+                  <option>선택해 주세요</option>
+                </select>
+              </td>
+              <th>고객분류코드</th>
+              <td>
+                <select class="form-select">
+                  <option>선택해 주세요</option>
+                </select>
+              </td>
+              <th>대손상각 외상매출액</th>
+              <td>
+                <input type="text" class="form-control" placeholder="" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-form">
+          <colgroup>
+            <col width="10%" />
+            <col width="40%" />
+            <col width="10%" />
+            <col width="" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>통장사본</th>
+              <td>
+                <div class="custom-file">
+                  <input type="file" class="form-control" />
+                  <button type="button" class="btn btn-dark">첨부취소</button>
+                </div>
+              </td>
+              <th>등기부등본</th>
+              <td>
+                <div class="custom-file">
+                  <input type="file" class="form-control" />
+                  <button type="button" class="btn btn-dark">첨부취소</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th class="required">사업자등록증</th>
+              <td>
+                <div class="custom-file">
+                  <input type="file" class="form-control" />
+                  <button type="button" class="btn btn-dark">첨부취소</button>
+                </div>
+              </td>
+              <th>사용인감</th>
+              <td>
+                <div class="custom-file">
+                  <input type="file" class="form-control" />
+                  <button type="button" class="btn btn-dark">첨부취소</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>인감증명서</th>
+              <td>
+                <div class="custom-file">
+                  <input type="file" class="form-control" />
+                  <button type="button" class="btn btn-dark">첨부취소</button>
+                </div>
+              </td>
+              <th>민원발급서류</th>
+              <td>
+                <div class="custom-file">
+                  <input type="file" class="form-control" />
+                  <button type="button" class="btn btn-dark">첨부취소</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>변경대상</th>
+              <th>진행상태</th>
+              <th>일련번호</th>
+              <th>변경전내용</th>
+              <th>변경후내용</th>
+              <th>변경일</th>
+              <th>승인일</th>
+              <th>변경부서</th>
+              <th>변경사원</th>
+              <th>첨부파일</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="10">
+                <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!--//Content-->
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

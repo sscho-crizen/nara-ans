@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용금고 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div class="modal modal-popup" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" onclick="window.close();"></button>
+      </div>
+      <div class="modal-body">
+        <!--Content-->
+        <div class="popup-h">
+          <h2 class="popup-title">계약번호조회</h2>
+          <div class="btns">
+            <button type="button" class="btn btn-primary"><i class="ri-search-line"></i>조회</button>
+          </div>
+        </div>
+        <table class="table table-form">
+          <colgroup>
+            <col width="12%" />
+            <col width="38%" />
+            <col width="12%" />
+            <col width="" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>계약조건</th>
+              <td colspan="3">
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" checked />전체
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" />추심의뢰
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" />조사의뢰
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" />민원의뢰
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>조회조건</th>
+              <td>
+                <select class="form-select w-auto">
+                  <option>선택해 주세요</option>
+                </select>
+              </td>
+              <th>조회내용</th>
+              <td>
+                <input type="text" class="form-control w-auto" placeholder="" />
+                <div class="form-check form-check-inline ms-2">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" />
+                    상세검색
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>계약일</th>
+              <td>
+                <div class="d-flex align-items-center gap-1">
+                  <div class="input-group w-date">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                  </div>
+                  ~
+                  <div class="input-group w-date">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                  </div>
+                </div>
+              </td>
+              <th>수임일</th>
+              <td>
+                <div class="d-flex align-items-center gap-1">
+                  <div class="input-group w-date">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                  </div>
+                  ~
+                  <div class="input-group w-date">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>계약구분</th>
+              <th>고객명</th>
+              <th>실명번호</th>
+              <th>부서명</th>
+              <th>계약번호</th>
+              <th>담당자명</th>
+              <th>계약일</th>
+              <th>수임일</th>
+              <th>만기일</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="9">
+                <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!--//Content-->
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

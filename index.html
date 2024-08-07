@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title></title>
+<link rel="shortcut icon" href="./images/favicon.icon">
+<!--CSS-->
+<link href="./css/bootstrap.custom.css" rel="stylesheet">
+<link href="./css/custom.css" rel="stylesheet">
+<!--JS-->
+<script src="./js/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<style type="text/css">
+/* 임시 */
+.iframe-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.iframe{
+  height: 100vh;
+  flex: 1 1 auto;
+  width: 1%;
+}
+.iframe-nav{
+  background-color: #fff;
+  min-width: 220px;
+  height: 100vh;
+  padding: 0;
+  overflow: auto;
+  border-left: 1px solid #ebebeb;
+}
+.iframe-nav ul > li > :not(.btn) {
+  flex: 1 1 auto;
+  text-decoration: none;
+}
+.title {
+  font-size: 18px;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".frame-menu > li:not('.title,.popup')").each(function(){
+		var url = $(this).find('a').attr("href");
+		$(this).append('<a href="'+url+'" class="btn btn-default btn-xs" target="_blank">새창</a>');
+	});
+  $(".frame-menu > li.popup").each(function(){
+		var url = $(this).find('a').attr("href");
+		$(this).append('<a href="#none" class="btn btn-default btn-xs btn-popup">팝업</a>');
+    $(this).find('.btn-popup').click(function() {
+      window.open(url, 'popupWindow', 'width=1600,height=800,scrollbars=yes');
+    });
+	});
+});
+
+</script>
+</head>
+<body>
+<div class="iframe-wrap">
+  <iframe src="./html/login_a.html" class="iframe" name="view" frameborder="0" scrolling="auto"></iframe>
+  <div class="iframe-nav">
+    <div class="p-2">
+      <ul class="frame-menu divide-y">
+        <li class="title p-2 pb-1 text-primary"><b>INDEX</b></li>
+        <li class="title p-2 pb-1 border-top mt-1"><b>#시안</b></li>
+        <!-- <li class="d-flex align-items-center py-1"><a href="./html/components.html" class="d-block py-1 px-3" target="view">Component</a></li> -->
+        <li class="d-flex align-items-center py-1"><a href="./html/login_a.html" class="d-block py-1 px-3" target="view">Login-A</a></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/login_b.html" class="d-block py-1 px-3" target="view">Login-B</a></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/nav_horizontal.html" class="d-block py-1 px-3" target="view">Main(상단메뉴)</a></li>
+        <!-- <li class="d-flex align-items-center py-1"><a href="./html/page_horizontal.html" class="d-block py-1 px-3" target="view">Sub(상단메뉴)</a></li> -->
+        <!-- <li class="d-flex align-items-center py-1"><a href="./html/nav_vertical.html" class="d-block py-1 px-3" target="view">Main(좌측메뉴)</a></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/page_vertical.html" class="d-block py-1 px-3" target="view">Sub(좌측메뉴)</a></li> -->
+        <!-- <li class="d-flex align-items-center py-1"><a href="./html/sub.html" class="d-block py-1 px-3" target="view">Sub(상+좌측 메뉴)</a></li> -->
+        <li class="title p-2 pb-1 border-top mt-1"><b>#좌측메뉴</b></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/sub1.html" class="d-block py-1 px-3" target="view">전자우편</a></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/sub2.html" class="d-block py-1 px-3" target="view">전자결재</a></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/sub3.html" class="d-block py-1 px-3" target="view">내규</a></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/sub4.html" class="d-block py-1 px-3" target="view">업무지원</a></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/sub5.html" class="d-block py-1 px-3" target="view">경영정보</a></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/sub6.html" class="d-block py-1 px-3" target="view">커뮤니티</a></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/sub7.html" class="d-block py-1 px-3" target="view">도서관리</a></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/sub8.html" class="d-block py-1 px-3" target="view">노동조합</a></li>
+        <li class="title p-2 pb-1 border-top mt-1"><b>#Page</b></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/p_UCI0203.html" class="d-block py-1 px-3" target="view">고객정보관리</a></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/p_UCI0802.html" class="d-block py-1 px-3" target="view">진행사항실시간조회</a></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/p_UCM0301.html" class="d-block py-1 px-3" target="view">민원발급서류관리</a></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/p_UCT0401.html" class="d-block py-1 px-3" target="view">계약관리</a></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/p_UIQ0804.html" class="d-block py-1 px-3" target="view">섭외정보조회</a></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/p_RPS0101.html" class="d-block py-1 px-3" target="view">조사의뢰관리</a></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/p_RPS0102.html" class="d-block py-1 px-3" target="view">조사대상자관리</a></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/p_KDI0201.html" class="d-block py-1 px-3" target="view">민원발급기본배정</a></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/p_DLA0101.html" class="d-block py-1 px-3" target="view">개별등록</a></li>
+        <li class="d-flex align-items-center py-1"><a href="./html/p_DLA0201.html" class="d-block py-1 px-3" target="view">일괄등록</a></li>
+        <li class="title p-2 pb-1 border-top mt-1"><b>#Popup</b></li>
+        <li class="popup d-flex align-items-center py-1"><a href="./popup/popup_DDM1001.html" class="d-block py-1 px-3" target="view">계좌내역</a></li>
+        <li class="popup d-flex align-items-center py-1"><a href="./popup/popup_UCI0212.html" class="d-block py-1 px-3" target="view">개인고객관리</a></li>
+        <li class="popup d-flex align-items-center py-1"><a href="./popup/popup_UCM0107.html" class="d-block py-1 px-3" target="view">계약번호조회</a></li>
+        <li class="popup d-flex align-items-center py-1"><a href="./popup/popup_UNG0301.html" class="d-block py-1 px-3" target="view">섭외대상</a></li>
+        <li class="popup d-flex align-items-center py-1"><a href="./popup/popup_DWC2301.html" class="d-block py-1 px-3" target="view">채권추심활동보고서</a></li>
+        <li class="popup d-flex align-items-center py-1"><a href="./popup/popup_DDM1001_2.html" class="d-block py-1 px-3" target="view">담당사후관리</a></li>
+        <li class="popup d-flex align-items-center py-1"><a href="./popup/popup_DDM1001_3.html" class="d-block py-1 px-3" target="view">채무상세정보</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

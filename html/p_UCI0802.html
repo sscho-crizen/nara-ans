@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용금고 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="layout-wrapper">    
+  <!-- Header -->
+  <div w3-include-html="../include/header.html"></div>
+  <section class="main-content">
+    <main class="page-content">
+      <div class="container-fixed">
+        <div class="content">
+          <!-- Content -->
+          <div class="page-header-wrap">
+            <h2 class="page-header">진행사항실시간조회</h2>
+            <div class="btns">
+              <button type="button" class="btn btn-primary"><i class="ri-search-line"></i>조회</button>
+            </div>
+          </div>
+          <table class="table table-form">
+            <colgroup>
+              <col width="10%" />
+              <col width="40%" />
+              <col width="10%" />
+              <col width="" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>고객명</th>
+                <td>
+                  <div class="input-group w-lg">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+                  </div>
+                  <input type="text" class="form-control w-md" placeholder="" />
+                  <input type="text" class="form-control w-md" placeholder="" />
+                </td>
+                <th>기준일</th>
+                <td>
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="input-group w-date">
+                      <input type="text" class="form-control" placeholder="" />
+                      <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                    </div>
+                    ~
+                    <div class="input-group w-date">
+                      <input type="text" class="form-control" placeholder="" />
+                      <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                    </div>
+                  </div>
+                </td>
+              </tr>              
+            </tbody>
+          </table>
+          <ul class="nav nav-tabs nav-dark">
+            <li class="nav-item">
+              <a href="#none" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">채권추심현황</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2">채권회수명세표</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3">채권추심활동내역(채무자별)</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab4">경비명세표</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="tab1">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th colspan="5">위임현황</th>
+                    <th colspan="4">회수현황</th>
+                  </tr>
+                  <tr>
+                    <th>위임일자</th>
+                    <th>건수</th>
+                    <th>원금</th>
+                    <th>이자</th>
+                    <th>계</th>
+                    <th>건수</th>
+                    <th>원금</th>
+                    <th>이자</th>
+                    <th>계</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="9">
+                      <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <nav class="pagination-area">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a href="#none" class="page-link"><i class="ri-arrow-left-s-line"></i></a>
+                  </li>
+                  <li class="page-item">
+                    <a href="#none" class="page-link">1</a>
+                  </li>
+                  <li class="page-item active">
+                    <span class="page-link">2</span>
+                  </li>
+                  <li class="page-item">
+                    <a href="#none" class="page-link">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a href="#none" class="page-link">4</a>
+                  </li>
+                  <li class="page-item">
+                    <a href="#none" class="page-link">5</a>
+                  </li>
+                  <li class="page-item">
+                    <a href="#none" class="page-link"><i class="ri-arrow-right-s-line"></i></a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="tab-pane fade" id="tab2">
+              tab2
+            </div>
+            <div class="tab-pane fade" id="tab3">
+              tab3
+            </div>
+            <div class="tab-pane fade" id="tab4">
+              tab4
+            </div>
+          </div>          
+          <!-- //Content -->
+        </div>
+        <!-- Quickmenu -->
+        <div w3-include-html="../include/quick_menu.html"></div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fixed">
+        <small class="text-muted">© 2024 - Nara Credit Service Co.,LTD. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </section>
+</div>
+<!-- END layout-wrapper -->
+</body>
+</html>

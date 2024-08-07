@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용금고 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="layout-wrapper">    
+  <!-- Header -->
+  <div w3-include-html="../include/header.html"></div>
+  <section class="main-content">
+    <main class="page-content">
+      <div class="container-fixed">
+        <div class="content">
+          <!-- Content -->
+          <div class="page-header-wrap">
+            <h2 class="page-header">조사대상자관리</h2>
+            <div class="ms-3">
+              <button type="button" class="btn btn-sm btn-default">KCB<i class="ri-arrow-right-s-line"></i></button>
+              <button type="button" class="btn btn-sm btn-default">CRETOP<i class="ri-arrow-right-s-line"></i></button>
+            </div>
+            <div class="btns">
+              <button type="button" class="btn btn-primary"><i class="ri-search-line"></i>조회</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-tools-line"></i>수정</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-tools-line"></i>민원서류신청</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-parent-line"></i>인적사항등록</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-slideshow-line"></i>실사현황</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-file-list-3-line"></i>내역등록</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-user-search-line"></i>동일인조회</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-contacts-book-2-line"></i>실명번호변경</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-clipboard-line"></i>보고서</button>
+            </div>
+          </div>
+          <table class="table table-form">
+            <colgroup>
+              <col width="10%" />
+              <col width="40%" />
+              <col width="10%" />
+              <col width="" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>계약관리</th>
+                <td>
+                  <div class="input-group w-lg">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+                  </div>
+                </td>
+                <th>고객명</th>
+                <td>
+                  <input type="text" class="form-control w-sm" placeholder="" />
+                  <input type="text" class="form-control w-lg" placeholder="" />
+                </td>
+              </tr>
+              <tr>
+                <th>등록일</th>
+                <td>
+                  <input type="text" class="form-control w-sm" placeholder="" />
+                </td>
+                <th>실명번호</th>
+                <td>
+                  <input type="text" class="form-control w-auto" placeholder="" />
+                </td>
+              </tr>
+              <tr>
+                <th>계약부서명</th>
+                <td>
+                  <input type="text" class="form-control w-sm" placeholder="" />
+                  <input type="text" class="form-control w-lg" placeholder="" />
+                </td>
+                <th>계약사원명</th>
+                <td>
+                  <input type="text" class="form-control w-sm" placeholder="" />
+                  <input type="text" class="form-control w-lg" placeholder="" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table table-form">
+            <colgroup>
+              <col width="10%" />
+              <col width="40%" />
+              <col width="10%" />
+              <col width="" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>법인번호</th>
+                <td>
+                  <input type="text" class="form-control w-auto" placeholder="" />
+                </td>
+                <th>대표자주민번호</th>
+                <td>
+                  <input type="text" class="form-control w-auto" placeholder="" />
+                </td>
+              </tr>
+              <tr>
+                <th>대표자/개인명</th>
+                <td>
+                  <input type="text" class="form-control w-auto" placeholder="" />
+                </td>
+                <th>상호/직장명</th>
+                <td>
+                  <input type="text" class="form-control w-auto" placeholder="" />
+                </td>
+              </tr>
+              <tr>
+                <th>사업자구분</th>
+                <td colspan="3">
+                  <input type="text" class="form-control w-auto" placeholder="" />
+                </td>
+              </tr>
+              <tr>
+                <th>신용정보조회</th>
+                <td colspan="3">
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" />가
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" />부
+                    </label>
+                  </div>
+                  <div class="input-group w-date">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>우편번호</th>
+                <td colspan="3">
+                  <div class="input-group w-lg">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>행정주소</th>
+                <td colspan="3">
+                  <input type="text" class="form-control" placeholder="" />
+                </td>
+              </tr>
+              <tr>
+                <th>번지주소</th>
+                <td colspan="3">
+                  <input type="text" class="form-control" placeholder="" />
+                </td>
+              </tr>
+              <tr>
+                <th>옵션내용</th>
+                <td colspan="3">
+                  <input type="text" class="form-control" placeholder="" />
+                </td>
+              </tr>
+              <tr>
+                <th>기본수수료</th>
+                <td>
+                  <input type="text" class="form-control w-auto text-end" placeholder="" /><span class="ms-2">원</span>
+                </td>
+                <th>옵션수수료</th>
+                <td>
+                  <input type="text" class="form-control w-auto text-end" placeholder="" /><span class="ms-2">원</span>
+                </td>
+              </tr>
+              <tr>
+                <th>채무원금</th>
+                <td>
+                  <input type="text" class="form-control w-auto text-end" placeholder="" /><span class="ms-2">원</span>
+                </td>
+                <th>변제일</th>
+                <td>
+                  <div class="input-group w-date">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>취소여부</th>
+                <td colspan="3">
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" />취소
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" />정상
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>변경사유</th>
+                <td colspan="3">
+                  <input type="text" class="form-control" placeholder="" />
+                </td>
+              </tr>
+              <tr>
+                <th>배정부서명</th>
+                <td>
+                  <select class="form-select w-auto">
+                    <option>선택해 주세요</option>
+                  </select>
+                </td>
+                <th>배정사원명</th>
+                <td>
+                  <div class="input-group w-md">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+                  </div>
+                  <input type="text" class="form-control w-md" placeholder="" />
+                </td>
+              </tr>
+              <tr>
+                <th>조사완료여부</th>
+                <td>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" />완료
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" />미완료
+                    </label>
+                  </div>
+                </td>
+                <th>조사비용</th>
+                <td>
+                  <input type="text" class="form-control w-auto text-end" placeholder="" /><span class="ms-2">원</span>
+                </td>
+              </tr>
+              <tr>
+                <th>조사완료여부</th>
+                <td></td>
+                <th>조사비용</th>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>          
+          <!-- //Content -->
+        </div>
+        <!-- Quickmenu -->
+        <div w3-include-html="../include/quick_menu.html"></div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fixed">
+        <small class="text-muted">© 2024 - Nara Credit Service Co.,LTD. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </section>
+</div>
+<!-- END layout-wrapper -->
+</body>
+</html>

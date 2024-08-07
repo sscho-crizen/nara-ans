@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용금고 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="layout-wrapper">    
+  <!-- Header -->
+  <div w3-include-html="../include/header.html"></div>
+  <section class="main-content">
+    <main class="page-content">
+      <div class="container-fixed">
+        <div class="content">
+          <!-- Content -->
+          <div class="page-header-wrap">
+            <h2 class="page-header">조사의뢰관리</h2>
+            <div class="btns">
+              <button type="button" class="btn btn-outline-default"><i class="ri-tools-line"></i>계약부서변경</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i>복원조회</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i>대표자조회</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i>조회</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-file-upload-line"></i>등록</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-folder-upload-line"></i>일괄등록</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-folder-add-line"></i>이전생성</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-todo-line"></i>보고서</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-database-2-line"></i>완료</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-file-list-3-line"></i>민원서류신청</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-file-excel-2-line"></i>엑셀</button>
+            </div>
+          </div>          
+          <table class="table table-form">
+            <colgroup>
+              <col width="9%" />
+              <col width="" />
+              <col width="9%" />
+              <col width="" />
+              <col width="9%" />
+              <col width="" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>고객명</th>
+                <td>
+                  <div class="input-group w-md">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+                  </div>
+                  <input type="text" class="form-control w-xs" placeholder="" />
+                  <input type="text" class="form-control w-xs" placeholder="" />
+                </td>
+                <th>계약번호</th>
+                <td>
+                  <div class="input-group w-md">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+                  </div>
+                  <input type="text" class="form-control w-xs" placeholder="" />
+                </td>
+                <th>수임일</th>
+                <td>
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="input-group w-date">
+                      <input type="text" class="form-control" placeholder="" />
+                      <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                    </div>
+                    ~
+                    <div class="input-group w-date">
+                      <input type="text" class="form-control" placeholder="" />
+                      <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>                
+                <th>관리사원명</th>
+                <td>
+                  <div class="input-group w-md">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+                  </div>
+                  <input type="text" class="form-control w-xs" placeholder="" />
+                </td>
+                <th>조사상태</th>
+                <td colspan="3">
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" checked />전체
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" />완료
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" />미완료
+                    </label>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>선택</th>
+                <th>순번</th>
+                <th>계약번호</th>
+                <th>등록일</th>
+                <th>신용조사대상자명</th>
+                <th>실명번호</th>
+                <th>우편번호</th>
+                <th>주소</th>
+                <th>배정사원명</th>
+                <th>완료여부</th>
+                <th>완료일자</th>
+                <th>정산여부</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="12">
+                  <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <nav class="pagination-area">
+            <ul class="pagination">
+              <li class="page-item">
+                <a href="#none" class="page-link"><i class="ri-arrow-left-s-line"></i></a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link">1</a>
+              </li>
+              <li class="page-item active">
+                <span class="page-link">2</span>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link">3</a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link">4</a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link">5</a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link"><i class="ri-arrow-right-s-line"></i></a>
+              </li>
+            </ul>
+          </nav>
+          <!-- //Content -->
+        </div>
+        <!-- Quickmenu -->
+        <div w3-include-html="../include/quick_menu.html"></div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fixed">
+        <small class="text-muted">© 2024 - Nara Credit Service Co.,LTD. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </section>
+</div>
+<!-- END layout-wrapper -->
+</body>
+</html>

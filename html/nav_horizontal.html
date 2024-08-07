@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>나라신용금고 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="layout-wrapper">
+  <!-- Header -->
+  <div w3-include-html="../include/header.html"></div>
+  <main class="main-content">
+    <div class="page-content">
+      <div class="container-fixed">
+        <!-- Content -->
+        <div class="row">
+          <div class="col-3">
+            <particle class="card main-card">
+              <div class="card-header">
+                <em>새로운</em>
+              </div>
+              <div class="card-body">
+                <div class="status">
+                  <div class="status-item">
+                    <span><i class="ri-calculator-line"></i>메일</span>
+                    <em>0</em>
+                  </div>
+                  <div class="status-item">
+                    <span><i class="ri-calculator-line"></i>팩스</span>
+                    <em>1</em>
+                  </div>
+                </div>
+              </div>
+            </particle>
+            <particle class="card main-card">
+              <div class="card-header">
+                <em>전자결재</em>
+              </div>
+              <div class="card-body">
+                <div class="status">
+                  <div class="status-item">
+                    <span><i class="ri-calculator-line"></i>결재</span>
+                    <em>3</em>
+                  </div>
+                  <div class="status-item">
+                    <span><i class="ri-calculator-line"></i>진행</span>
+                    <em>0</em>
+                  </div>
+                  <div class="status-item">
+                    <span><i class="ri-calculator-line"></i>수신</span>
+                    <em>2</em>
+                  </div>
+                  <div class="status-item">
+                    <span><i class="ri-calculator-line"></i>열람</span>
+                    <em>1</em>
+                  </div>
+                  <div class="status-item">
+                    <span><i class="ri-calculator-line"></i>기안</span>
+                    <em>0</em>
+                  </div>
+                </div>
+              </div>
+            </particle>
+            <particle class="card main-card">
+              <div class="card-header">
+                <em>사원조회</em>
+              </div>
+              <div class="card-body">
+                <div class="d-flex gap-2">
+                  <input type="text" class="form-control border-secondary" placeholder="" />
+                  <button type="button" class="btn btn-secondary"><i class="ri-search-line"></i>조회</button>
+                </div>
+              </div>
+            </particle>
+            <particle class="card main-card">
+              <div class="card-header">
+                <em>전산업무</em>
+              </div>
+              <div class="card-body">
+                <ul class="tab-list">
+                  <li>전산 업무매뉴얼</li>
+                  <li>타부서 대리결재시 외부</li>
+                </ul>
+              </div>
+            </particle>            
+            <particle class="card main-card">
+              <div class="card-body">
+                <h5 class="card-title"><em>오늘의 일정</em></h5>
+              </div>
+            </particle>
+          </div>
+          <div class="col-6">
+            <particle class="card main-card">
+              <div class="card-body">
+                <table class="table table-sm mb-0">
+                  <thead>
+                    <tr>
+                      <th rowspan="2">구분</th>
+                      <th colspan="3">전월실적</th>
+                      <th colspan="3">금월실적</th>
+                    </tr>
+                    <tr>
+                      <th>목표</th>
+                      <th>실적</th>
+                      <th>달성률</th>
+                      <th>목표</th>
+                      <th>실적</th>
+                      <th>달성률</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>예보채권</th>
+                      <td>0</td>
+                      <td>114.3</td>
+                      <td>0%</td>
+                      <td>0</td>
+                      <td>36.9</td>
+                      <td>0%</td>
+                    </tr>
+                    <tr>
+                      <th>캠코채권</th>
+                      <td>0</td>
+                      <td>305.9</td>
+                      <td>0%</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0%</td>
+                    </tr>
+                    <tr>
+                      <th>엘씨채권</th>
+                      <td>0</td>
+                      <td>103.6</td>
+                      <td>0%</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0%</td>
+                    </tr>
+                    <tr>
+                      <th>일반채권</th>
+                      <td>0</td>
+                      <td>757.3</td>
+                      <td>0%</td>
+                      <td>0</td>
+                      <td>67.9</td>
+                      <td>0%</td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <th>합계</th>
+                      <td>0</td>
+                      <td>1,281,1</td>
+                      <td>0%</td>
+                      <td>0</td>
+                      <td>104.8</td>
+                      <td>0%</td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+            </particle>
+            <particle class="card main-card">
+              <div class="card-header">
+                <ul class="nav nav-underline">
+                  <li class="nav-item">
+                    <a href="#none" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-doc1">최근수신문서</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#none" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-doc2">최근결재문서</a>
+                  </li>
+                  <li class="nav-item ms-auto d-flex align-items-center">
+                    <a href="#none" class="btn btn-sm px-0">more<i class="ri-arrow-drop-right-line"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">                
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tab-doc1">
+                    <ul class="tab-list">
+                      <li>
+                        <a href="#none" class="nav-link">2024년 3/4분기 회의비 배정</a>
+                      </li>
+                      <li>
+                        <a href="#none" class="nav-link">[대외접수문서 기안서](협회) 대표이사 간담회 결과 보고(초단기 미납안내 업무...</a>
+                      </li>
+                      <li>
+                        <a href="#none" class="nav-link">[업무(협의,요청)서] 오토금융센터 계약서 미사용-사용으로 수정 요청</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="tab-doc2">
+                    <div class="not-found">최근 공지글이 없습니다.</div>
+                  </div>
+                </div>
+              </div>
+            </particle>
+            <particle class="card main-card">
+              <div class="card-header">
+                <ul class="nav nav-underline">
+                  <li class="nav-item">
+                    <a href="#none" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-board1">공지사항</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#none" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-board2">사내게시판</a>
+                  </li>
+                  <li class="nav-item ms-auto d-flex align-items-center">
+                    <a href="#none" class="btn btn-sm px-0">more<i class="ri-arrow-drop-right-line"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">                
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tab-board1">
+                    <ul class="tab-list">
+                      <li>
+                        <a href="#none" class="nav-link">2023년도 채무조정 사후재산조사 대상자에 대한 금융자산...</a>
+                        <span>케이알앤씨 채권부</span>
+                        <span>2024.07.12</span>
+                      </li>
+                      <li>
+                        <a href="#none" class="nav-link">시효도래자에 대한 재산조사 결과(금융자산) 통보 및 법...</a>
+                        <span>케이알앤씨 채권부</span>
+                        <span>2024.07.12</span>
+                      </li>
+                      <li>
+                        <a href="#none" class="nav-link">[중요] '24.2분기 KR&C 종결채권 개인신용정보 분리보'...</a>
+                        <span class="">케이알앤씨 채권부</span>
+                        <span class="date">2024.07.12</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="tab-board2">
+                    <div class="not-found">최근 공지글이 없습니다.</div>
+                  </div>
+                </div>
+              </div>
+            </particle>
+            <particle class="card main-card">
+              <div class="card-header">
+                <ul class="nav nav-underline">
+                  <li class="nav-item">
+                    <a href="#none" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-case1">동호회게시판</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#none" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-case2">사례관리</a>
+                  </li>
+                  <li class="nav-item ms-auto d-flex align-items-center">
+                    <a href="#none" class="btn btn-sm px-0">more<i class="ri-arrow-drop-right-line"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tab-case1">
+                    <ul class="tab-list">
+                      <li>
+                        <a href="#none" class="nav-link">[어울림] 2024년 7월 모임 안내</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="tab-case2">
+                    <div class="not-found">최근 공지글이 없습니다.</div>
+                  </div>
+                </div>
+              </div>
+            </particle>
+          </div>
+          <div class="col-3">
+            <particle class="card main-card">
+              <div class="card-header d-flex align-items-center">
+                <em>업무시스템 바로가기</em>
+                <div class="nav-item ms-auto d-flex align-items-center">
+                  <a href="#none" class="btn btn-sm px-0">more<i class="ri-arrow-drop-right-line"></i></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="quick-link">
+                  <button type="button" class="btn btn-sm btn-outline-dark">총괄실적</button>
+                  <button type="button" class="btn btn-sm btn-outline-dark">수수료</button>
+                  <button type="button" class="btn btn-sm btn-outline-dark">회수</button>
+                  <button type="button" class="btn btn-sm btn-outline-dark">수임</button>
+                  <button type="button" class="btn btn-sm btn-outline-dark">추세표</button>
+                  <button type="button" class="btn btn-sm btn-outline-dark">편지쓰기</button>
+                  <button type="button" class="btn btn-sm btn-outline-dark">받은편지</button>
+                  <button type="button" class="btn btn-sm btn-outline-dark">급여명세</button>
+                  <button type="button" class="btn btn-sm btn-outline-dark">물품신청</button>
+                  <button type="button" class="btn btn-sm btn-outline-dark">명함신청</button>
+                  <button type="button" class="btn btn-sm btn-outline-dark">크레듀</button>
+                  <button type="button" class="btn btn-sm btn-outline-dark">한화 S&C</button>
+                  <button type="button" class="btn btn-sm btn-outline-default">경영실적</button>
+                  <button type="button" class="btn btn-sm btn-outline-default">부서목표</button>
+                  <button type="button" class="btn btn-sm btn-outline-default">금일실적</button>
+                  <button type="button" class="btn btn-sm btn-outline-default">개인목달</button>
+                  <button type="button" class="btn btn-sm btn-outline-default">담당성과</button>
+                  <button type="button" class="btn btn-sm btn-outline-default">영업성과</button>
+                  <button type="button" class="btn btn-sm btn-outline-default">신용정보</button>
+                  <button type="button" class="btn btn-sm btn-outline-default">라이브리</button>
+                  <button type="button" class="btn btn-sm btn-outline-default">동일인조</button>
+                  <button type="button" class="btn btn-sm btn-outline-default">채무상세</button>
+                  <button type="button" class="btn btn-sm btn-outline-default">전문현황</button>
+                  <button type="button" class="btn btn-sm btn-outline-default">목록관리</button>
+                </div>
+              </div>
+            </particle>
+            <particle class="card main-card">
+              <div class="card-header d-flex align-items-center">
+                <em>사내메일</em>
+                <div class="nav-item ms-auto d-flex align-items-center">
+                  <a href="#none" class="btn btn-sm px-0">more<i class="ri-arrow-drop-right-line"></i></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="">
+                  <ul class="tab-list">
+                    <li>
+                      박한민 / [7월 월례회의자료 배포] '2...'
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </particle>
+            <particle class="card main-card">
+              <div class="card-header d-flex align-items-center">
+                <em>경영공지사항</em>
+                <div class="nav-item ms-auto d-flex align-items-center">
+                  <a href="#none" class="btn btn-sm px-0">more<i class="ri-arrow-drop-right-line"></i></a>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="not-found">최근 공지글이 없습니다.</div>
+              </div>
+            </particle>
+            <particle class="card main-card">
+              <div class="card-header">
+                <ul class="nav nav-underline">
+                  <li class="nav-item">
+                    <a href="#none" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-collect1">영업·추심정보</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#none" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-collect2">제안·지식·현업</a>
+                  </li>
+                  <li class="nav-item ms-auto d-flex align-items-center">
+                    <a href="#none" class="btn btn-sm px-0">more<i class="ri-arrow-drop-right-line"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">                
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tab-collect1">
+                    <ul class="tab-list">
+                      <li>
+                        <a href="#none" class="nav-link">[어울림] 2024년 7월 모임 안내</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="tab-collect2">
+                    <div class="not-found">최근 공지글이 없습니다.</div>
+                  </div>
+                </div>
+              </div>
+            </particle>
+          </div>
+        </div>
+        <!-- //Content -->
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container-fixed">
+        <small class="text-muted">© 2024 - Nara Credit Service Co.,LTD. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </main>
+</div>
+<!-- END layout-wrapper -->
+</body>
+</html>
