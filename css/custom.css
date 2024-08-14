@@ -46,6 +46,8 @@ br.spacer {
 .container-fixed {
   position: relative;
   width: 1400px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 
@@ -104,6 +106,14 @@ br.spacer {
 
 .w-date {
   width: 112px !important;
+}
+
+.w-date-time {
+  width: 146px !important;
+}
+
+.w-range {
+  width: 190px !important;
 }
 
 .logo img {
@@ -223,7 +233,7 @@ br.spacer {
   align-self: flex-start;
   margin-right: 1rem;
   margin-bottom: 1rem;
-  background-color: #6b777f;
+  background-color: #396684;
   border: 1px solid var(--bs-border-color);
   border-radius: var(--bs-border-radius);
 }
@@ -559,8 +569,26 @@ br.spacer {
   background-color: var(--bs-primary);
   border-radius: 50%;
   position: absolute;
-  top: 14px;
+  top: 12px;
   left: 4px;
+}
+.tab-list > li .nav-link {
+  flex: 1 1 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tab-list > li .nav-link:hover {
+  color: var(--bs-secondary);
+}
+.tab-list > li .writer {
+  width: 140px;
+  text-align: left;
+  margin-left: auto;
+}
+.tab-list > li .date {
+  width: 68px;
+  text-align: right;
+  margin-left: auto;
 }
 
 .card-header em {

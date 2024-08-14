@@ -1023,7 +1023,7 @@ $form-switch-checked-bg-position: right center !default;
 
 // scss-docs-start input-group-variables
 $input-group-addon-padding-y:           $input-padding-y !default;
-$input-group-addon-padding-x:           .75rem !default;
+$input-group-addon-padding-x:           .375rem !default;
 $input-group-addon-font-weight:         $input-font-weight !default;
 $input-group-addon-color:               $input-color !default;
 $input-group-addon-bg:                  var(--#{$prefix}tertiary-bg) !default;
@@ -1216,7 +1216,7 @@ $nav-pills-border-radius:           var(--#{$prefix}border-radius) !default;
 $nav-pills-link-active-color:       $component-active-color !default;
 $nav-pills-link-active-bg:          $component-active-bg !default;
 
-$nav-underline-gap:                 1rem !default;
+$nav-underline-gap:                 .625rem !default;
 $nav-underline-border-width:        1px !default;
 //$nav-underline-link-active-color:   var(--#{$prefix}emphasis-color) !default;
 $nav-underline-link-active-color:   var(--#{$prefix}secondary) !default;
