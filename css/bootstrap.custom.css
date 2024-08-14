@@ -13218,7 +13218,7 @@ textarea.form-control-lg {
   width: 307.875px;
   box-sizing: border-box;
   touch-action: manipulation;
-  background: var(--bs-secondary-bg);
+  background-color: white;
   box-shadow: 1px 0 0 var(--bs-border-color), -1px 0 0 var(--bs-border-color), 0 1px 0 var(--bs-border-color), 0 -1px 0 var(--bs-border-color), 0 3px 13px rgba(0, 0, 0, 0.08);
 }
 .flatpickr-calendar.open, .flatpickr-calendar.inline {
@@ -13693,8 +13693,8 @@ span.flatpickr-weekday {
 .flatpickr-day.inRange, .flatpickr-day.prevMonthDay.inRange, .flatpickr-day.nextMonthDay.inRange, .flatpickr-day.today.inRange, .flatpickr-day.prevMonthDay.today.inRange, .flatpickr-day.nextMonthDay.today.inRange, .flatpickr-day:hover, .flatpickr-day.prevMonthDay:hover, .flatpickr-day.nextMonthDay:hover, .flatpickr-day:focus, .flatpickr-day.prevMonthDay:focus, .flatpickr-day.nextMonthDay:focus {
   cursor: pointer;
   outline: 0;
-  background-color: var(--bs-light);
-  border-color: var(--bs-light);
+  background-color: #ecf4e3;
+  border-color: #ecf4e3;
 }
 .flatpickr-day.today {
   border-color: var(--bs-primary);
@@ -13724,7 +13724,7 @@ span.flatpickr-weekday {
 }
 .flatpickr-day.inRange {
   border-radius: 0;
-  box-shadow: -5px 0 0 var(--bs-light), 5px 0 0 var(--bs-light);
+  box-shadow: -5px 0 0 #ecf4e3, 5px 0 0 #ecf4e3;
 }
 .flatpickr-day.flatpickr-disabled, .flatpickr-day.flatpickr-disabled:hover, .flatpickr-day.prevMonthDay, .flatpickr-day.nextMonthDay, .flatpickr-day.notAllowed, .flatpickr-day.notAllowed.prevMonthDay, .flatpickr-day.notAllowed.nextMonthDay {
   color: rgba(var(--bs-body-color-rgb), 0.3);
