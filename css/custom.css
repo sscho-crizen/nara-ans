@@ -46,6 +46,7 @@ br.spacer {
 .container-fixed {
   position: relative;
   width: 1400px;
+  min-width: 1400px;
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 auto;
@@ -124,23 +125,6 @@ br.spacer {
 /* ---------------------------------------------------------------------- */
 /*  Layout
 /* ---------------------------------------------------------------------- */
-.app-top {
-  padding: 0.25rem 0;
-  background-color: var(--bs-bg-color);
-  border-bottom: 1px solid var(--bs-border-color);
-}
-.app-top .util {
-  display: flex;
-  align-items: center;
-}
-.app-top .util .user-info {
-  margin-right: 2rem;
-}
-.app-top .util .user-info .user {
-  font-size: 0.75rem;
-  margin-right: 0.25rem;
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -154,13 +138,29 @@ br.spacer {
   border-bottom: 1px solid var(--bs-border-color);
 }
 .header .app-top {
-  background-color: #212529;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding: 0.25rem 0;
+  background-color: #396684;
+  border-bottom: 1px solid var(--bs-border-color);
 }
 .header .app-top .container-fixed {
-  display: flex;
+  justify-content: center;
 }
 .header .app-top .util {
+  display: flex;
+  align-items: center;
   margin-left: auto;
+}
+.header .app-top .util .user-info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header .app-top .util .user-info .user {
+  font-size: 0.75rem;
+  margin-right: 0.25rem;
 }
 .header .container-fixed {
   display: flex;
@@ -207,6 +207,9 @@ br.spacer {
   display: inline-flex;
   align-items: center;
   padding: 2px 12px;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 3.25rem;
+  background-color: var(--bs-bg-color);
 }
 .app-navbar .nav-date span [class^=ri-] {
   color: var(--bs-secondary);
@@ -242,12 +245,13 @@ br.spacer {
   position: sticky;
   top: 126px;
   z-index: 10;
-  padding: 0.5rem;
+  padding: 2px;
 }
 .main-content .page-content .container-fixed .lnb .lnb-inner .lnb-header {
   display: flex;
   align-items: center;
-  margin-bottom: 0.5rem;
+  padding-left: 10px;
+  margin-bottom: 2px;
 }
 .main-content .page-content .container-fixed .lnb .lnb-inner .lnb-header h2 {
   font-size: 0.875rem;
@@ -330,6 +334,7 @@ br.spacer {
 .main-content .page-content .container-fixed .content {
   flex: 1 1 0;
   padding: 1rem;
+  margin-right: -1rem;
   margin-bottom: 1rem;
   background-color: white;
   border: 1px solid var(--bs-border-color);
