@@ -2476,14 +2476,14 @@ progress {
 
 .form-control-lg {
   height: 40px;
-  padding: 0 1.25rem;
+  padding: 0 0.875rem;
   font-size: 0.875rem;
   border-radius: var(--bs-border-radius-lg);
 }
 .form-control-lg::file-selector-button {
-  padding: 0 1.25rem;
-  margin: 0 -1.25rem;
-  margin-inline-end: 1.25rem;
+  padding: 0 0.875rem;
+  margin: 0 -0.875rem;
+  margin-inline-end: 0.875rem;
 }
 
 textarea.form-control {
@@ -2576,7 +2576,7 @@ textarea.form-control-lg {
 .form-select-lg {
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 1.25rem;
+  padding-left: 0.875rem;
   height: 40px;
   font-size: 0.875rem;
   border-radius: var(--bs-border-radius-lg);
@@ -2936,7 +2936,7 @@ textarea.form-control-lg {
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
 .input-group-lg > .btn {
-  padding: 0 1.25rem;
+  padding: 0 0.875rem;
   height: 40px;
   font-size: 0.875rem;
   border-radius: var(--bs-border-radius-lg);
@@ -3595,7 +3595,7 @@ textarea.form-control-lg {
 
 .btn-lg, .btn-group-lg > .btn {
   --bs-btn-padding-y: 0;
-  --bs-btn-padding-x: 1.25rem;
+  --bs-btn-padding-x: 0.875rem;
   --bs-btn-font-size: 0.875rem;
   --bs-btn-border-radius: var(--bs-border-radius-lg);
   --bs-btn-height: 40px;
@@ -4061,8 +4061,8 @@ textarea.form-control-lg {
 }
 
 .btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
-  padding-right: 0.9375rem;
-  padding-left: 0.9375rem;
+  padding-right: 0.65625rem;
+  padding-left: 0.65625rem;
 }
 
 .btn-group-vertical {
