@@ -350,6 +350,32 @@ br.spacer {
     }      
   }
 }
+.doc-box {
+  position: relative;
+  width: 280px;
+  display: flex;
+  // align-self: stretch;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  .doc-box-inner {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+  }
+  .doc-box-tit {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+  }
+  .doc-box-btns {
+    text-align: center;
+    padding-top: 1rem;
+    margin-top: auto;
+  }
+}
 .footer {
   text-align: center;
   padding: 10px calc(1rem* 0.5);
@@ -456,6 +482,11 @@ br.spacer {
   .page-header {
     font-size: 1rem;
     margin-bottom: 0;
+  }
+  .search-items {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
   }
   .btns {
     margin-left: auto;
