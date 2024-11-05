@@ -500,6 +500,10 @@ br.spacer {
   display: flex;
   align-items: center;
   margin-bottom: .5rem;
+  &.popup-h-divider {
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--bs-border-color);
+  }
   .popup-title {
     font-size: 1rem;
     margin-bottom: 0;
@@ -698,6 +702,43 @@ br.spacer {
       font-size: .8125rem;
       text-indent: -4px;
       margin-bottom: .25rem;
+    }
+  }
+}
+.sign {
+  text-align: center;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  > * {
+    padding: .3125rem 1rem;
+    border: 1px solid var(--bs-border-color);
+  }
+  > dt {
+    background-color: var(--bs-bg-color);
+  }
+  > dd {
+    border-top-width: 0;
+    margin-bottom: 0;
+  }
+}
+.custom-file {
+  &::before {
+    content: "";
+    display: block;
+    flex: 1 1 0;
+    border: 1px solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+  }
+  input[type="file"] {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    padding-top: 5px;
+    background-color: transparent;
+    border-color: transparent;
+    &::-webkit-selector-button,
+    &::-webkit-file-upload-button {
+      display: none;
     }
   }
 }
