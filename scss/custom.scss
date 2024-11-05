@@ -82,9 +82,6 @@ br.spacer {
     margin-left: .5rem;
   }
 }
-.table-form {
-  border-top-color: var(--bs-border-color);
-}
 .w-xs {
   width: 60px !important;
 }
@@ -558,7 +555,8 @@ br.spacer {
   }
 }
 .table-form {
-  > tbody th {
+  border-top-color: var(--bs-border-color);
+  > tbody > tr > th {
     background-color: #f6f9fb;
   }
 }

@@ -85,10 +85,6 @@ br.spacer {
   margin-left: 0.5rem;
 }
 
-.table-form {
-  border-top-color: var(--bs-border-color);
-}
-
 .w-xs {
   width: 60px !important;
 }
@@ -562,7 +558,10 @@ br.spacer {
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.table-form > tbody th {
+.table-form {
+  border-top-color: var(--bs-border-color);
+}
+.table-form > tbody > tr > th {
   background-color: #f6f9fb;
 }
 
