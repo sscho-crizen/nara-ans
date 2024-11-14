@@ -555,6 +555,7 @@ br.spacer {
   }
 }
 .table-form {
+  table-layout: fixed;
   border-top-color: var(--bs-border-color);
   > tbody > tr > th {
     background-color: #f6f9fb;
