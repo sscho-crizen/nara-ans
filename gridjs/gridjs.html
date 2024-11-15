@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용금고 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="./css/mermaid.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="./js/gridjs.umd.js"></script>
+<script src="../js/common.js"></script>
+<!-- Grid.js -->
+<!-- <link href="//unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" type="text/css" /> -->
+<!-- <script src="//unpkg.com/gridjs/dist/gridjs.umd.js"></script> -->
+<style>
+.table-fixed td.gridjs-td {
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+.table-ellipsis td.gridjs-td {
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+}
+.gridjs-thead { 
+  position: relative;
+  z-index: 2; 
+}
+th.gridjs-th{
+  border-width: 0;
+}
+th.gridjs-th .gridjs-th-content {
+  text-overflow: initial; /* thead 줄임말 속성 해지 */
+}
+/* 특정 열 고정 스타일 */
+.table-fixed .gridjs-td:nth-child(1),
+.table-fixed .gridjs-th:nth-child(1) {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+}
+.table-fixed .gridjs-td:nth-child(2),
+.table-fixed .gridjs-th:nth-child(2) {
+    position: sticky;
+    left: 110px;
+    z-index: 1;
+}
+.table-fixed .gridjs-td:nth-child(3),
+.table-fixed .gridjs-th:nth-child(3) {
+    position: sticky;
+    left: 180px;
+    z-index: 1;
+}
+.table-fixed .gridjs-td:nth-child(4),
+.table-fixed .gridjs-th:nth-child(4) {
+    position: sticky;
+    left: 280px;
+    z-index: 1;
+}
+.table-fixed .gridjs-td:nth-child(5),
+.table-fixed .gridjs-th:nth-child(5) {
+    position: sticky;
+    left: 360px;
+    z-index: 1;
+}
+.table-fixed .gridjs-td:nth-child(6),
+.table-fixed .gridjs-th:nth-child(6) {
+    position: sticky;
+    left: 510px;
+    z-index: 1;
+}
+.table-fixed .gridjs-td:nth-child(7),
+.table-fixed .gridjs-th:nth-child(7) {
+    position: sticky;
+    left: 580px;
+    z-index: 1;
+}
+.table-fixed .gridjs-td:nth-child(8),
+.table-fixed .gridjs-th:nth-child(8) {
+    position: sticky;
+    left: 640px;
+    z-index: 1;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function(){
+  
+});
+</script>
+</head>
+<body>
+<div id="layout-wrapper">
+  <!-- Header -->
+  <div w3-include-html="../include/header.html"></div>
+  <section class="main-content">
+    <main class="page-content">
+      <div class="container-fixed">
+        <div class="content">
+          <!-- Content -->
+          <h2 class="page-header">Grid.js</h2>
+          <hr />
+          <h3 class="h3">컬럼 폭 고정 {name: "부서명", width: "110px"}, 상단-좌측 스크롤 고정, 줄임말...(헤더 항목 말줄임은 해결, 폭 고정 안한 데이터 컬럼에서 ...말줄임 될 수 있음)</h3>
+          <div id="gridTable"></div>
+          <hr />
+          <h3 class="h3">Resizable columns : 헤더 컬럼에서 폭 드래그 조정</h3>
+          <div id="resizableColumns"></div>
+          <!-- //Content -->
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fixed">
+        <small class="text-muted">© 2024 - Nara Credit Service Co.,LTD. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </section>
+</div>
+<!-- END layout-wrapper -->
+<script type="text/javascript">
+const gridWidthColumns = [
+  {name: "부서명", width: "110px"}, {name: "담당자명", width: "70px"}, {name: "고객명", width: "100px"}, {name: "수임일", width: "80px"}, {name: "실명번호", width: "150px"}, {name: "채무자명", width: "70px"}, {name: "관계", width: "60px"}, {name: "관련인실명번호", width: "150px"}, "관련인명", "원금잔액", "이자잔액", "계좌번호", "대출과목", "상태", "평가금액", "관련가지급금", "시효기준", "시효기산일"
+]
+const gridColumns = [
+  "부서명", "담당자명", "고객명", "수임일", "실명번호", "채무자명", "관계", "관련인실명번호", "관련인명", "원금잔액", "이자잔액", "계좌번호", "대출과목", "상태", "평가금액", "관련가지급금", "시효기준", "시효기산일"
+]
+const gridData = [
+  ["케이알앤씨채권부", "옭탕았", "(꿴)겻덴루명뫼", "20220511", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "채무자", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "4906240", "17411977", "1763906", "원화대출금(가계)", "정상", "359255", "359255", "판결선고일", "20140923"],
+  ["케이알앤씨채권부", "옭탕았", "(꿴)겻덴루명뫼", "20220511", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "채무자", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "4906240", "17411977", "1763906", "원화대출금(가계)", "정상", "359255", "359255", "판결선고일", "20140923"],
+  ["케이알앤씨채권부", "옭탕았", "(꿴)겻덴루명뫼", "20220511", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "채무자", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "4906240", "17411977", "1763906", "원화대출금(가계)", "정상", "359255", "359255", "판결선고일", "20140923"],
+  ["케이알앤씨채권부", "옭탕았", "(꿴)겻덴루명뫼", "20220511", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "채무자", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "4906240", "17411977", "1763906", "원화대출금(가계)", "정상", "359255", "359255", "판결선고일", "20140923"],
+  ["케이알앤씨채권부", "옭탕았", "(꿴)겻덴루명뫼", "20220511", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "채무자", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "4906240", "17411977", "1763906", "원화대출금(가계)", "정상", "359255", "359255", "판결선고일", "20140923"],
+  ["케이알앤씨채권부", "옭탕았", "(꿴)겻덴루명뫼", "20220511", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "채무자", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "4906240", "17411977", "1763906", "원화대출금(가계)", "정상", "359255", "359255", "판결선고일", "20140923"],
+  ["케이알앤씨채권부", "옭탕았", "(꿴)겻덴루명뫼", "20220511", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "채무자", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "4906240", "17411977", "1763906", "원화대출금(가계)", "정상", "359255", "359255", "판결선고일", "20140923"],
+  ["케이알앤씨채권부", "옭탕았", "(꿴)겻덴루명뫼", "20220511", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "채무자", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "4906240", "17411977", "1763906", "원화대출금(가계)", "정상", "359255", "359255", "판결선고일", "20140923"],
+  ["케이알앤씨채권부", "옭탕았", "(꿴)겻덴루명뫼", "20220511", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "채무자", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "4906240", "17411977", "1763906", "원화대출금(가계)", "정상", "359255", "359255", "판결선고일", "20140923"],
+  ["케이알앤씨채권부", "옭탕았", "(꿴)겻덴루명뫼", "20220511", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "채무자", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "4906240", "17411977", "1763906", "원화대출금(가계)", "정상", "359255", "359255", "판결선고일", "20140923"],
+  ["케이알앤씨채권부", "옭탕았", "(꿴)겻덴루명뫼", "20220511", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "채무자", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "4906240", "17411977", "1763906", "원화대출금(가계)", "정상", "359255", "359255", "판결선고일", "20140923"],
+  ["케이알앤씨채권부", "옭탕았", "(꿴)겻덴루명뫼", "20220511", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "채무자", "5711151AAF5tEdug2qLC5xihT7sw0nZ", "콜웽뜨", "4906240", "17411977", "1763906", "원화대출금(가계)", "정상", "359255", "359255", "판결선고일", "20140923"],
+]
+new gridjs.Grid({
+  columns: gridWidthColumns,
+  data: gridData,
+  fixedHeader: true,
+  pagination: true,
+  className: {
+    table: 'table table-bordered table-fixed'
+  },
+  width: 1350,
+  height: '228px',
+}).render(document.getElementById('gridTable'));
+
+/****************************************************************/
+
+new gridjs.Grid({
+  columns: gridColumns,
+  data: gridData,
+  fixedHeader: true,
+  pagination: true,
+  resizable: true,
+  className: {
+    table: 'table table-bordered table-ellipsis'
+  },
+  width: 1350,
+  height: '228px',
+}).render(document.getElementById('resizableColumns'));
+</script>
+</body>
+</html>
