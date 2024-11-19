@@ -72,11 +72,24 @@ br.spacer {
 }
 
 .custom-file {
+  position: relative;
   display: flex;
 }
+.custom-file::before {
+  content: "";
+  display: block;
+  flex: 1 1 0;
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+}
 .custom-file > input[type=file] {
+  position: absolute;
+  z-index: 2;
+  width: calc(100% - 68px);
   padding-top: 6px;
   padding-bottom: 6px;
+  background-color: transparent;
+  border-color: transparent;
 }
 .custom-file > input[type=file]::-webkit-selector-button, .custom-file > input[type=file]::-webkit-file-upload-button {
   display: none;
@@ -709,25 +722,6 @@ br.spacer {
   font-size: 0.8125rem;
   text-indent: -4px;
   margin-bottom: 0.25rem;
-}
-
-.custom-file::before {
-  content: "";
-  display: block;
-  flex: 1 1 0;
-  border: 1px solid var(--bs-border-color);
-  border-radius: var(--bs-border-radius);
-}
-.custom-file input[type=file] {
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  padding-top: 5px;
-  background-color: transparent;
-  border-color: transparent;
-}
-.custom-file input[type=file]::-webkit-selector-button, .custom-file input[type=file]::-webkit-file-upload-button {
-  display: none;
 }
 
 .sign-area {
