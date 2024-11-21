@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용금고 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+<!-- Fancytree -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.fancytree/dist/skin-lion/ui.fancytree.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery.fancytree/dist/jquery.fancytree-all-deps.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.fancytree/dist/modules/jquery.fancytree.dnd5.min.js"></script>
+
+</head>
+<body>
+<div class="modal modal-popup" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" onclick="window.close();"></button>
+      </div>
+      <div class="modal-body">
+        <!--Content-->
+        <div class="popup-h popup-h-divider">
+          <h2 class="popup-title">결재경로작성</h2>
+          <div class="btns">
+            <button type="button" class="btn btn-primary"><i class="ri-check-line"></i>확인</button>
+            <button type="button" class="btn btn-outline-default"><i class="ri-refresh-line"></i>초기화</button>
+            <button type="button" class="btn btn-outline-default"><i class="ri-close-line"></i>닫기</button>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-3">
+            <div id="tree"></div>
+            <script type="text/javascript">
+              $(document).ready(function() {
+                // Initialize FancyTree with DND
+                $("#tree").fancytree({
+                  source: [
+                    {title: "나라신용정보(주)", key: "", expanded: true, folder: true, children: [
+                      {title: "본사", key: "", expanded: true, folder: true, children: [
+                        {title: "임원실"},
+                        {title: "경영관리본부", key: "", expanded: true, folder: true, children: [
+                          {title: "경영지원부", key: "", expanded: true, folder: true, children: [
+                            {title: "경영지원부"},
+                            {title: "경영지원"},
+                          ]},
+                          {title: "IT지원부"},
+                        ]},
+                        {title: "채권1본부", key: "", expanded: true, folder: true,},
+                        {title: "채권2본부", key: "", expanded: true, folder: true,},
+                      ]},
+                    ]},
+                  ],
+                });
+              });
+            </script>
+          </div>
+          <div class="col-9">
+            <div class="multi-select">
+              <div class="multi-select-left">
+                <div class="search-items mb-2">
+                  <input type="text" class="form-control w-auto" placeholder="" />
+                  <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i>검색</button>
+                </div>
+                <table class="table table-bordered">
+                  <colgroup>
+                    <col width="60px" />
+                    <col width="" />
+                    <col width="" />
+                    <col width="" />
+                    <col width="" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>선택</th>
+                      <th>사번</th>
+                      <th>이름</th>
+                      <th>직급</th>
+                      <th>직위(호칭)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" />
+                        </label>
+                      </td>
+                      <td>102002</td>
+                      <td>김나라</td>
+                      <td>1급</td>
+                      <td>부장</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" />
+                        </label>
+                      </td>
+                      <td>102002</td>
+                      <td>김나라</td>
+                      <td>1급</td>
+                      <td>부장</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" />
+                        </label>
+                      </td>
+                      <td>102002</td>
+                      <td>김나라</td>
+                      <td>1급</td>
+                      <td>부장</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" />
+                        </label>
+                      </td>
+                      <td>102002</td>
+                      <td>김나라</td>
+                      <td>1급</td>
+                      <td>부장</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" />
+                        </label>
+                      </td>
+                      <td>102002</td>
+                      <td>김나라</td>
+                      <td>1급</td>
+                      <td>부장</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" />
+                        </label>
+                      </td>
+                      <td>102002</td>
+                      <td>김나라</td>
+                      <td>1급</td>
+                      <td>부장</td>
+                    </tr>
+                  </tbody>
+                </table>              
+              </div>
+              <div class="multi-select-right">
+                <div class="form-group">
+                  <label class="form-label">결재경로명</label>
+                  <input type="text" class="form-control" placeholder="" />
+                </div>
+                <div class="multi-select-form">
+                  <div class="form-group">
+                    <label class="form-label">부서결재경로</label>
+                    <div class="multi-select-group">
+                      <select class="form-select" multiple>
+                        <option disabled>선택된 부서결재경로</option>
+                        <option value="">A</option>
+                        <option value="">B</option>
+                        <option value="">C</option>
+                      </select>
+                      <div class="up-down">
+                        <button type="button" class="btn btn-default btn-sm btn-icon"><i class="ri-play-fill up"></i></button>
+                        <button type="button" class="btn btn-default btn-sm btn-icon"><i class="ri-play-fill down"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="multi-control">
+                    <button type="button" class="btn btn-outline-default">결재자 추가<i class="ri-arrow-right-fill"></i></button>
+                    <button type="button" class="btn btn-outline-default">합의자 추가<i class="ri-arrow-right-fill"></i></button>
+                    <button type="button" class="btn btn-outline-default">열람자 추가<i class="ri-arrow-right-fill"></i></button>
+                    <button type="button" class="btn btn-default"><i class="ri-arrow-left-fill"></i>목록 삭제</button>
+                  </div>
+                </div>
+                <div class="multi-select-form">
+                  <div class="form-group">
+                    <label class="form-label">이중결재경로</label>
+                    <div class="multi-select-group">
+                      <select class="form-select" multiple>
+                        <option disabled>선택된 부서결재경로</option>
+                        <option value="">A</option>
+                        <option value="">B</option>
+                        <option value="">C</option>
+                      </select>
+                      <div class="up-down">
+                        <button type="button" class="btn btn-default btn-sm btn-icon"><i class="ri-play-fill up"></i></button>
+                        <button type="button" class="btn btn-default btn-sm btn-icon"><i class="ri-play-fill down"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="multi-control">
+                    <button type="button" class="btn btn-outline-default">결재자 추가<i class="ri-arrow-right-fill"></i></button>
+                    <button type="button" class="btn btn-outline-default">합의자 추가<i class="ri-arrow-right-fill"></i></button>
+                    <button type="button" class="btn btn-outline-default">열람자 추가<i class="ri-arrow-right-fill"></i></button>
+                    <button type="button" class="btn btn-default"><i class="ri-arrow-left-fill"></i>목록 삭제</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+        <!--//Content-->
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
