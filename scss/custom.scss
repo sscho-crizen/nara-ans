@@ -179,14 +179,14 @@ br.spacer {
           position: relative;
           display: flex;
           align-items: center;
-          padding: 1rem 1.2rem;
+          padding: 1rem 1rem;
           &:hover {
             color: var(--bs-secondary);
           }
-          i {
+          [class^="ri-"] {
             font-size: 18px;
             display: inline-block;
-            min-width: 1.75rem;
+            margin-right: .375rem;
           }
         }
         &.active {
@@ -356,6 +356,10 @@ br.spacer {
       }
       > .row {
         flex-grow: 1;
+        [class^=col-] {
+          display: flex;
+          flex-direction: column;
+        }
       }
     }      
   }
@@ -605,12 +609,94 @@ br.spacer {
   }
 }
 .main-card {
+  height: 100%;
   .card-body {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
   .tab-content > .tab-pane {
     padding: 0;
+  }
+}
+.profile-wrap {
+  display: flex;
+  > .profile-card {
+    width: 180px;
+    margin-right: 1rem;
+    margin-bottom: 0;
+    box-shadow: 0px 12px 20px -12px rgba(0,0,0,.2);
+    .tit {
+      font-size: 1rem;
+      margin-bottom: .5rem;
+    }
+    .card-body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .picture {
+      text-align: center;
+      margin-bottom: 0;
+    }
+    .card-footer {
+      text-align: center;
+    }
+  }
+  > .row {
+    flex: 1 1 0;
+  }
+}
+.sitemap {
+  .main-card {
+    height: auto;
+  }
+  .sitemap-tit {
+    font-size: .875rem;
+    color: #396684;
+    display: flex;
+    align-items: center;
+    padding: .375rem .5rem;
+    margin-bottom: .5rem;
+    background-color: #f6f7f8;
+    border: 1px solid var(--bs-border-color);
+    border-radius: .25rem;
+    &::before {
+      content: "\ed52";
+      font-family: "remixicon";
+      font-size: 1rem;
+      font-weight: 400;
+      margin-right: .125rem;
+    }
+  }
+  .sitemap-subtit {
+    font-size: .8125rem;
+    padding-left: 10px;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    border-top: 1px solid var(--bs-border-color);
+  }
+  .sitemap-item {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 6px;
+    margin-bottom: 0;
+    > li {
+      width: 25%;
+      > a {
+        display: flex;
+        align-items: center;
+        &::before {
+          content: "\ea54";
+          font-family: "remixicon";
+          font-size: 1rem;
+          vertical-align: middle;
+        }
+        &:hover {
+          color: var(--bs-secondary);
+        }
+      }
+    }
   }
 }
 .tab-list {
@@ -683,7 +769,7 @@ br.spacer {
       display: flex;
       align-items: center;
       justify-content: center;
-      > i {
+      > [class^="ri-"] {
         margin-right: .125rem;
         display: none;
       }
@@ -750,13 +836,7 @@ br.spacer {
       display: flex;
       justify-content: center;
     }
-  }  
-  .multi-select-control2 {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    padding: 0 20px;
-  }  
+  }
   .multi-select-right {
     position: relative;
     padding-top: 8px;
