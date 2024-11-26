@@ -35,6 +35,47 @@ $(document).ready(function(){
     dateFormat: "Y-m-d",
     locale: "ko",
   });
+
+  //날짜 범위
+  flatpickr(".flatpickr-year", {
+    onReady: function (selectedDates, dateStr, instance) {
+      replaceYearSelect(instance);
+    },
+    onOpen: function (selectedDates, dateStr, instance) {
+      replaceYearSelect(instance);
+    },
+  });
+
+  function replaceYearSelect(instance) {
+    var $numInputWrapper = $(instance.calendarContainer).find(".numInputWrapper");
+
+    if ($numInputWrapper.length) {
+      $numInputWrapper.addClass("select-year");
+
+      var $yearInput = $numInputWrapper.find("input[type='number']");
+
+      if ($yearInput.length) {
+        var startYear = 1960,
+            endYear = 2030,            
+            $yearSelect = $("<select>").addClass("form-select w-auto");  
+
+        for (let year = startYear; year <= endYear; year++) {
+          var $option = $("<option>").val(year).text(year);
+
+          if (year === parseInt($yearInput.val(), 10)) {
+            $option.prop("selected", true);
+          }                 
+          $yearSelect.append($option);
+        }                
+        
+        $yearInput.replaceWith($yearSelect);
+    
+        $yearSelect.on("change", function () {
+          instance.changeYear(parseInt($(this).val(), 10));
+        });
+      }
+    }
+  }
 });
 </script>
 </head>
@@ -83,9 +124,16 @@ $(document).ready(function(){
                     <span class="input-group-text"><i class="ri-calendar-line"></i></span>
                   </div>
                 </td>
+                <th>년도 selectbox로 변경</th>
+                <td>
+                  <div class="input-group w-range">
+                    <input type="text" class="form-control flatpickr-year" placeholder="" />
+                    <span class="input-group-text"><i class="ri-calendar-line"></i></span>
+                  </div>
+                </td>
               </tr>
             </tbody>
-          </table>          
+          </table>
           <!-- //Content -->
         </div>
       </div>

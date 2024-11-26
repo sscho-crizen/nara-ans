@@ -895,4 +895,9 @@ br.spacer {
   width: 100px;
 }
 
+.numInputWrapper.select-year .arrowUp,
+.numInputWrapper.select-year .arrowDown {
+  display: none;
+}
+
 /*# sourceMappingURL=custom.css.map */
