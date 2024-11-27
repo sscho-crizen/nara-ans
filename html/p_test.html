@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용정보 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="layout-wrapper">    
+  <!-- Header -->
+  <div w3-include-html="../include/header.html"></div>
+  <section class="main-content">
+    <main class="page-content">
+      <div class="container-fixed">
+        <div class="content">
+          <!-- Content -->
+          <div class="page-header-wrap">
+            <h2 class="page-header">
+              담당추심활동내역
+              <button type="button" class="btn btn-icon btn-xs btn-default"><i class="ri-save-line"></i></button>
+            </h2>
+            <div class="btns">
+              <button type="button" class="btn btn-primary"><i class="ri-search-line"></i>조회</button>
+              <button type="button" class="btn btn-secondary"><i class="ri-check-line"></i>신규등록</button>
+              <button type="button" class="btn btn-secondary"><i class="ri-check-line"></i>추가등록</button>
+              <button type="button" class="btn btn-secondary"><i class="ri-check-line"></i>계약등록</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-tools-line"></i>수정</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-file-excel-2-line"></i>엑셀</button>
+            </div>
+          </div>
+          <table class="table table-form">
+            <colgroup>
+              <col width="9%" />
+              <col width="23%" />
+              <col width="9%" />
+              <col width="23%" />
+              <col width="9%" />
+              <col width="" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>고객명</th>
+                <td>
+                  <div class="input-group w-md">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+                  </div>
+                  <input type="text" class="form-control w-md" placeholder="" />
+                </td>
+                <th>재단명</th>
+                <td>
+                  <div class="input-group w-md">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+                  </div>
+                  <input type="text" class="form-control w-md" placeholder="" />
+                </td>
+                <th>검색구분</th>
+                <td>
+                  <select class="form-select w-auto">
+                    <option>채무자명</option>
+                  </select>
+                  <input type="text" class="form-control w-md" placeholder="" />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <select class="form-select w-auto">
+                    <option>상담일</option>
+                  </select>
+                </th>
+                <td>
+                  <div class="d-flex align-items-center gap-1">
+                    <div class="input-group w-date">
+                      <input type="text" class="form-control" placeholder="" />
+                      <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                    </div>
+                    ~
+                    <div class="input-group w-date">
+                      <input type="text" class="form-control" placeholder="" />
+                      <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                    </div>
+                  </div>
+                </td>
+                <th>부서명</th>
+                <td>
+                  <select class="form-select w-auto">
+                    <option>IT지원부</option>
+                  </select>
+                  <div class="form-check form-check-inline ms-2">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" />
+                      해지포함
+                    </label>
+                  </div>
+                </td>
+                <th>
+                  <select class="form-select w-auto">
+                    <option>담당자명</option>
+                  </select>
+                </th>
+                <td>
+                  <div class="input-group w-md">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+                  </div>
+                  <input type="text" class="form-control w-md" placeholder="" />
+                </td>
+              </tr>
+              <tr>
+                <th>상담방법</th>
+                <td>
+                  <select class="form-select w-auto">
+                    <option>선택해 주세요</option>
+                  </select>
+                </td>
+                <th>삭제구분</th>
+                <td>
+                  <select class="form-select w-auto">
+                    <option>선택해 주세요</option>
+                  </select>
+                </td>
+                <th>조회구분</th>
+                <td>
+                  <select class="form-select w-auto">
+                    <option>선택해 주세요</option>
+                  </select>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>선택</th>
+                <th>계약번호</th>
+                <th>계약구분</th>
+                <th>계약선택</th>
+                <th>고객명</th>
+                <th>실명번호</th>
+                <th>수임채권분류</th>
+                <th>부서명</th>
+                <th>고객담당자명</th>
+                <th>고객전화</th>
+                <th>고객핸드폰</th>
+                <th>계약일</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="12">
+                  <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <nav class="pagination-area">
+            <ul class="pagination">
+              <li class="page-item">
+                <a href="#none" class="page-link"><i class="ri-arrow-left-s-line"></i></a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link">1</a>
+              </li>
+              <li class="page-item active">
+                <span class="page-link">2</span>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link">3</a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link">4</a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link">5</a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link"><i class="ri-arrow-right-s-line"></i></a>
+              </li>
+            </ul>
+          </nav>
+          <!-- //Content -->
+        </div>
+        <!-- Quickmenu -->
+        <div w3-include-html="../include/quick_menu.html"></div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fixed">
+        <small class="text-muted">© 2024 - Nara Credit Service Co.,LTD. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </section>
+</div>
+<!-- END layout-wrapper -->
+</body>
+</html>
