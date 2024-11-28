@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용정보 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="layout-wrapper">    
+  <!-- Header -->
+  <header class="header">
+    <div class="app-top">
+      <div class="container-fixed">
+        <div class="util">
+          <div class="user-info">
+            <span class="user text-light"><strong>관리자 (IT지원부 102002)</strong>님</span>
+            <button type="button" class="btn btn-xs btn-light"><i class="ri-logout-box-r-line"></i>로그아웃</button>
+            <button type="button" class="btn btn-xs btn-light"><i class="ri-settings-3-line"></i>설정</button>
+          </div>
+          <div class="service">
+            <button type="button" class="btn btn-xs btn-outline-default">KMS</button>
+            <button type="button" class="btn btn-xs btn-outline-default">추심</button>
+            <button type="button" class="btn btn-xs btn-outline-default">영업</button>
+            <button type="button" class="btn btn-xs btn-outline-default">CTI</button>
+            <button type="button" class="btn btn-xs btn-primary">ERP</button>
+            <button type="button" class="btn btn-xs btn-outline-default">SYSTEM</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="app-navbar">
+      <div class="container-fixed">
+        <div class="navbar-brand">
+          <a href="#none" class="logo">
+            <img src="../images/nara_logo.png" alt="나라신용정보" />
+          </a>
+        </div>
+        <div class="gnb">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#none" class="nav-link menu-link">
+                <i class="ri-calculator-line"></i><span>회계관리</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link menu-link">
+                <i class="ri-wallet-line"></i><span>인사급여</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link menu-link">
+                <i class="ri-computer-line"></i><span>MIS</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link menu-link">
+                <i class="ri-information-line"></i><span>대외정보</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link menu-link">
+                <i class="ri-coins-line"></i><span>성과급관리</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-date">
+          <span><i class="ri-time-line"></i>2024년 07월 00일</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="main-content">
+    <main class="page-content">
+      <div class="container-fixed">
+        <!--LNB-->
+        <div class="lnb" id="lnb">
+          <div class="lnb-inner">
+            <div class="lnb-header">
+              <h2>회계관리</h2>
+              <div class="input-group input-group-sm">
+                <input type="text" class="form-control" placeholder="" />
+                <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+              </div>
+            </div>
+            <ul class="lnb-menu">
+              <li class="nav-item">
+                <a href="#none" class="nav-link" data-bs-toggle="collapse" data-bs-target="#lnb1">전표관리</a>
+                <div class="collapse menu-dropdown" data-bs-parent="#lnb" id="lnb1">
+                  <ul class="lnb-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">전표등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">신용카드이용내역조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">표준전표등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">반복전표등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">전표변경</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">가계정정리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">신용카드대금정리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">외상매출금정리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">전표조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">계정관리항목조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">관리항목조회</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#none" class="nav-link" data-bs-toggle="collapse" data-bs-target="#lnb2">결산관리</a>
+                <div class="collapse menu-dropdown" data-bs-parent="#lnb" id="lnb2">
+                  <ul class="lnb-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일마감</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서별 일마감</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일계표</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">현금출납장</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">보조부원장</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">총계정원장</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">합계잔액시산표(구양식)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">보정전표등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">이익잉여금</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일일마감보고서</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">연결조정분개등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">재무제표출력</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#none" class="nav-link" data-bs-toggle="collapse" data-bs-target="#lnb3">자금관리</a>
+                <div class="collapse menu-dropdown" data-bs-parent="#lnb" id="lnb3">
+                  <ul class="lnb-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">시재장등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">타점권등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">계좌관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">계약등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">집행/입금계획</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">차입금상환계획표</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예금명세서</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">차입금명세서</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">자금출납부</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예치금현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">보통예금거래내역조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">우리은행 펌뱅킹</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#none" class="nav-link" data-bs-toggle="collapse" data-bs-target="#lnb4">주주관리</a>
+                <div class="collapse menu-dropdown" data-bs-parent="#lnb" id="lnb4">
+                  <ul class="lnb-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">주주관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">권종관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">주주변동이력관리</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#none" class="nav-link" data-bs-toggle="collapse" data-bs-target="#lnb5">세무관리</a>
+                <div class="collapse menu-dropdown" data-bs-parent="#lnb" id="lnb5">
+                  <ul class="lnb-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">매입계산서조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">매출증빙관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">계산서합계표</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">세금계산서합계표</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부가세신고</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">매출증빙마감</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#none" class="nav-link" data-bs-toggle="collapse" data-bs-target="#lnb6">예산관리</a>
+                <div class="collapse menu-dropdown" data-bs-parent="#lnb" id="lnb6">
+                  <ul class="lnb-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예산편성/배정</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예산편성근거등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예산추가배정</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예산전용</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예산환출</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예산배정마감</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">가예산배정등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">신규부서예산배정</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예산보고서</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">임원접대비한도관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">임직원경비현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">임원경비집행현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">본사경비한도관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예산현황 (보정후)</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#none" class="nav-link" data-bs-toggle="collapse" data-bs-target="#lnb7">수탁회계</a>
+                <div class="collapse menu-dropdown" data-bs-parent="#lnb" id="lnb7">
+                  <ul class="lnb-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">전표등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">표준전표등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">반복전표등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">전표정정</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">가계정정리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">전표변경</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">전표조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">타점권등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일마감</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일일마감보고서(수탁)</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#none" class="nav-link" data-bs-toggle="collapse" data-bs-target="#lnb8">총무관리</a>
+                <div class="collapse menu-dropdown" data-bs-parent="#lnb" id="lnb8">
+                  <ul class="lnb-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">고객등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">지출결의서관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">특근식대관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">등기우편물관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">차량운행일지관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">내선번호이력</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">지출증빙관리</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#none" class="nav-link" data-bs-toggle="collapse" data-bs-target="#lnb9">자산관리</a>
+                <div class="collapse menu-dropdown" data-bs-parent="#lnb" id="lnb9">
+                  <ul class="lnb-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">자산코드등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">고정자산등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">고정자산변동</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">고정자산이동</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">감가상각계산</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">감사상각조정</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">비품품목등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">비품단가등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">비품입출고관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">비품부서별현황</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--//LNB-->
+        <div class="content">
+          <!-- Content -->
+          <div class="page-header-wrap">
+            <h2 class="page-header">좌측 메뉴 확인용</h2>
+            <div class="btns">
+              <button type="button" class="btn btn-primary"><i class="ri-search-line"></i>조회</button>
+            </div>
+          </div>          
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" />
+                  </label>
+                </th>
+                <th>대상자실명번호</th>
+                <th>대상자명</th>
+                <th>일련번호</th>
+                <th>서식종류</th>
+                <th>발급일자</th>
+                <th>등록부서</th>
+                <th>등록자</th>
+                <th>등록일자</th>
+                <th>파일명</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="10">
+                  <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- //Content -->
+        </div>
+        <!-- Quickmenu -->
+        <div w3-include-html="../include/quick_menu.html"></div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fixed">
+        <small class="text-muted">© 2024 - Nara Credit Service Co.,LTD. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </section>
+</div>
+<!-- END layout-wrapper -->
+</body>
+</html>
