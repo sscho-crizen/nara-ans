@@ -20,61 +20,55 @@ $(document).ready(function(){
   flatpickr(".flatpickr", {
     dateFormat: "Y-m-d",
     locale: "ko",
+    onReady: function (selectedDates, dateStr, instance) {
+      replaceYearSelect(instance);
+    }
   });
 
   //날짜 + 시간
-  flatpickr(".date-timepicker", {
+  flatpickr(".flatpickr-timepicker", {
     enableTime: true,
     dateFormat: "Y-m-d H:i",
     locale: "ko",
+    onReady: function (selectedDates, dateStr, instance) {
+      replaceYearSelect(instance);
+    }
   });
 
   //날짜 범위
-  flatpickr(".rangepicker", {
+  flatpickr(".flatpickr-rangepicker", {
     mode: "range",
     dateFormat: "Y-m-d",
     locale: "ko",
-  });
-
-  //날짜 범위
-  flatpickr(".flatpickr-year", {
     onReady: function (selectedDates, dateStr, instance) {
       replaceYearSelect(instance);
-    },
-    onOpen: function (selectedDates, dateStr, instance) {
-      replaceYearSelect(instance);
-    },
+    }
   });
 
   function replaceYearSelect(instance) {
-    var $numInputWrapper = $(instance.calendarContainer).find(".numInputWrapper");
-
-    if ($numInputWrapper.length) {
-      $numInputWrapper.addClass("select-year");
-
-      var $yearInput = $numInputWrapper.find("input[type='number']");
-
-      if ($yearInput.length) {
-        var startYear = 1960,
-            endYear = 2030,            
-            $yearSelect = $("<select>").addClass("form-select w-auto");  
-
-        for (let year = startYear; year <= endYear; year++) {
-          var $option = $("<option>").val(year).text(year);
-
-          if (year === parseInt($yearInput.val(), 10)) {
-            $option.prop("selected", true);
-          }                 
-          $yearSelect.append($option);
-        }                
-        
-        $yearInput.replaceWith($yearSelect);
+    const yearInput = instance.currentYearElement;
+    const yearDropdown = document.createElement("select");
     
-        $yearSelect.on("change", function () {
-          instance.changeYear(parseInt($(this).val(), 10));
-        });
-      }
+    yearDropdown.className = "flatpickr-monthDropdown-months flatpickr-year";
+
+    const minYear = 1960;
+    const maxYear = 2030;
+
+    for (let year = minYear; year <= maxYear; year++) {
+        const option = document.createElement("option");
+        option.value = year;
+        option.textContent = year;
+        if (year === instance.currentYear) {
+            option.selected = true;
+        }
+        yearDropdown.appendChild(option);
     }
+
+    yearInput.parentNode.replaceChild(yearDropdown, yearInput);
+
+    yearDropdown.addEventListener("change", function () {
+        instance.changeYear(parseInt(this.value, 10));
+    });
   }
 });
 </script>
@@ -92,6 +86,8 @@ $(document).ready(function(){
           <p>
             <a href="https://flatpickr.js.org/examples/" target="_blank">https://flatpickr.js.org/</a>
           </p>
+          <br class="spacer" />
+          <h6>#년도 선택 selectbox로 커스텀</h6>
           <table class="table table-form">
             <colgroup>
               <col width="10%" />
@@ -111,7 +107,7 @@ $(document).ready(function(){
                 <th>날짜+시간</th>
                 <td>
                   <div class="input-group w-date-time">
-                    <input type="text" class="form-control date-timepicker" placeholder="" />
+                    <input type="text" class="form-control flatpickr-timepicker" placeholder="" />
                     <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
                   </div>
                 </td>
@@ -120,17 +116,12 @@ $(document).ready(function(){
                 <th>날짜 범위</th>
                 <td>
                   <div class="input-group w-range">
-                    <input type="text" class="form-control rangepicker" placeholder="" />
+                    <input type="text" class="form-control flatpickr-rangepicker" placeholder="" />
                     <span class="input-group-text"><i class="ri-calendar-line"></i></span>
                   </div>
                 </td>
-                <th>년도 selectbox로 변경</th>
-                <td>
-                  <div class="input-group w-range">
-                    <input type="text" class="form-control flatpickr-year" placeholder="" />
-                    <span class="input-group-text"><i class="ri-calendar-line"></i></span>
-                  </div>
-                </td>
+                <th></th>
+                <td></td>
               </tr>
             </tbody>
           </table>

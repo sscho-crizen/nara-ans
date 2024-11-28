@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용정보 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+<!-- Fancytree -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.fancytree/dist/skin-lion/ui.fancytree.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery.fancytree/dist/jquery.fancytree-all-deps.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.fancytree/dist/modules/jquery.fancytree.dnd5.min.js"></script>
+
+</head>
+<body>
+<div class="modal modal-popup" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" onclick="window.close();"></button>
+      </div>
+      <div class="modal-body">
+        <!--Content-->
+        <div class="popup-h popup-h-divider">
+          <h2 class="popup-title">사원조회</h2>
+          <div class="btns">
+            <button type="button" class="btn btn-primary"><i class="ri-check-line"></i>인사카드 조회</button>
+            <button type="button" class="btn btn-secondary"><i class="ri-save-line"></i>저장</button>
+            <button type="button" class="btn btn-outline-default"><i class="ri-file-excel-2-line"></i>엑셀</button>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-3">
+            <div id="tree"></div>
+            <script type="text/javascript">
+              $(document).ready(function() {
+                // Initialize FancyTree with DND
+                $("#tree").fancytree({
+                  source: [
+                    {title: "나라신용정보(주)", key: "", expanded: true, folder: true, children: [
+                      {title: "본사", key: "", expanded: true, folder: true, children: [
+                        {title: "임원실"},
+                        {title: "경영관리본부", key: "", expanded: true, folder: true, children: [
+                          {title: "경영지원부", key: "", expanded: true, folder: true, children: [
+                            {title: "경영지원부"},
+                            {title: "경영지원"},
+                          ]},
+                          {title: "IT지원부"},
+                        ]},
+                        {title: "채권1본부", key: "", expanded: true, folder: true,},
+                        {title: "채권2본부", key: "", expanded: true, folder: true,},
+                      ]},
+                    ]},
+                  ],
+                });
+              });
+            </script>
+          </div>
+          <div class="col-4">
+            <div class="d-flex gap-1">
+              <select class="form-select w-auto">
+                <option>사원명</option>
+              </select>
+              <div class="search-items mb-2">
+                <input type="text" class="form-control w-auto" placeholder="" />
+                <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i>검색</button>
+              </div>
+            </div>
+            <div class="multi-select">
+            </div>
+            <table class="table table-bordered">
+              <colgroup>
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="" />
+                <col width="" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>부서</th>
+                  <th>성명</th>
+                  <th>직위</th>
+                  <th>핸드폰</th>
+                  <th>사무실</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>경영지원부(휴)</td>
+                  <td>김나라</td>
+                  <td>차장</td>
+                  <td>010-0000-0000</td>
+                  <td>02-000-0000</td>
+                </tr>
+                <tr>
+                  <td>경영지원부(휴)</td>
+                  <td>김나라</td>
+                  <td>차장</td>
+                  <td>010-0000-0000</td>
+                  <td>02-000-0000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-5">
+            <div class="d-flex">
+              <figure class="me-3">
+                <img src="../images/profile_picture.png" alt="" />
+              </figure>
+              <div class="">
+                <table class="table table-form">
+                  <colgroup>
+                    <col width="140px" />
+                    <col width="" />
+                  </colgroup>
+                  <tbody>
+                    <tr>
+                      <th>사원번호</th>
+                      <td>104000</td>
+                    </tr>
+                    <tr>
+                      <th>성명</th>
+                      <td>김나라</td>
+                    </tr>
+                    <tr>
+                      <th>입사일</th>
+                      <td>2024-00-00</td>
+                    </tr>
+                    <tr>
+                      <th>직위(호칭)</th>
+                      <td>차장</td>
+                    </tr>
+                    <tr>
+                      <th>직군/직렬</th>
+                      <td>일반직 / 종합직</td>
+                    </tr>
+                    <tr>
+                      <th>근무부서</th>
+                      <td>경영지원부(휴)</td>
+                    </tr>
+                    <tr>
+                      <th>담당업무</th>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <table class="table table-form">
+              <colgroup>
+                <col width="140px" />
+                <col width="" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th>생년월일</th>
+                  <td>
+                    <div class="input-group w-date me-2">
+                      <input type="text" class="form-control" placeholder="" />
+                      <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" />음력
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" />양력
+                      </label>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>결혼기념일</th>
+                  <td>
+                    <input type="text" class="form-control w-sm" placeholder="" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>회사전화</th>
+                  <td>
+                    <input type="text" class="form-control" placeholder="" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>FAX번호</th>
+                  <td>
+                    <input type="text" class="form-control" placeholder="" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>자택전화</th>
+                  <td>
+                    <input type="text" class="form-control" placeholder="" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>이동전화</th>
+                  <td>
+                    <input type="text" class="form-control" placeholder="" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>이메일</th>
+                  <td>
+                    <input type="text" class="form-control" placeholder="" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>주민등록지 주소</th>
+                  <td>
+                    <div class="input-group w-md">
+                      <input type="text" class="form-control" placeholder="" />
+                      <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+                    </div>
+                    <input type="text" class="form-control mt-1" placeholder="" />
+                    <input type="text" class="form-control mt-1" placeholder="" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>현주소</th>
+                  <td>
+                    <div class="input-group w-md">
+                      <input type="text" class="form-control" placeholder="" />
+                      <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+                    </div>
+                    <input type="text" class="form-control mt-1" placeholder="" />
+                    <input type="text" class="form-control mt-1" placeholder="" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>        
+        <!--//Content-->
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

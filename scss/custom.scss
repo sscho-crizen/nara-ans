@@ -880,10 +880,15 @@ br.spacer {
     width: 100px;    
   }  
 }
-.numInputWrapper.select-year {
+.numInputWrapper {
   .arrowUp,
   .arrowDown {
     display: none;
+  }
+  .flatpickr-year {
+    > option {
+      color: rgba(0,0,0,.8);
+    }
   }
 }
 

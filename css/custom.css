@@ -895,9 +895,12 @@ br.spacer {
   width: 100px;
 }
 
-.numInputWrapper.select-year .arrowUp,
-.numInputWrapper.select-year .arrowDown {
+.numInputWrapper .arrowUp,
+.numInputWrapper .arrowDown {
   display: none;
+}
+.numInputWrapper .flatpickr-year > option {
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /*# sourceMappingURL=custom.css.map */
