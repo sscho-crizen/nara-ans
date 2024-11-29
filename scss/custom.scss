@@ -891,4 +891,6 @@ br.spacer {
     }
   }
 }
-
+.flatpickr-input[readonly] {
+  color: inherit;
+}

@@ -903,4 +903,8 @@ br.spacer {
   color: rgba(0, 0, 0, 0.8);
 }
 
+.flatpickr-input[readonly] {
+  color: inherit;
+}
+
 /*# sourceMappingURL=custom.css.map */

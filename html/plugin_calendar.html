@@ -45,6 +45,26 @@ $(document).ready(function(){
     }
   });
 
+  //flatpickr 버튼에 적용
+  flatpickr(".flatpickr-btn", {
+    dateFormat: "Y-m-d",
+    locale: "ko",
+    onReady: function (selectedDates, dateStr, instance) {
+      replaceYearSelect(instance);
+    },
+    onClose: function(selectedDates, dateStr, instance){
+      if(!dateStr){
+        return;
+      }
+      const dateInput = instance.element.previousElementSibling;
+      dateInput.value = dateStr;
+    },
+    onOpen: function(selectedDates, dateStr, instance){
+      const dateInput = instance.element.previousElementSibling;
+      instance.setDate(dateInput.value,null,"Y-m-d")
+    }
+  });
+
   function replaceYearSelect(instance) {
     const yearInput = instance.currentYearElement;
     const yearDropdown = document.createElement("select");
@@ -125,6 +145,38 @@ $(document).ready(function(){
               </tr>
             </tbody>
           </table>
+          <hr />
+          <h6>#flatpickr 버튼 적용 + 년도 selectbox</h6>
+          <table class="table table-form">
+            <colgroup>
+              <col width="10%" />
+              <col width="40%" />
+              <col width="10%" />
+              <col width="" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>조회기간</th>
+                <td>
+                  <div class="input-group w-date">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default flatpickr-btn">
+                      <i class="ri-calendar-line"></i>
+                    </button>
+                  </div>
+                  ~
+                  <div class="input-group w-date">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default flatpickr-btn">
+                      <i class="ri-calendar-line"></i>
+                    </button>
+                  </div>
+                </td>
+                <th></th>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>          
           <!-- //Content -->
         </div>
       </div>
