@@ -58,6 +58,18 @@
                       ]},
                     ]},
                   ],
+                  activate: function (event, data) {
+                    localStorage.setItem("fancytree-active-node", data.node.key);
+                  },
+                  init: function (event, data) {
+                    var savedKey = localStorage.getItem("fancytree-active-node");
+                    if (savedKey) {
+                      var node = data.tree.getNodeByKey(savedKey);
+                      if (node) {
+                        node.setActive(true);
+                      }
+                    }
+                  }
                 });
               });
             </script>
