@@ -68,6 +68,10 @@ br.spacer {
     margin-left: .25rem;
   }
 }
+.form-required {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 16 16' fill='%23efd400' stroke='none'%3E%3Cpolygon points='0 16 0 0 16 0 0 16'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+}
 .custom-file {
   position: relative;
   display: flex;
