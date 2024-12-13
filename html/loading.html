@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용정보 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/flatpickr.js"></script>
+<script src="../js/flatpickr_ko.js"></script>
+<script src="../js/common.js"></script>
+<script type="text/javascript">
+//로딩
+function spinner() {
+  $('<div></div>').addClass('loader').html('<div class="spinner-border"></div>').appendTo("body");
+  
+  $(".loader").stop().delay(1000).queue(function(){
+    $(this).remove();
+  });
+}
+</script>
+</head>
+<body>
+<div id="layout-wrapper">
+  <section class="main-content">
+    <main class="page-content">
+      <div class="container-fixed">
+        <div class="content">
+          <!-- Content -->
+          <div class="page-header-wrap">
+            <h2 class="page-header">Loading</h2>
+          </div>
+          <button type="button" class="btn btn-primary" onclick="spinner();">로딩바 확인</button>
+          <!-- //Content -->
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fixed">
+        <small class="text-muted">© 2024 - Nara Credit Service Co.,LTD. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </section>
+</div>
+<!-- END layout-wrapper -->
+</body>
+</html>

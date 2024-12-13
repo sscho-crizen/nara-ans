@@ -912,4 +912,45 @@ br.spacer {
   color: inherit;
 }
 
+/* ---------------------------------------------------------------------- */
+/*  Loader
+/* ---------------------------------------------------------------------- */
+.loader {
+  position: fixed;
+  z-index: 999999;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-spinner {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.spinner-border {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  vertical-align: text-bottom;
+  border: 3px solid #fff;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spinner-rotate 0.75s linear infinite;
+}
+
+@-webkit-keyframes spinner-rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spinner-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /*# sourceMappingURL=custom.css.map */
