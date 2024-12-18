@@ -5024,13 +5024,13 @@ textarea.form-control-lg {
 
 @keyframes progress-bar-stripes {
   0% {
-    background-position-x: 1rem;
+    background-position-x: 1.5rem;
   }
 }
 .progress,
 .progress-stacked {
-  --bs-progress-height: 1rem;
-  --bs-progress-font-size: 0.5625rem;
+  --bs-progress-height: 1.5rem;
+  --bs-progress-font-size: 0.75rem;
   --bs-progress-bg: var(--bs-secondary-bg);
   --bs-progress-border-radius: var(--bs-border-radius);
   --bs-progress-box-shadow: var(--bs-box-shadow-inset);

@@ -931,3 +931,27 @@ br.spacer {
 @keyframes spinner-rotate {
   to { transform:rotate(360deg); }
 }
+
+.progressbar {
+  position: relative;
+  display: flex;
+  width: 240px;
+  height: 16px;
+  margin: auto;
+  background-color: #e9ecef;
+  border-radius: 3rem;
+  .progressbar-primary {
+    background-color: #85c441;
+    background-image:linear-gradient(to bottom, #a5f152 0%, #5f912a 100%);
+    background-size: 16px;
+    border-radius: 3rem;
+  }
+  .progressbar-text {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: -24px;
+  }
+}
