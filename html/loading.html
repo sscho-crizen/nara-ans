@@ -26,9 +26,12 @@ function spinner() {
 
 /* Progress Bar */
 function progressbar() {
-  const progressbar = $('<div></div>').addClass('loader').html('<div class="progressbar"><div class="progressbar-primary progress-bar-striped2" style="width:0%"></div><div class="progressbar-text">처리중입니다(<span class="progressbar-count"></span>%)</div></div>').appendTo("body");
+  const progressbar = $('<div></div>').addClass('loader').html('<div class="progressbar"><div class="progressbar-primary"></div><div class="progressbar-text">처리중입니다...</div></div>').appendTo("body");
   
-  $(".progressbar-primary").stop().queue(function(){
+  setTimeout(() => {
+    progressbar.remove();
+  }, 3000);
+  /*$(".progressbar-primary").stop().queue(function(){
     $(this).animate({
       width: "100%",
     },{
@@ -42,7 +45,7 @@ function progressbar() {
         progressbar.remove();
       }
     },"linear").dequeue();
-  });
+  });*/  
 }
 </script>
 </head>

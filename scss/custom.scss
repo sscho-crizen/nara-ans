@@ -935,16 +935,19 @@ br.spacer {
 .progressbar {
   position: relative;
   display: flex;
-  width: 240px;
-  height: 16px;
+  width: 200px;
+  height: 18px;
   margin: auto;
   background-color: #e9ecef;
+  border: 2px solid #fff;
   border-radius: 3rem;
   .progressbar-primary {
+    width: 0%;
     background-color: #85c441;
     background-image:linear-gradient(to bottom, #a5f152 0%, #5f912a 100%);
     background-size: 16px;
     border-radius: 3rem;
+    animation: progressBar 1s linear infinite;
   }
   .progressbar-text {
     position: absolute;
@@ -953,5 +956,13 @@ br.spacer {
     left: 50%;
     transform: translate(-50%,-50%);
     margin-top: -24px;
+  }
+}
+@keyframes progressBar {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
   }
 }
