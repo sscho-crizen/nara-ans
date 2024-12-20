@@ -961,6 +961,7 @@ br.spacer {
   background-color: #e9ecef;
   border: 2px solid #fff;
   border-radius: 3rem;
+  transform: translateY(-40px);
 }
 .progressbar .progressbar-primary {
   width: 0%;
