@@ -957,6 +957,9 @@ br.spacer {
     left: 50%;
     transform: translate(-50%,-50%);
     margin-top: -24px;
+    font-size: .875rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 rgba(255,255,255,.8);
   }
 }
 @keyframes progressBar {
