@@ -62,7 +62,10 @@ $(document).ready(function(){
     onOpen: function(selectedDates, dateStr, instance){
       const dateInput = instance.element.previousElementSibling;
       instance.setDate(dateInput.value,null,"Y-m-d")
-    }
+    },
+    onValueUpdate: function (selectedDates, dateStr, instance) {
+      updateYearDropdown(instance);
+    },
   });
 
   function replaceYearSelect(instance) {
@@ -89,6 +92,15 @@ $(document).ready(function(){
     yearDropdown.addEventListener("change", function () {
         instance.changeYear(parseInt(this.value, 10));
     });
+  }
+
+  function updateYearDropdown(instance) {
+    const yearDropdown = instance.calendarContainer.querySelector(".flatpickr-year");
+    const currentYear = instance.currentYear;
+
+    if (yearDropdown) {
+      yearDropdown.value = currentYear;
+    }
   }
 });
 </script>
