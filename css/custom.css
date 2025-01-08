@@ -931,6 +931,26 @@ br.spacer {
   color: inherit;
 }
 
+.doc-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.doc-header h2 {
+  margin-bottom: 0;
+}
+.doc-header small {
+  font-size: 0.75rem;
+  color: #666;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+@media print {
+  .modal-header,
+  .popup-h .btn {
+    display: none;
+  }
+}
 /* ---------------------------------------------------------------------- */
 /*  Loader
 /* ---------------------------------------------------------------------- */
