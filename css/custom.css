@@ -957,69 +957,36 @@ br.spacer {
 .loader {
   position: fixed;
   z-index: 999999;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: translate(-50%, -50%);
 }
-
-.loader-spinner {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
+.loader .progressbar-text {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
 }
-
-.spinner-border {
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  vertical-align: text-bottom;
-  border: 3px solid #fff;
-  border-right-color: transparent;
-  border-radius: 50%;
-  animation: spinner-rotate 0.75s linear infinite;
-}
-
-@-webkit-keyframes spinner-rotate {
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@keyframes spinner-rotate {
-  to {
-    transform: rotate(360deg);
-  }
-}
-.progressbar {
+.loader .progressbar {
   position: relative;
   display: flex;
   width: 200px;
   height: 18px;
-  margin: auto;
   background-color: #e9ecef;
   border: 2px solid #fff;
   border-radius: 3rem;
-  transform: translateY(-40px);
 }
-.progressbar .progressbar-primary {
+.loader .progressbar .progressbar-primary {
   width: 0%;
   background-color: #85c441;
   background-image: linear-gradient(to bottom, #a5f152 0%, #5f912a 100%);
   background-size: 16px;
   border-radius: 3rem;
   animation: progressBar 1s linear infinite;
-}
-.progressbar .progressbar-text {
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: -24px;
-  font-size: 0.875rem;
-  font-weight: 700;
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8);
 }
 
 @keyframes progressBar {
