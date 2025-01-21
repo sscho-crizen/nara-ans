@@ -936,6 +936,25 @@ br.spacer {
     display: none;
   }
 }
+.fade-dot {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  text-align: left;
+  white-space: nowrap;
+  width: 0;
+  letter-spacing: 2px;
+  margin-left: 2px;
+  animation: fadeInOut .8s infinite forwards;
+}
+@keyframes fadeInOut {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 20px;
+  }
+}
 /* ---------------------------------------------------------------------- */
 /*  Loader
 /* ---------------------------------------------------------------------- */
