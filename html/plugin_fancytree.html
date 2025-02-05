@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용정보 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+<!-- Fancytree -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.fancytree/dist/skin-lion/ui.fancytree.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery.fancytree/dist/jquery.fancytree-all-deps.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.fancytree/dist/modules/jquery.fancytree.dnd5.min.js"></script>
+
+</head>
+<body>
+<div class="modal modal-popup" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" onclick="window.close();"></button>
+      </div>
+      <div class="modal-body">
+        <!--Content-->
+        <div class="popup-h popup-h-divider">
+          <h2 class="popup-title">사원조회</h2>
+          <div class="btns">
+            <button type="button" class="btn btn-primary"><i class="ri-check-line"></i>인사카드 조회</button>
+            <button type="button" class="btn btn-secondary"><i class="ri-save-line"></i>저장</button>
+            <button type="button" class="btn btn-outline-default"><i class="ri-file-excel-2-line"></i>엑셀</button>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-3">
+            <div id="tree"></div>
+            <script type="text/javascript">
+              $(document).ready(function() {
+                // Initialize FancyTree with DND
+                $("#tree").fancytree({
+                  source: [
+                    {title: "나라신용정보(주)", key: "", expanded: true, folder: true, children: [
+                      {title: "본사", key: "", expanded: true, folder: true, children: [
+                        {title: "임원실 (<span class='text-danger'>집행권한 필요</span>)"},
+                        {title: "경영관리본부", key: "", expanded: true, folder: true, children: [
+                          {title: "경영지원부", key: "", expanded: true, folder: true, children: [
+                            {title: "경영지원부"},
+                            {title: "경영지원"},
+                          ]},
+                          {title: "IT지원부", key: "team1"},
+                        ]},
+                        {title: "채권1본부", key: "", expanded: true, folder: true, children: [
+                          {title: "IT지원부", key: "team2"},
+                        ]},
+                        {title: "채권2본부", key: "", expanded: true, folder: true,},
+                      ]},
+                    ]},
+                  ],
+                });
+              });
+            </script>
+            <hr />
+            <button type="button" class="btn btn-default" id="changeNode">노드 변경하기</button>
+            <script type="text/javascript">
+              $("#changeNode").click(function(){
+                var tree = $("#tree").fancytree("getTree"),
+                    node = tree.getNodeByKey("team1");
+  
+                if (node) {
+                  node.setTitle('<span class="text-danger">노드 변경</span>');
+                }
+              });
+            </script>
+          </div>          
+        </div>        
+        <!--//Content-->
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
