@@ -213,6 +213,7 @@ em {
 
 small {
   @include font-size($small-font-size);
+  font-weight: 400;
 }
 
 

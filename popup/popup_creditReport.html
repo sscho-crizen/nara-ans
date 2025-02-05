@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용정보 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div class="modal modal-popup" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" onclick="window.close();"></button>
+      </div>
+      <div class="modal-body">
+        <!--Content-->
+        <div class="popup-h">
+          <div class="btns">
+            <button type="button" class="btn btn-primary" onclick="window.print();"><i class="ri-printer-line"></i>인쇄하기</button>
+            <button type="button" class="btn btn-dark" onclick="window.close();"><i class="ri-close-line"></i>닫기</button>
+          </div>
+        </div>
+        <div class="doc-header">
+          <h2>신용보고서</h2>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="label-group">
+              <div class="label-item">
+                <label class="col-form-label">부서명</label>
+                <div class="form-control-plaintext">IT지원부</div>
+              </div>
+              <div class="label-item">
+                <label class="col-form-label">조회자</label>
+                <div class="form-control-plaintext">LDS06</div>
+              </div>
+              <div class="label-item">
+                <label class="col-form-label">조회일시</label>
+                <div class="form-control-plaintext">2025-02-03 11:07:09</div>
+              </div>
+              <div class="label-item">
+                <label class="col-form-label">실명번호</label>
+                <div class="form-control-plaintext">6209031665710</div>
+              </div>
+              <div class="label-item">
+                <label class="col-form-label">성명</label>
+                <div class="form-control-plaintext">홍길동</div>
+              </div>
+              <div class="label-item">
+                <label class="col-form-label">조회사유</label>
+                <div class="form-control-plaintext">신용조사(추심목적)</div>
+              </div>
+              <div class="label-item">
+                <label class="col-form-label">조회 동의</label>
+                <div class="form-control-plaintext"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br class="spacer" />
+        <h3 class="doc-h3">고객정보</h3>
+        <h5 class="h5">주민등록번호변경정보 <small>(※ 개인의 경우만 제공) (처리일자: 2012-08-23)</small></h5>
+        <table class="table table-bordered mb-2">
+          <thead>
+            <tr>
+              <th>변경구분</th>
+              <th>변경주민번호</th>
+              <th>변경성명</th>
+              <th>등록기관명</th>
+              <th>등록일</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="5">
+                <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="text-list">
+          <li>[생년월일+성명 조회방식]은 관련없는 타인의 정보가 제공될 우려가 있으므로 상세정보 등을 활용하며 일치 여부를 확인하시기 바랍니다.</li>
+        </ul>
+        <div class="d-flex align-items-end mb-3">
+          <h5 class="h5 mb-0">신용정보요약통계</h5>
+          <div class="ms-auto">
+            <small>(단위: 천원)</small>
+          </div>
+        </div>
+        <table class="table table-bordered">
+          <colgroup>
+            <col width="33%" />
+            <col width="33%" />
+            <col width="" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th colspan="3">금융일반</th>
+            </tr>
+            <tr>
+              <th>정보구분</th>
+              <th>총건수</th>
+              <th>총금액</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>채무불이행(은행연합회)</th>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>금융질서문란정보</th>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>공공정보</th>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>채무불이행(신용정보사)</th>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>신용개설</th>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>조회정보</th>
+              <td>0</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+        <br class="spacer" />
+        <h3 class="doc-h3">연체정보</h3>
+        <div class="d-flex align-items-end mb-3">
+          <h5 class="h5 mb-0">채무불이행 <small>(은행연합회) (처리일자: 2012-08-23)</small></h5>
+          <div class="ms-auto">
+            <div class="d-flex align-items-center gap-2">
+              <label class="col-form-label">전은인: 불량건수</label>
+              <input type="text" class="form-control text-end w-sm" placeholder="" />
+              <label class="col-form-label">전은인: 불량금액</label>
+              <input type="text" class="form-control text-end w-md" placeholder="" />
+              <span>(채무불이행 전은영 + 공공정보)</span>
+              <small>(단위: 천원)</small>
+            </div>
+          </div>
+        </div>
+        <table class="table table-bordered">
+          <colgroup>
+            <col width="20%" />
+            <col width="20%" />
+            <col width="20%" />
+            <col width="20%" />
+            <col width="20%" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>등록사유</th>
+              <th>사유구분</th>
+              <th>발생기관명</th>
+              <th>발생일</th>
+              <th>제공일</th>
+            </tr>
+            <tr>
+              <th>해제일</th>
+              <th>해제구분</th>
+              <th>발생지점명</th>
+              <th>등록금액</th>
+              <th>연체금</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="5">
+                <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="d-flex align-items-end mb-3">
+          <h5 class="h5 mb-0">공공정보 <small>(처리일자: 2012-08-23) </small></h5>
+          <div class="ms-auto">
+            <small>(단위: 천원)</small>
+          </div>
+        </div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>등록사유</th>
+              <th>사유구분</th>
+              <th>발생기관명</th>
+              <th>발생일</th>
+              <th>제공일</th>
+              <th rowspan="2">사건번호</th>
+            </tr>
+            <tr>
+              <th>해제일</th>
+              <th>해제구분</th>
+              <th>발생지점명</th>
+              <th>등록금액</th>
+              <th>연체금</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="6">
+                <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>        
+        <div class="d-flex align-items-end mb-3">
+          <h5 class="h5 mb-0">채무불이행 <small>(신용정보사) (처리일자: 2012-08-23)</small></h5>
+          <div class="ms-auto">
+            <div class="d-flex align-items-center gap-2">
+              <label class="col-form-label">신용정보사: 불량건수</label>
+              <input type="text" class="form-control text-end w-sm" placeholder="" />
+              <label class="col-form-label">불량금액</label>
+              <input type="text" class="form-control text-end w-md" placeholder="" />
+              <small>(단위: 천원)</small>
+            </div>
+          </div>
+        </div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>등록사유</th>
+              <th>발생기관명</th>
+              <th>발생지점명</th>
+              <th>발생일</th>
+              <th>제공일</th>
+              <th>연체금액</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="6">
+                <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br class="spacer" />
+        <h3 class="doc-h3">개설정보</h3>
+        <div class="d-flex align-items-end mb-3">
+          <h5 class="h5 mb-0">개인대출정보 <small>(케이알엔씨 채무관련인에 한하여 2005년 7월 31일 이전 데이터를 제공합니다.)</small></h5>
+          <div class="ms-auto">
+            <small>(단위: 천원)</small>
+          </div>
+        </div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>발생기관명</th>
+              <th>발생지점명</th>
+              <th>발생일</th>
+              <th>변경일</th>
+              <th>금액</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="5">
+                <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="d-flex align-items-end mb-3">
+          <h5 class="h5 mb-0">신용개설정보 <small>(처리일자: 2012-08-23)</small></h5>
+          <div class="ms-auto">
+            <small>(단위: 천원)</small>
+          </div>
+        </div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>등록사유</th>
+              <th>발생기관명</th>
+              <th>발생지점명</th>
+              <th>개설일</th>
+              <th>만기일</th>
+              <th>개설금액</th>
+              <th>사유구분</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="7">
+                <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br class="spacer" />
+        <h3 class="doc-h3">보증정보</h3>
+        <div class="d-flex align-items-end mb-3">
+          <h5 class="h5 mb-0">채무보증정보 <small>(케이알엔씨 채무관련인에 한하여 2005년 7월 31일 이전 데이터를 제공합니다.)</small></h5>
+          <div class="ms-auto">
+            <small>(단위: 천원)</small>
+          </div>
+        </div>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>발생기관명</th>
+              <th>발생지점명</th>
+              <th>발생일</th>
+              <th>변경일</th>
+              <th>금액</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="5">
+                <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br class="spacer" />
+        <h3 class="doc-h3">조회정보 <small>(처리일자: 2012-08-23)</small></h3>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>조회사유</th>
+              <th>조회일</th>
+              <th>조회 기관명</th>
+              <th>조회 지점명</th>
+              <th>발생기관업체코드</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="5">
+                <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="text-list">
+          <li>
+            인사, 고용조회사유(*조회사유코드 13번)로 신용정보 요청시 재무불이행(은행연합회 및 신용정보사)정보의 각 합산값이 200만원 미만인 경우 정보제공이 유예되며, 관련 요약정보는 미제공됩니다.
+          </li>
+          <li>연체등 정보조회(조회동의사유코드 2번)로 신용정보 요청시 연체관련정보만 제공됩니다.</li>
+        </ul>
+        <ul class="text-list">
+          <li>
+            상기의 신용정보는 '신용정보의 이용 및 보호에 관한 법률', '신용정보업 감독규정'등의 규정에 따라 NICE신용평가정보(주)가 귀사에게만 제공한 정보이며,
+            이에 대해 귀사의 업무목적외의 사용에 대해서는 민,형사상의 제대가 따를 수 있습니다.
+          </li>
+        </ul>
+        <!--//Content-->
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
