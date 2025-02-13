@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>나라신용정보 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="layout-wrapper">
+  <!-- Header -->
+  <header class="header">
+    <div class="app-top">
+      <div class="container-fixed">
+        <div class="util">
+          <div class="user-info">
+            <span class="user text-light"><strong>관리자 (IT지원부 102002)</strong>님</span>
+            <button type="button" class="btn btn-xs btn-light"><i class="ri-logout-box-r-line"></i>로그아웃</button>
+            <button type="button" class="btn btn-xs btn-light"><i class="ri-settings-3-line"></i>설정</button>
+          </div>
+          <div class="service">
+            <button type="button" class="btn btn-xs btn-primary">KMS</button>
+            <button type="button" class="btn btn-xs btn-outline-default">추심</button>
+            <button type="button" class="btn btn-xs btn-outline-default">영업</button>
+            <button type="button" class="btn btn-xs btn-outline-default">CTI</button>
+            <button type="button" class="btn btn-xs btn-outline-default">ERP</button>
+            <button type="button" class="btn btn-xs btn-outline-default">SYSTEM</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="app-navbar">
+      <div class="container-fixed">
+        <div class="navbar-brand">
+          <a href="#none" class="logo">
+            <img src="../images/nara_logo.png" alt="나라신용정보" />
+          </a>
+        </div>
+        <div class="gnb">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#none" class="nav-link menu-link">
+                <i class="ri-mail-line"></i><span>전자우편</span>
+              </a>
+              <!-- 전자우편 하위메뉴 -->
+              <ul class="dropdown-nav">
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">편지함 정보</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">받은편지함</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">임시보관함</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">편지쓰기</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">외부메일승인</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">주소록</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">환경설정</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">보낸편지함</a>
+                </li>
+              </ul>
+              <!-- //전자우편 하위메뉴 -->
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link menu-link">
+                <i class="ri-calculator-line"></i><span>전자결재</span>
+              </a>
+              <!-- 전자결재 하위메뉴 -->
+              <ul class="dropdown-nav">
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-key="t-calendar">전자결재 정보</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-key="t-chat">직인날인대장</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">결재문서관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">대표이사결재문서</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">결재문서조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">업무요청조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">열람문서조회</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">기안서작성</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">기안서작성</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">결재경로작성</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">본인기안 임시보관</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">본인기안관리</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">부서문서관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서수신문서</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서기안문서</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">직인날인기록부</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">대외문서조회</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">개인보관함</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">본인기안 보관함</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">결재참여 보관함</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">전체문서관리</a>
+                </li>
+              </ul>
+              <!-- //전자결재 하위메뉴 -->
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link menu-link">
+                <i class="ri-scales-line"></i><span>내규</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link menu-link">
+                <i class="ri-stack-line"></i><span>업무지원</span>
+              </a>
+              <!-- 업무지원 하위메뉴 -->
+              <ul class="dropdown-nav">
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">표준양식</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">코칭톡</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">증명서발행(신청)</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">전자근로계약</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">교육내역 관리</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">교육미수료자 관리</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">시차출근관리</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">연차휴가사용계획</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">차량운행일지관리</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">개인별연말정산관리</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">내부통제시스템</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">업무성과일지</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">외출기록부</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">사내전화번호</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">개인별지급명세서</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">휴가사용내역조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">사원조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">링크모음</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">자료실</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일반추심정보</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">전산정보</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">인사정보</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서별자료실</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">개인 자료실</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">KR&C추심정보</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">감사정보</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">파산정보</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">영업정보</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">일정관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서공유 일정조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">개인공개일정</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서내 일정조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일정조회</a>
+                    </li>
+                  </ul>
+                </li>                
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">전산상담</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">전산변경공지</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">전산상담 게시판</a>
+                    </li>
+                  </ul>
+                </li>                
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">회의정보</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">회의정보관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">회의내용관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">회의자료</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">직원MBO</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">MBO평가표</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">업무목표평가</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">업무목표관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">MBO마감정보</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">대상자관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">공통목표관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">성과목표평가</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">성과목표관리</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">종합평정점수</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">단체보험</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">단체보험보장내용 및 양식</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">단체보험가입현황</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- //업무지원 하위메뉴 -->
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link menu-link">
+                <i class="ri-global-line"></i><span>경영정보</span>
+              </a>
+              <!-- 경영정보 하위메뉴 -->
+              <ul class="dropdown-nav">
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">채권잔액현황</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">수임실적</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">총괄실적현황</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">금일실적현황</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">수수료실적</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">수수료실적(총괄)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">수수료실적(KR&C)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">수수료실적(일반)</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">실적추세표</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">민원발급추세표</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">회수실적</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">수임실적</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">신용조사추세표</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">수수료 실적 추세표</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">채권별 수수료 추세표</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">채권잔액</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">구성비</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">손익관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">월별급여지급내역조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">급여계산내역관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서별 연간손익현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서별 채권현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서별 월간손익현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서별 매출실적</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일반채권 본사 파트별 매출(기여마진) 추이</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서별 매출(기여마진) 추이</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일반채권 부서별 성과지급률 현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서별,부문별 목표달성현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서별,부문별 실적현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서별수익비용현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">직원별 손익실적조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">경영실적현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부문별 목표달성현황</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">목표관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일반개인목표관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">KR&C개인목표관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">개인목표달성현황</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">BPM</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">영업 업무현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">KR&C 업무현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">KR&C 총괄부서</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일반채권 총괄부서</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서(지사) 총괄현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일반채권 업무현황</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- //경영정보 하위메뉴 -->
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link menu-link">
+                <i class="ri-group-line"></i><span>커뮤니티</span>
+              </a>
+              <!-- 커뮤니티 하위메뉴 -->
+              <ul class="dropdown-nav">
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">공지사항</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">사내게시판</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">나라인의 소리</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">동호회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">경영공지사항</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">설문관리</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">설문조사</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">지식저장소</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">제안합니다</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">도와주세요</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">외부지식</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">협업</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">사례관리</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- //커뮤니티 하위메뉴 -->
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link menu-link">
+                <i class="ri-book-open-line"></i><span>도서관리</span>
+              </a>
+              <!-- 도서관리 하위메뉴 -->
+              <ul class="dropdown-nav">
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">도서대출관리</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">도서연체관리</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">도서대출신청</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">도서게시판</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">e-Book 코너</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">도서목록관리</a>
+                </li>
+              </ul>
+              <!-- //도서관리 하위메뉴 -->
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link menu-link">
+                <i class="ri-leaf-line"></i><span>노동조합</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-date">
+          <span><i class="ri-time-line"></i>2024년 07월 00일</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main-content">
+    <div class="page-content">
+      <div class="container-fixed">
+        <!-- Content -->
+        
+        <!-- //Content -->
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container-fixed">
+        <small class="text-muted">© 2024 - Nara Credit Service Co.,LTD. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </main>
+</div>
+<!-- END layout-wrapper -->
+</body>
+</html>

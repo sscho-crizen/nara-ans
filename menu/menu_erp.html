@@ -1,0 +1,1032 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<title>나라신용정보 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="layout-wrapper">
+  <!-- Header -->
+  <header class="header">
+    <div class="app-top">
+      <div class="container-fixed">
+        <div class="util">
+          <div class="user-info">
+            <span class="user text-light"><strong>관리자 (IT지원부 102002)</strong>님</span>
+            <button type="button" class="btn btn-xs btn-light"><i class="ri-logout-box-r-line"></i>로그아웃</button>
+            <button type="button" class="btn btn-xs btn-light"><i class="ri-settings-3-line"></i>설정</button>
+          </div>
+          <div class="service">
+            <button type="button" class="btn btn-xs btn-outline-default">KMS</button>
+            <button type="button" class="btn btn-xs btn-outline-default">추심</button>
+            <button type="button" class="btn btn-xs btn-outline-default">영업</button>
+            <button type="button" class="btn btn-xs btn-outline-default">CTI</button>
+            <button type="button" class="btn btn-xs btn-primary">ERP</button>
+            <button type="button" class="btn btn-xs btn-outline-default">SYSTEM</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="app-navbar">
+      <div class="container-fixed">
+        <div class="navbar-brand">
+          <a href="#none" class="logo">
+            <img src="../images/nara_logo.png" alt="나라신용정보" />
+          </a>
+        </div>
+        <div class="gnb">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#none" class="nav-link menu-link">
+                <i class="ri-calculator-line"></i><span>회계관리</span>
+              </a>
+              <!-- 회계관리 -->
+              <ul class="dropdown-nav">
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">전표관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">전표등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">신용카드이용내역조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">표준전표등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">반복전표등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">전표변경</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">가계정정리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">신용카드대금정리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">외상매출금정리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">전표조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">계정관리항목조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">관리항목조회</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">결산관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일마감</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서별 일마감</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일계표</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">현금출납장</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">보조부원장</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">총계정원장</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">합계잔액시산표(구양식)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">보정전표등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">이익잉여금</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일일마감보고서</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">연결조정분개등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">재무제표출력</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">자금관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">시재장등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">타점권등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">계좌관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">계약등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">집행/입금계획</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">차입금상환계획표</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예금명세서</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">차입금명세서</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">자금출납부</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예치금현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">보통예금거래내역조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">우리은행 펌뱅킹</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">주주관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">주주관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">권종관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">주주변동이력관리</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">세무관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">매입계산서조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">매출증빙관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">계산서합계표</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">세금계산서합계표</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부가세신고</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">매출증빙마감</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">예산관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예산편성/배정</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예산편성근거등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예산추가배정</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예산전용</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예산환출</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예산배정마감</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">가예산배정등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">신규부서예산배정</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예산보고서</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">임원접대비한도관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">임직원경비현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">임원경비집행현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">본사경비한도관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">예산현황 (보정후)</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">수탁회계</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">전표등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">표준전표등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">반복전표등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">전표정정</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">가계정정리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">전표변경</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">전표조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">타점권등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일마감</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일일마감보고서(수탁)</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">총무관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">고객등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">지출결의서관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">특근식대관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">등기우편물관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">차량운행일지관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">내선번호이력</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">지출증빙관리</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">자산관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">자산코드등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">고정자산등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">고정자산변동</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">고정자산이동</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">감가상각계산</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">감사상각조정</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">비품품목등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">비품단가등록</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">비품입출고관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">비품부서별현황</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- //회계관리 하위메뉴 -->
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link menu-link">
+                <i class="ri-wallet-line"></i><span>인사급여</span>
+              </a>
+              <!-- 인사급여 -->
+              <ul class="dropdown-nav">
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">인사정보</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">인사마스터관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">인사발령승인</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">인사발령관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">가족사항관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">학력사항관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">경력사항관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">자격면허관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">상벌내역관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">외국어사항관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">전자근로계약관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">연봉계약관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">증명서발행</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">건강검진대상자관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">건강검진관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">유소견자관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">신원보증보험관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">인사정보보고서</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">기념일관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">위임계약해지요청</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">증명서발행(승인)</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">근태관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">연차생성관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">근태관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">시간외근무관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">근태관리보고서</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">시차출근관리</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">급여관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">급여마스터관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">고정수당공제관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">변동수당공제관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">급여계산관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">급여계산내역관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">마감관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">이체요청서관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">급여대장관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">급여대장조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">지급내역조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">수당공제보고서</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">퇴직금관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">퇴직금관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">퇴직금추계액관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">특별상여계산</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">연말정산</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">개인별연말정산관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">연말정산종전근무지정보관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">연말정산결과관리</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">교육관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">교육과정관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">교육신청관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">교육결과관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">교육환급비관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">필수과정미이수자조회</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">채용관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">지원자관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">인력풀관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">채용구분관리</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- //인사급여 하위메뉴 -->
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link menu-link">
+                <i class="ri-computer-line"></i><span>MIS</span>
+              </a>
+              <!-- MIS -->
+              <ul class="dropdown-nav">
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">경영정보</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">총괄실적현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">채권잔액현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">구성비</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">임직원실적</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서담당자총괄실적</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">고객기준일실적</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">고객기간별실적</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서별목표현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">영업매출실적</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">신용조사추세표</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">민원발급수임실적</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">민원발급추세표</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">채권추심월별추세표</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">채권추심일별추세표</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">개인별 회수현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">고객그룹별 일일실적현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">영업실적현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">영업직원별매출실적</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">민사채권매출실적</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">금일실적현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">수수료보정</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">신용관리사 실적현황</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">목표관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서목표관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일반개인목표관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">KR&C개인목표관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서목표달성현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">개인목표달성현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">KR&C채권 회수수수료율 관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">목표율관리(KR&C)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">개인목표관리(건별)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서 운영목표관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">신용정보조회 한도관리</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">손익관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">손익현황(총괄)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서별수익비용현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서별손익현황(구)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">분기별부서별손익현황(구)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부문별부서별손익현황(구)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서별집계관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">KR&C관리수수료 배부</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">직원별 손익실적조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">실적우수자관리</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">경영실적현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부문별 목표달성현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서별, 부문별 실적현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서별, 부문별 목표달성현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일반채권 본사 팀별 목표달성현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일반채권 부서별 성과지급률 현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">부서별 매출(기여마진) 추이</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">일반채권 본사 파트별 매출(기여마진) 추이</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">관리수수료 담당자별 배정</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">KR&C부문 성과지급률 현황</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">손익 검증</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">검증 외 확인사항</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">자회사관리</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">보고서</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- //MIS 하위메뉴 -->
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link menu-link">
+                <i class="ri-information-line"></i><span>대외정보</span>
+              </a>
+              <!-- 대외정보 -->
+              <ul class="dropdown-nav">
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">신용정보조회(KIS)</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">신용정보조회(조기경보)</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">기업정보조회(코참비즈)</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">대외기관정보</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">원인서류조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">조기경보정보조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">우리캐피탈 채권조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">개인신용정보관리</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">수신파일관리</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">경기지사 감면보고서 등</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">채무감면내역</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">씨앤앰입금장비등록</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">경기신용보증재단 통합조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">강원신용보증재단 통합조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">경남신용보증재단 통합조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">부산신용보증재단 통합조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">광주신용보증재단 통합조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">전북신용보증재단 통합조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">대구신용보증재단 통합조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">DSNPL 위탁정보 조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">DS추심보고서</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">BC카드 위임정보조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">캠코채권부SMS일괄발송</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">메리츠캐피탈 채권위임조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">스마트저축은행 채권위임조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">도담자산관리대부 채권위임조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">농협캐피탈 채권위임조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">JB우리캐피탈 채권위임조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">서울신용보증재단 통합조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">NICE 신용정보조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">전남신용보증재단 통합조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">IBK저축은행 통합조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">KCAR캐피탈 채권조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">강남지사SMS일괄발송</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">우리카드</a>
+                  <ul class="dropdown-nav-sub dropdown-sub-wooricard">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">우리카드 채무감면</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">우리카드 채무감면상세</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">우리카드 채무감면결과</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">우리카드 시효실익판단조사표</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">우리카드 시효실익판단결과</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">우리카드 법조치내역조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">우리카드 법조치실익판단조사표</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">우리카드 법조치실익판단결과</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">우리카드 원장자동화</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">우리카드 감면요청서</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">우리카드 전자독촉</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">우리카드 일일실적</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">KCB</a>
+                  <ul class="dropdown-nav-sub dropdown-sub-kcb">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">KCB 대상자 등록현황조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">KCB 대상자 등록결과조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">KCB 조기경보 내역조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">KCB ID조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">KCB 신용정보조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">KCB체크카드실적정보조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">KCB체크카드실적조회</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">한국주택금융공사</a>
+                  <ul class="dropdown-nav-sub">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">한국주택금융</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">한국주택금융공사 채무감면/분할상환 신청</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">NICE</a>
+                  <ul class="dropdown-nav-sub dropdown-sub-nice">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">NICE 조기경보정보조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">NICE 경매정보 조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">NICE SAFEKEY 발급 요청 조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">NICE SAFEKEY 발급 결과 조회</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">NICE 대상자 등록현황 조회</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link" data-icon="true">PayLetter</a>
+                  <ul class="dropdown-nav-sub dropdown-sub-payletter">
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">페이레터입금내역</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#none" class="nav-link">페이레터 감면/소멸내역</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- //대외정보 하위메뉴 -->
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link menu-link">
+                <i class="ri-coins-line"></i><span>성과급관리</span>
+              </a>
+              <!-- 성과급관리 -->
+              <ul class="dropdown-nav">
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">회수유형관리</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">성과급구간설정관리</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">성과급정보관리</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">영업성과율관리</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">영업성과급조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">수수료장려금현황</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">담당별성과급정보</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">영업 장려/성과 제한관리</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">영업/신용관리직 인사조회</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">외상매출관련성과급등 관리대장</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">KR&C용역비내역</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#none" class="nav-link">캠코실적관리</a>
+                </li>
+              </ul>
+              <!-- //성과급관리 하위메뉴 -->
+            </li>
+          </ul>
+        </div>
+        <div class="nav-date">
+          <span><i class="ri-time-line"></i>2024년 07월 00일</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main-content">
+    <div class="page-content">
+      <div class="container-fixed">
+        <!-- Content -->
+        
+        <!-- //Content -->
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container-fixed">
+        <small class="text-muted">© 2024 - Nara Credit Service Co.,LTD. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </main>
+</div>
+<!-- END layout-wrapper -->
+</body>
+</html>
