@@ -43,6 +43,7 @@ function progressbar() {
             </div>
           </div>
           <button type="button" class="btn btn-primary" onclick="progressbar();">로딩바 확인</button>
+          <button type="button" class="btn btn-outline-default" data-bs-toggle="modal" data-bs-target="#modalLoader">처리중(모달)</button>
           <!-- //Content -->
         </div>
       </div>
@@ -56,5 +57,20 @@ function progressbar() {
   </section>
 </div>
 <!-- END layout-wrapper -->
+
+<!-- 처리중(모달) -->
+<div class="modal modal-loader fade" tabindex="-1" data-bs-backdrop="false" id="modalLoader">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm">
+    <div class="modal-content">
+      <button type="button" class="btn-close ms-auto m-1" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="loading-text">처리중입니다...</div>
+        <div class="loading-bar">
+          <div class="loading-primary"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
