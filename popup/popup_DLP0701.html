@@ -118,58 +118,123 @@
             <tr>
               <th>제목</th>
               <td>
-                <input type="text" class="form-control" placeholder="" />
+                <div class="max-w-form">
+                  <input type="text" class="form-control" placeholder="" />
+                </div>
               </td>
             </tr>
             <tr>
               <th>내용</th>
               <td>
-                <p class="mb-1">
-                  1. 괸리 중인 수탁원장을 아래와 같이 수정하고자 합니다.<br />
-                  2. 채권원장(금액) 일괄수정 요청 내역<br />
-                  &nbsp;&nbsp;&nbsp;&nbsp;고객명 : (주)국민행복기금_구상채권
-                </p>
-                <div class="table-responsive">
-                  <table class="table table-bordered">
-                    <thead>
-                      <tr>
-                        <th rowspan="2">변경건수</th>
-                        <th colspan="4">변경전</th>
-                        <th colspan="4">변경후</th>
-                      </tr>
-                      <tr>
-                        <th>수임원금</th>
-                        <th>수임이자</th>
-                        <th>대출잔액</th>
-                        <th>이지잔액</th>
-                        <th>수임원금</th>
-                        <th>수임이자</th>
-                        <th>대출잔액</th>
-                        <th>이지잔액</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>5</td>
-                        <td>31,024,072</td>
-                        <td>1,824,604</td>
-                        <td>28,725,372</td>
-                        <td>1,824,604</td>
-                        <td>31,024,072</td>
-                        <td>1,824,604</td>
-                        <td>29,226,372</td>
-                        <td>1,824,604</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>                
+                <div class="max-w-form">
+                  1. 채무자 : 홍길동(0000000000000000)(담당자: 대전지사)<br />
+                  2. 승인신청내용(부가세, 기타 소송 실비 별도)<br />
+                  <div class="border border-1 border-dark p-1">
+                    <div class="d-flex gap-4">
+                      <div>
+                        ■ 확정판결채권 소제기 : 대상 [채무자] 홍길동<br />
+                        ■ 소송물가액 : [20,000,000원]<br />
+                        ■ 소송대리인 : [법무법인 00(대전분사무소)]<br />
+                        - 판결문 : [대전지방법원홍성지원서법군법원] [0000차000]<br />
+                        - 시효기산일 : [확정판결: 0000-00-00][10년]
+                      </div>
+                      <div>
+                        [보증인] 홍길동, 홍길동<br />
+                        ■ 보수료 : 착수금 [000,000원]<br /><br />
+                        - 판결일 : [0000-00-00] &nbsp;&nbsp;&nbsp; 송달확정일 : [0000-00-00]<br />
+                        - 시효만료일 : [0000-00-00]
+                      </div>
+                    </div>
+                  </div>
+                  <div class="border border-1 border-top-0 border-dark p-1">
+                    - 채무자 홍길동의 사망으로 양수금소소으로 진행
+                  </div>
+                  3. 채권현황 (0000.00.00 현재) (단위 : 천원)
+                  <div class="table-responsive">
+                    <table class="table table-bordered mb-1">
+                      <thead>
+                        <tr>
+                          <th rowspan="2">입수재단</th>
+                          <th colspan="5">총 채권액</th>
+                          <th rowspan="2">연대보증인</th>
+                        </tr>
+                        <tr>
+                          <th>원금</th>
+                          <th>이자</th>
+                          <th>가지급금</th>
+                          <th>계</th>
+                          <th>평가금액</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>합계</td>
+                          <td class="text-end">0</td>
+                          <td class="text-end">0</td>
+                          <td class="text-end">0</td>
+                          <td class="text-end">0</td>
+                          <td class="text-end">0</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="border border-1 border-dark p-1">
+                    특이사항 없음
+                  </div>
+                  4. 담보 및 발견재산현황 (단위 : 천원)
+                  <div class="table-responsive">
+                    <table class="table table-bordered mb-1">
+                      <thead>
+                        <tr>
+                          <th>소유자</th>
+                          <th>소재지</th>
+                          <th>종류</th>
+                          <th>수량(㎡)</th>
+                          <th>추정시가</th>
+                          <th>선순위</th>
+                          <th>압류경합</th>
+                          <th>유효가</th>
+                          <th>비고</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>합계</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="border border-1 border-dark p-1">
+                    특이사항 없음
+                  </div>
+                  5. 재산조사 등 현황
+                  <div class="border border-1 border-dark p-1">
+                    - 채무자 홍길동 : 최종주소지(행안부 주소보정자료로 대체) - 미등기부동산<br />
+                    - 보증인 홍길동 : 최종주소지(행안부 주소보정자료로 대체) - 미등기부동산<br />
+                    - 보증인 홍길동 : 최종주소지(행안부 주소보정자료로 대체) - 미등기부동산<br />
+                  </div>
+                  6. 검토의견
+                  <div class="border border-1 border-dark p-1">
+                    "확정판결채권 시효연장소송 관리기준 통지"관련 제3조 4호 "채권금액이 1억원 이상 당연 소제기"에 의거 
+                    본건 채무자 임옥규 외 2명에 대한 시효연장 및 채무명의 획득을 위한 소제기를 승인 신청합니다.
+                  </div>
+                </div>
                 <!-- <textarea class="form-control" rows="20"></textarea> -->
               </td>
             </tr>
             <tr>
               <th>수신처</th>
               <td>
-                <div class="d-flex gap-1">
+                <div class="max-w-form d-flex gap-1">
                   <input type="text" class="form-control" placeholder="" />
                   <button type="button" class="btn btn-outline-dark"><i class="ri-mail-check-line"></i>수신처선택</button>
                   <button type="button" class="btn btn-outline-default"><i class="ri-refresh-line"></i>초기화</button>
@@ -179,7 +244,7 @@
             <tr>
               <th>참고문서</th>
               <td>
-                <div class="d-flex gap-1">
+                <div class="max-w-form d-flex gap-1">
                   <input type="text" class="form-control" placeholder="" />
                   <button type="button" class="btn btn-outline-dark"><i class="ri-newspaper-line"></i>참조문서</button>
                   <button type="button" class="btn btn-outline-default"><i class="ri-refresh-line"></i>초기화</button>
@@ -197,7 +262,7 @@
             <tr>
               <th>첨부파일</th>
               <td>
-                <div class="input-group custom-file">
+                <div class="max-w-form input-group custom-file">
                   <input type="file" class="form-control" id="file" />
                   <label class="btn btn-secondary" for="file"><i class="ri-attachment-2"></i>찾아보기</label>
                 </div>
@@ -206,7 +271,7 @@
             <tr>
               <th>파일 목록</th>
               <td>
-                <div class="">
+                <div class="max-w-form">
                   <textarea class="form-control" rows="8"></textarea>
                   <div class="mt-1">
                     총 <input type="text" class="form-control text-end w-sm" placeholder="" /> byte 
