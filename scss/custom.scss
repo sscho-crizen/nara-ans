@@ -745,9 +745,10 @@ br.spacer {
   }
 }
 .quick-nav {
-  position: absolute;
-  top: 0px;
-  right: -40px;  
+  position: relative;  
+  display: flex;
+  align-items: center;
+  margin-left: .5rem;
   > .btn {
     font-size: 1.25rem;
     width: 28px;
@@ -767,6 +768,9 @@ br.spacer {
   }
   .quick-box {
     position: absolute;
+    z-index: 2;
+    top: 51px;
+    right: 0;
     width: 130px;
     margin-top: .5rem;
     .quick-menu {
