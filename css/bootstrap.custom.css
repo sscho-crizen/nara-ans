@@ -1909,6 +1909,9 @@ progress {
 .table > tbody th {
   font-weight: normal;
 }
+.table > tbody > * > * {
+  height: 32px;
+}
 .table tfoot > * > * {
   font-weight: 700;
   text-align: center;

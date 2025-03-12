@@ -39,7 +39,7 @@
     background-color: var(--#{$prefix}table-bg);
     border-bottom-width: $table-border-width;
     box-shadow: inset 0 0 0 9999px var(--#{$prefix}table-bg-state, var(--#{$prefix}table-bg-type, var(--#{$prefix}table-accent-bg)));
-    vertical-align: middle;
+    vertical-align: middle;    
   }
   border-top-color: #2b5774;  
   > thead {
@@ -67,6 +67,9 @@
     vertical-align: inherit;
     th { 
       font-weight: normal;
+    }
+    > * > * {
+      height: 32px;
     }
   }
   tfoot {
