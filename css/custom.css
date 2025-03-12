@@ -754,10 +754,9 @@ br.spacer {
 }
 
 .quick-nav {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin-left: 0.5rem;
+  position: absolute;
+  top: 0px;
+  right: -40px;
 }
 .quick-nav > .btn {
   font-size: 1.25rem;
@@ -779,7 +778,6 @@ br.spacer {
 .quick-nav .quick-box {
   position: absolute;
   z-index: 2;
-  top: 51px;
   right: 0;
   width: 130px;
   margin-top: 0.5rem;
