@@ -1195,6 +1195,13 @@ br.spacer {
 .max-w-form {
   max-width: 800px !important;
 }
+.form-check-label {
+  display: inline-flex;
+  gap: .25rem;
+}
+.white-space-nowrap {
+  white-space: nowrap;
+}
 /* ---------------------------------------------------------------------- */
 /*  Loader
 /* ---------------------------------------------------------------------- */
