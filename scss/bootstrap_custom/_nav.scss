@@ -74,6 +74,10 @@
     margin-bottom: calc(-1 * var(--#{$prefix}nav-tabs-border-width)); // stylelint-disable-line function-disallowed-list
     border: var(--#{$prefix}nav-tabs-border-width) solid transparent;
     @include border-top-radius(var(--#{$prefix}nav-tabs-border-radius));
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: .25rem;
 
     &:hover,
     &:focus {

@@ -40,7 +40,10 @@
               <a href="#none" class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">내부수신(0/0)</a>
             </li>
             <li class="nav-item">
-              <a href="#none" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2">외부수신(0/0)</a>
+              <a href="#none" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2">
+                외부수신(0/0) 
+                <button type="button" class="btn btn-sm rounded-pill btn-dark" onclick="alert('확인')">휴지통</button>
+              </a>
             </li>
             <li class="nav-item">
               <a href="#none" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3">보낸편지함(0/0)</a>
@@ -52,7 +55,10 @@
               <a href="#none" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab4">스팸편지함(0/0)</a>
             </li>
             <li class="nav-item">
-              <a href="#none" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab4">휴지통(0/0)</a>
+              <a href="#none" class="nav-link" data-bs-toggle="tab" data-bs-target="#tab4">
+                휴지통(0/0)
+                <button type="button" class="btn btn-sm rounded-pill btn-dark" onclick="alert('확인')">비우기</button>
+              </a>
             </li>
           </ul>
           <div class="bg-body-secondary rounded-2 d-flex align-items-center p-2 my-1">
@@ -61,6 +67,7 @@
               <select class="form-select w-auto">
                 <option value="">편지함으로 옮기기</option>
               </select>
+              <button type="button" class="btn btn-outline-dark"><i class="ri-mail-add-line"></i>외부메일가져오기</button>
             </div>
             <div class="d-flex align-items-center gap-1 ms-auto">
               <span>메일검색</span>
