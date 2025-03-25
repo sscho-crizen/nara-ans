@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용정보 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="layout-wrapper">    
+  <!-- Header -->
+  <div w3-include-html="../include/header.html"></div>
+  <section class="main-content">
+    <main class="page-content">
+      <div class="container-fixed">
+        <div class="content">
+          <!-- Content -->
+          <div class="page-header-wrap">
+            <h2 class="page-header">본인기안 문서</h2>
+            <div class="btns">
+              <button type="button" class="btn btn-primary"><i class="ri-search-line"></i>조회</button>
+            </div>
+          </div>
+          <table class="table table-form">
+            <colgroup>
+              <col width="" />
+              <col width="6%" />
+              <col width="" />
+              <col width="6%" />
+              <col width="" />
+              <col width="6%" />
+              <col width="" />
+              <col width="6%" />
+              <col width="" />
+              <col width="6%" />
+              <col width="" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <td>
+                  <select class="form-select">
+                    <option>기안서 전체</option>
+                  </select>
+                </td>
+                <th>제목</th>
+                <td>
+                  <input type="text" class="form-control" placeholder="" />
+                </td>
+                <th>기안자</th>
+                <td>
+                  <input type="text" class="form-control" placeholder="" />
+                </td>
+                <th>기안일자</th>
+                <td>
+                  <div class="input-group w-date">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                  </div>
+                </td>
+                <th>기안부서</th>
+                <td>
+                  <input type="text" class="form-control" placeholder="" />
+                </td>
+                <th>문서번호</th>
+                <td>
+                  <input type="text" class="form-control" placeholder="" />
+                </td>
+              </tr>              
+            </tbody>
+          </table>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>순번</th>
+                <th>
+                  <select class="form-select form-select-sm w-auto">
+                    <option>상태</option>
+                  </select>
+                </th>
+                <th>제목</th>
+                <th>문서번호</th>
+                <th>공개여부</th>
+                <th>기안자(ID)</th>
+                <th>작성일자</th>
+                <th>종결일자</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>5</td>
+                <td><span class="badge rounded-pill text-bg-primary">진행</span></td>
+                <td class="text-start">
+                  <button type="button" class="btn btn-sm btn-icon btn-outline-default"><i class="ri-phone-line"></i></button>
+                  <button type="button" class="btn btn-sm btn-icon btn-outline-default"><i class="ri-file-text-line"></i></button>
+                  수탁원장 변경 요청 품의
+                </td>
+                <td></td>
+                <td>공개</td>
+                <td>LDS02</td>
+                <td>2025-00-00 00:00</td>
+                <td>2025-00-00</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td><span class="badge rounded-pill text-bg-primary">진행</span></td>
+                <td class="text-start">
+                  <button type="button" class="btn btn-sm btn-icon btn-outline-default"><i class="ri-phone-line"></i></button>
+                  <button type="button" class="btn btn-sm btn-icon btn-outline-default"><i class="ri-file-text-line"></i></button>
+                  수탁원장 변경 요청 품의
+                </td>
+                <td></td>
+                <td>공개</td>
+                <td>LDS02</td>
+                <td>2025-00-00 00:00</td>
+                <td>2025-00-00</td>
+              </tr>
+            </tbody>
+          </table>
+          <nav class="pagination-area">
+            <ul class="pagination">
+              <li class="page-item">
+                <a href="#none" class="page-link px-2"><i class="ri-skip-left-line"></i></a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link px-2"><i class="ri-arrow-left-double-line"></i></a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link px-2"><i class="ri-arrow-left-s-line"></i></a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link">1</a>
+              </li>
+              <li class="page-item active">
+                <span class="page-link">2</span>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link">3</a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link">4</a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link">5</a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link px-2"><i class="ri-arrow-right-s-line"></i></a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link px-2"><i class="ri-arrow-right-double-line"></i></a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link px-2"><i class="ri-skip-right-line"></i></a>
+              </li>
+            </ul>
+          </nav>          
+          <!-- //Content -->
+        </div>
+        <!-- Quickmenu -->
+        <div w3-include-html="../include/quick_menu.html"></div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fixed">
+        <small class="text-muted">© 2024 - Nara Credit Service Co.,LTD. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </section>
+</div>
+<!-- END layout-wrapper -->
+</body>
+</html>
