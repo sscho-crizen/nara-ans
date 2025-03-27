@@ -669,6 +669,9 @@ br.spacer {
   margin-bottom: 0;
 }
 .page-header-wrap .btns {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
   margin-left: auto;
 }
 
@@ -1259,6 +1262,81 @@ br.spacer {
   padding: 0 0.75rem;
   background-position-y: bottom;
   background-image: url("../images/tab_bg_active.png");
+}
+
+.schedule .tit {
+  font-size: 0.875rem;
+  color: var(--bs-primary);
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.schedule .tit::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin-right: 0.25rem;
+  background-color: var(--bs-primary);
+  border-radius: 50%;
+}
+.schedule .schedule-header {
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--bs-tertiary-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+}
+.schedule .schedule-header .schedule-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.schedule .schedule-header .schedule-date .schd-year {
+  font-size: 1.25rem;
+  color: var(--bs-primary);
+  font-weight: 700;
+  line-height: 1;
+}
+.schedule .schedule-header .schedule-date .schd-month-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.schedule .schedule-header .schedule-date .schd-month-wrap .btn-icon {
+  margin-bottom: -0.5rem;
+}
+.schedule .schedule-header .schedule-date .schd-month {
+  font-size: 4rem;
+  color: var(--bs-primary);
+  line-height: 1;
+}
+.schedule .schedule-header .schedule-add {
+  margin-left: auto;
+}
+
+.table-calendar {
+  border-top-color: #77b337;
+}
+.table-calendar > thead > * > * {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-color: #77b337 !important;
+  border-bottom: 1px solid #77b337 !important;
+  background-color: var(--bs-primary) !important;
+}
+.table-calendar > tbody > * > * {
+  text-align: left !important;
+  vertical-align: top;
+  height: 100px;
+}
+.table-calendar > tbody > * > *:nth-of-type(1) {
+  color: red;
+}
+.table-calendar > tbody > * > *:nth-of-type(7) {
+  color: green;
 }
 
 /* ---------------------------------------------------------------------- */
