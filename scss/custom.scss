@@ -1202,6 +1202,35 @@ br.spacer {
 .white-space-nowrap {
   white-space: nowrap;
 }
+.tab-panel {
+  display: none;
+  padding: .5rem 0;
+  &.active {
+    display: block;
+  }
+}
+.tab-table {
+  width: 100%;
+  background-position-y: bottom;
+  background-image: url('../images/tab_bg.png');
+}
+.tab-table > tbody > tr > td {
+  width: 60px;
+}
+.tab-table > tbody > tr > td:last-child {
+  width: auto;
+}
+.tab-bg {
+  padding: 0 .75rem;
+  background-position-y: bottom;
+  background-image: url('../images/tab_bg.png');
+}
+.tab-bg-active {
+  font-weight: 700;
+  padding: 0 .75rem;
+  background-position-y: bottom;
+  background-image: url('../images/tab_bg_active.png');
+}
 /* ---------------------------------------------------------------------- */
 /*  Loader
 /* ---------------------------------------------------------------------- */
