@@ -4884,14 +4884,10 @@ textarea.form-control-lg {
 .page-item:first-child .page-link {
   border-top-left-radius: var(--bs-pagination-border-radius);
   border-bottom-left-radius: var(--bs-pagination-border-radius);
-  padding-left: 8px;
-  padding-right: 8px;
 }
 .page-item:last-child .page-link {
   border-top-right-radius: var(--bs-pagination-border-radius);
   border-bottom-right-radius: var(--bs-pagination-border-radius);
-  padding-left: 8px;
-  padding-right: 8px;
 }
 
 .pagination-lg {
