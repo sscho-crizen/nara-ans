@@ -3389,6 +3389,7 @@ textarea.form-control-lg {
 }
 .btn-lg.btn-icon, .btn-group-lg > .btn-icon.btn {
   width: 40px;
+  min-width: 40px;
 }
 
 .btn-sm, .btn-group-sm > .btn {
@@ -3400,6 +3401,7 @@ textarea.form-control-lg {
 }
 .btn-sm.btn-icon, .btn-group-sm > .btn-icon.btn {
   width: 20px;
+  min-width: 20px;
 }
 
 .btn-xs {
@@ -3411,10 +3413,12 @@ textarea.form-control-lg {
 }
 .btn-xs.btn-icon {
   width: 20px;
+  min-width: 20px;
 }
 
 .btn-icon {
   width: 26px;
+  min-width: 26px;
   padding: 0;
 }
 

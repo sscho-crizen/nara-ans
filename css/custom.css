@@ -659,13 +659,17 @@ br.spacer {
 /* ---------------------------------------------------------------------- */
 /*  Content
 /* ---------------------------------------------------------------------- */
+.page-header {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
 .page-header-wrap {
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
 }
 .page-header-wrap .page-header {
-  font-size: 1rem;
   margin-bottom: 0;
 }
 .page-header-wrap .btns {
@@ -1337,6 +1341,30 @@ br.spacer {
 }
 .table-calendar > tbody > * > *:nth-of-type(7) {
   color: green;
+}
+
+.mail-msg {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.mail-msg .ico {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 2rem;
+  background-color: var(--bs-tertiary-bg);
+  border-radius: 50%;
+}
+.mail-msg .ico [class^=ri-] {
+  font-size: 3.5rem;
+  color: var(--bs-primary);
+}
+.mail-msg .text {
+  font-size: 1.25rem;
+  color: var(--bs-primary);
 }
 
 /* ---------------------------------------------------------------------- */
