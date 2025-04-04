@@ -692,28 +692,44 @@ br.spacer {
 .modal-popup .top-menu {
   margin: auto;
   display: flex;
-  gap: 0.5rem;
   flex-wrap: nowrap;
 }
-.modal-popup .top-menu .btn-group {
-  align-self: center;
-  background-color: white;
-  border: 1px solid var(--bs-secondary);
-  box-shadow: -6px -6px 8px 0 #fff, 3px 3px 8px 0 rgba(0, 0, 0, 0.05);
-  border-radius: 5rem;
-  overflow: hidden;
+.modal-popup .top-menu .button-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }
-.modal-popup .top-menu .btn {
-  color: var(--bs-secondary);
-  --bs-btn-height: 32px;
-  border: 0;
-  background-color: transparent;
+.modal-popup .top-menu .button-group:not(:first-child) {
+  margin-left: 0.5rem;
 }
-.modal-popup .top-menu .btn:active {
-  border-color: transparent;
+.modal-popup .top-menu .button-group:not(:first-child)::before {
+  content: "";
+  width: 1px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 0.25rem;
+  background-color: #d3d8de;
 }
-.modal-popup .top-menu .btn:hover {
-  background-color: #f1f8fd;
+.modal-popup .top-menu .button-group .btn-default {
+  --bs-btn-bg: var(--bs-btn-hover-bg);
+  --bs-btn-border-color: var(--bs-btn-hover-bg);
+}
+.modal-popup .top-menu .button-group-dropdown {
+  display: inline-block;
+}
+.modal-popup .top-menu .button-group-dropdown > .dropdown-toggle.show {
+  color: white;
+  background-color: var(--bs-secondary);
+  border-color: var(--bs-secondary);
+}
+.modal-popup .top-menu .button-group-dropdown > .dropdown-menu {
+  gap: 0.25rem;
+  flex-wrap: nowrap;
+  padding: 0.5rem;
+}
+.modal-popup .top-menu .button-group-dropdown > .dropdown-menu.show {
+  display: flex;
 }
 
 .popup-h {

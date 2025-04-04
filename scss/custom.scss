@@ -686,26 +686,44 @@ br.spacer {
   .top-menu {
     margin: auto;
     display: flex;
-    gap: .5rem;
     flex-wrap: nowrap;
-    .btn-group {
-      align-self: center;
-      background-color: white;
-      border: 1px solid var(--bs-secondary);
-      box-shadow: -6px -6px 8px 0 #fff, 3px 3px 8px 0 rgba(0,0,0,.05);
-      border-radius: 5rem;
-      overflow: hidden;
-    }
-    .btn {
-      color: var(--bs-secondary);
-      --bs-btn-height: 32px;
-      border: 0;
-      background-color: transparent;
-      &:active {
-        border-color: transparent;
+    .button-group {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: .25rem;
+      &:not(:first-child) {
+        margin-left: .5rem;
+        &::before {
+          content: "";
+          width: 1px;
+          height: 20px;
+          display: inline-block;
+          margin-right: .25rem;
+          background-color: #d3d8de;
+        }
       }
-      &:hover {
-        background-color: #f1f8fd;
+      .btn-default {
+        --bs-btn-bg: var(--bs-btn-hover-bg);
+        --bs-btn-border-color: var(--bs-btn-hover-bg);
+      }
+    }
+    .button-group-dropdown {
+      display: inline-block;
+      > .dropdown-toggle {
+        &.show {
+          color: white;
+          background-color: var(--bs-secondary);
+          border-color: var(--bs-secondary);
+        }
+      }
+      > .dropdown-menu {        
+        gap: .25rem;
+        flex-wrap: nowrap;
+        padding: .5rem;
+        &.show {
+          display: flex;
+        }
       }
     }
   }
