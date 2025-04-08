@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용정보 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+<div id="layout-wrapper">
+  <section class="main-content">
+    <main class="page-content">
+      <div class="container-fixed">
+        <div class="content">
+          <!-- Content -->
+          <div class="page-header-wrap">
+            <h2 class="page-header">일정관리</h2>
+          </div>
+          <div class="schedule">
+            <div class="schedule-header">
+              <div class="schedule-date">
+                <div class="schd-month-wrap align-items-end">
+                  <strong class="schd-month">03</strong>
+                  <span>월</span>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-2 ms-4">
+                <button type="button" class="btn btn-icon btn-sm rounded-pill btn-outline-primary"><i class="ri-arrow-left-s-line"></i></button>
+                <span>2025년 3월 30일(일) ~ 2025년 4월 5일(토)</span>
+                <button type="button" class="btn btn-icon btn-sm rounded-pill btn-outline-primary"><i class="ri-arrow-right-s-line"></i></button>
+              </div>
+              <div class="ms-auto">
+                <div class="btns">
+                  <button type="button" class="btn btn-outline-primary"><i class="ri-edit-line"></i>작성</button>
+                  <button type="button" class="btn btn-outline-primary"><i class="ri-check-line"></i>주간</button>
+                  <button type="button" class="btn btn-outline-primary"><i class="ri-check-line"></i>월간</button>
+                </div>
+              </div>
+            </div>
+            <table class="table table-bordered table-calendar">
+              <colgroup>
+                <col width="14%" />
+                <col width="14%" />
+                <col width="14%" />
+                <col width="14%" />
+                <col width="14%" />
+                <col width="14%" />
+                <col width="14%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>03/30(일)</th>
+                  <th>03/31(월)</th>
+                  <th>04/01(화)</th>
+                  <th>04/02(수)</th>
+                  <th>04/03(목)</th>
+                  <th>04/04(금)</th>
+                  <th>04/05(토)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item d-flex align-items-center gap-1 px-0 py-1">
+                        <button type="button" class="btn btn-icon btn-xs btn-default">
+                          <i class="ri-save-line"></i>
+                        </button>
+                        [선] test
+                      </li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item d-flex align-items-center gap-1 px-0 py-1">
+                        <button type="button" class="btn btn-icon btn-xs btn-default">
+                          <i class="ri-save-line"></i>
+                        </button>
+                        [선] test
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-1 px-0 py-1">
+                        <button type="button" class="btn btn-icon btn-xs btn-default">
+                          <i class="ri-save-line"></i>
+                        </button>
+                        <span class="text-danger">[전]</span> test
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-1 px-0 py-1">
+                        <button type="button" class="btn btn-icon btn-xs btn-default">
+                          <i class="ri-save-line"></i>
+                        </button>
+                        <span class="text-danger">[전]</span> test
+                      </li>
+                    </ul>
+                  </td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <div class="schedule-add">
+                <h3 class="tit">빠른일정 추가</h3>
+                <div class="d-flex align-items-center gap-1">
+                  <select class="form-select w-auto">
+                    <option value="">업무</option>
+                  </select>
+                  <div class="input-group w-date">
+                    <input type="text" class="form-control" placeholder="" />
+                    <button type="text" class="btn btn-outline-default flatpickr-btn flatpickr-input">
+                      <i class="ri-calendar-line"></i>
+                    </button>
+                  </div>
+                  <select class="form-select w-auto">
+                    <option value="">AM 09</option>
+                  </select>
+                  <select class="form-select w-auto">
+                    <option value="">00</option>
+                  </select>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="r" checked />보통
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                      <input type="radio" class="form-check-input" name="r" />중요
+                    </label>
+                  </div>
+                  <input type="text" class="form-control w-auto" placeholder="" />
+                  <button type="button" class="btn btn-primary"><i class="ri-check-line"></i>등록</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //Content -->
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fixed">
+        <small class="text-muted">© 2024 - Nara Credit Service Co.,LTD. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </section>
+</div>
+<!-- END layout-wrapper -->
+</body>
+</html>

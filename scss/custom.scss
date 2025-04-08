@@ -1256,22 +1256,6 @@ br.spacer {
   background-image: url('../images/tab_bg_active.png');
 }
 .schedule {
-  .tit {
-    font-size: .875rem;
-    color: var(--bs-primary);
-    display: flex;
-    align-items: center;
-    margin-bottom: .5rem;
-    &::before {
-      content: "";
-      display: inline-block;
-      width: 4px;
-      height: 4px;
-      margin-right: .25rem;
-      background-color: var(--bs-primary);
-      border-radius: 50%;
-    }
-  }
   .schedule-header {
     display: flex;
     align-items: flex-end;
@@ -1294,6 +1278,9 @@ br.spacer {
         display: flex;
         align-items: center;
         gap: .5rem;
+        > span {
+          font-size: 1rem;
+        }
         .btn-icon {
           margin-bottom: -.5rem;
         }
@@ -1304,8 +1291,24 @@ br.spacer {
         line-height: 1;
       }
     }
-    .schedule-add {
-      margin-left: auto;
+  }
+}
+.schedule-add {
+  margin-left: auto;
+  .tit {
+    font-size: .875rem;
+    color: var(--bs-primary);
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      margin-right: .25rem;
+      background-color: var(--bs-primary);
+      border-radius: 50%;
     }
   }
 }
