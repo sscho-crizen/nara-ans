@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용정보 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="layout-wrapper">    
+  <!-- Header -->
+  <div w3-include-html="../include/header.html"></div>
+  <section class="main-content">
+    <main class="page-content">
+      <div class="container-fixed">
+        <div class="content">
+          <!-- Content -->
+          <div class="page-header-wrap">
+            <h2 class="page-header">주소록</h2>
+            <div class="btns">
+              <button type="button" class="btn btn-outline-default"><i class="ri-check-line"></i>전체선택</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-close-line"></i>선택해제</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-delete-bin-line"></i>삭제</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-delete-bin-line"></i>메일보내기</button>
+            </div>
+          </div>
+          <div class="card bg-body-tertiary">
+            <div class="card-body p-2">
+              <div class="d-flex align-items-center gap-1">
+                <strong class="text-secondary me-2">간단추가</strong>
+                <label>이름:</label>
+                <input type="text" class="form-control w-sm" placeholder="" />
+                <label>이메일:</label>
+                <input type="text" class="form-control w-auto" placeholder="" />
+                <label>전화번호:</label>
+                <div class="d-flex align-items-center gap-1">
+                  <select class="form-select w-auto">
+                    <option value="">휴대폰</option>
+                  </select>
+                  <input type="text" class="form-control w-xs" placeholder="" />
+                  -
+                  <input type="text" class="form-control w-xs" placeholder="" />
+                  -
+                  <input type="text" class="form-control w-xs" placeholder="" />
+                </div>
+                <button type="button" class="btn btn-outline-default"><i class="ri-add-line"></i>추가</button>
+              </div>
+            </div>
+          </div>
+          <ul class="nav nav-tabs nav-dark">
+            <li class="nav-item">
+              <a href="#none" class="nav-link active">개인목록</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link">그룹목록</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link">사원목록</a>
+            </li>
+            <li class="d-flex align-items-center gap-1 ms-auto">
+              <button type="button" class="btn btn-outline-default"><i class="ri-user-add-line"></i>개인추가</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-group-line"></i>그룹추가</button>
+            </li>
+          </ul>
+          <div class="bg-body-secondary rounded-2 d-flex align-items-center p-2 my-1">
+            <div class="d-flex align-items-center gap-1">
+              <button type="button" class="btn btn-sm btn-outline-default">ㄱ</button>
+              <button type="button" class="btn btn-sm btn-outline-default">ㄴ</button>
+              <button type="button" class="btn btn-sm btn-outline-default">ㄷ</button>
+              <button type="button" class="btn btn-sm btn-outline-default">ㄹ</button>
+              <button type="button" class="btn btn-sm btn-outline-default">ㅁ</button>
+              <button type="button" class="btn btn-sm btn-outline-default">ㅂ</button>
+              <button type="button" class="btn btn-sm btn-outline-default">ㅅ</button>
+              <button type="button" class="btn btn-sm btn-outline-default">ㅇ</button>
+              <button type="button" class="btn btn-sm btn-outline-default">ㅈ</button>
+              <button type="button" class="btn btn-sm btn-outline-default">ㅊ</button>
+              <button type="button" class="btn btn-sm btn-outline-default">ㅋ</button>
+              <button type="button" class="btn btn-sm btn-outline-default">ㅌ</button>
+              <button type="button" class="btn btn-sm btn-outline-default">ㅎ</button>
+              <button type="button" class="btn btn-sm btn-outline-default">0~9</button>
+              <button type="button" class="btn btn-sm btn-outline-default">A~Z</button>
+            </div>
+            <div class="d-flex align-items-center gap-1 ms-auto">
+              <label>주소검색</label>
+              <select class="form-select w-auto">
+                <option value="">선택</option>
+              </select>
+              <input type="text" class="form-control" placeholder="" />
+              <button type="button" class="btn btn-outline-dark"><i class="ri-search-line"></i>검색</button>
+            </div>
+          </div>
+          <table class="table table-bordered">
+            <colgroup>
+              <col width="6%" />
+              <col width="15%" />
+              <col width="15%" />
+              <col width="" />
+              <col width="15%" />
+              <col width="6%" />
+              <col width="6%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>선택</th>
+                <th>이름</th>
+                <th>소속(회사/학교)</th>
+                <th>이메일</th>
+                <th>전화번호</th>
+                <th>수정</th>
+                <th>삭제</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" />
+                  </label>
+                </td>
+                <td>테스트1</td>
+                <td>2</td>
+                <td class="text-start">TEST1</td>
+                <td></td>
+                <td>
+                  <button type="button" class="btn btn-outline-default"><i class="ri-tools-line"></i>수정</button>
+                </td>
+                <td>
+                  <button type="button" class="btn btn-outline-default"><i class="ri-delete-bin-line"></i>삭제</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <nav class="pagination-area">
+            <ul class="pagination">
+              <li class="page-item">
+                <a href="#none" class="page-link page-chevron"><i class="ri-arrow-left-s-line"></i></a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link">1</a>
+              </li>
+              <li class="page-item active">
+                <span class="page-link">2</span>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link">3</a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link">4</a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link">5</a>
+              </li>
+              <li class="page-item">
+                <a href="#none" class="page-link page-chevron"><i class="ri-arrow-right-s-line"></i></a>
+              </li>
+            </ul>
+          </nav>
+          <div class="d-flex align-items-center gap-1">
+            <button type="button" class="btn btn-outline-default"><i class="ri-check-line"></i>전체선택</button>
+            <button type="button" class="btn btn-outline-default"><i class="ri-close-line"></i>선택해제</button>
+            <button type="button" class="btn btn-outline-default"><i class="ri-delete-bin-line"></i>삭제</button>
+            <button type="button" class="btn btn-outline-default"><i class="ri-delete-bin-line"></i>메일보내기</button>
+          </div>
+          <!-- //Content -->
+        </div>
+        <!-- Quickmenu -->
+        <div w3-include-html="../include/quick_menu.html"></div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fixed">
+        <small class="text-muted">© 2024 - Nara Credit Service Co.,LTD. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </section>
+</div>
+<!-- END layout-wrapper -->
+</body>
+</html>
