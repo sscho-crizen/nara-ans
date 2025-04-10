@@ -1373,6 +1373,8 @@ br.spacer {
     }
   }
   .table {
+    border-spacing: 0;
+    border-collapse: separate;
     border-top: 0;
     thead {
       position: -webkit-sticky; 

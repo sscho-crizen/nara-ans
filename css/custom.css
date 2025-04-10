@@ -1403,6 +1403,8 @@ br.spacer {
   overflow-y: auto;
 }
 .chars .table {
+  border-spacing: 0;
+  border-collapse: separate;
   border-top: 0;
 }
 .chars .table thead {
