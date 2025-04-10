@@ -1360,6 +1360,33 @@ br.spacer {
   padding-left: .5rem;
   padding-right: .5rem;
 }
+.chars {
+  display: flex;
+  .chars-order {
+
+  }
+  .chars-list {
+    flex: 1 1 0;
+    .table-chars-list {
+      height: 537px;
+      overflow-y: auto;
+    }
+  }
+  .table {
+    border-top: 0;
+    thead {
+      position: -webkit-sticky; 
+      position: sticky; 
+      top: 0;
+      > tr {
+        > th {
+          height: 24px;
+          border-bottom: 0;
+        }
+      }
+    }
+  }
+}
 /* ---------------------------------------------------------------------- */
 /*  Loader
 /* ---------------------------------------------------------------------- */

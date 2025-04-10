@@ -33,165 +33,244 @@
           </div>
           <div class="row">
             <div class="col-6">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="r" checked />개인목록
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="r" />사원목록
+                  </label>
+                </div>
+                <select class="form-select w-auto">
+                  <option value="">선택</option>
+                </select>
+                <input type="text" class="form-control w-auto" placeholder="" />
+                <button type="button" class="btn btn-primary"><i class="ri-search-line"></i>검색</button>
+              </div>
               <div class="d-flex align-items-center gap-2">
                 <div class="flex-fill">
-                  <table class="table table-bordered">
-                    <thead>
-                      <tr>
-                        <th>전체</th>
-                        <th>선택</th>
-                        <th>이름</th>
-                        <th>사원번호</th>
-                        <th>부서</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>ㄱ</td>
-                        <td>
-                          <input type="checkbox" class="form-check-input" />
-                        </td>
-                        <td>감사실</td>
-                        <td>00000</td>
-                        <td class="text-start">감사실</td>
-                      </tr>
-                      <tr>
-                        <td>ㄴ</td>
-                        <td>
-                          <input type="checkbox" class="form-check-input" />
-                        </td>
-                        <td>감사실</td>
-                        <td>00000</td>
-                        <td class="text-start">감사실</td>
-                      </tr>
-                      <tr>
-                        <td>ㄷ</td>
-                        <td>
-                          <input type="checkbox" class="form-check-input" />
-                        </td>
-                        <td>감사실</td>
-                        <td>00000</td>
-                        <td class="text-start">감사실</td>
-                      </tr>
-                      <tr>
-                        <td>ㄹ</td>
-                        <td>
-                          <input type="checkbox" class="form-check-input" />
-                        </td>
-                        <td>감사실</td>
-                        <td>00000</td>
-                        <td class="text-start">감사실</td>
-                      </tr>
-                      <tr>
-                        <td>ㅁ</td>
-                        <td>
-                          <input type="checkbox" class="form-check-input" />
-                        </td>
-                        <td>감사실</td>
-                        <td>00000</td>
-                        <td class="text-start">감사실</td>
-                      </tr>
-                      <tr>
-                        <td>ㅂ</td>
-                        <td>
-                          <input type="checkbox" class="form-check-input" />
-                        </td>
-                        <td>감사실</td>
-                        <td>00000</td>
-                        <td class="text-start">감사실</td>
-                      </tr>
-                      <tr>
-                        <td>ㅅ</td>
-                        <td>
-                          <input type="checkbox" class="form-check-input" />
-                        </td>
-                        <td>감사실</td>
-                        <td>00000</td>
-                        <td class="text-start">감사실</td>
-                      </tr>
-                      <tr>
-                        <td>ㅇ</td>
-                        <td>
-                          <input type="checkbox" class="form-check-input" />
-                        </td>
-                        <td>감사실</td>
-                        <td>00000</td>
-                        <td class="text-start">감사실</td>
-                      </tr>
-                      <tr>
-                        <td>ㅈ</td>
-                        <td>
-                          <input type="checkbox" class="form-check-input" />
-                        </td>
-                        <td>감사실</td>
-                        <td>00000</td>
-                        <td class="text-start">감사실</td>
-                      </tr>
-                      <tr>
-                        <td>ㅊ</td>
-                        <td>
-                          <input type="checkbox" class="form-check-input" />
-                        </td>
-                        <td>감사실</td>
-                        <td>00000</td>
-                        <td class="text-start">감사실</td>
-                      </tr>
-                      <tr>
-                        <td>ㅌ</td>
-                        <td>
-                          <input type="checkbox" class="form-check-input" />
-                        </td>
-                        <td>감사실</td>
-                        <td>00000</td>
-                        <td class="text-start">감사실</td>
-                      </tr>
-                      <tr>
-                        <td>ㅋ</td>
-                        <td>
-                          <input type="checkbox" class="form-check-input" />
-                        </td>
-                        <td>감사실</td>
-                        <td>00000</td>
-                        <td class="text-start">감사실</td>
-                      </tr>
-                      <tr>
-                        <td>ㅍ</td>
-                        <td>
-                          <input type="checkbox" class="form-check-input" />
-                        </td>
-                        <td>감사실</td>
-                        <td>00000</td>
-                        <td class="text-start">감사실</td>
-                      </tr>
-                      <tr>
-                        <td>ㅎ</td>
-                        <td>
-                          <input type="checkbox" class="form-check-input" />
-                        </td>
-                        <td>감사실</td>
-                        <td>00000</td>
-                        <td class="text-start">감사실</td>
-                      </tr>
-                      <tr>
-                        <td>0~9</td>
-                        <td>
-                          <input type="checkbox" class="form-check-input" />
-                        </td>
-                        <td>감사실</td>
-                        <td>00000</td>
-                        <td class="text-start">감사실</td>
-                      </tr>
-                      <tr>
-                        <td>A~Z</td>
-                        <td>
-                          <input type="checkbox" class="form-check-input" />
-                        </td>
-                        <td>감사실</td>
-                        <td>00000</td>
-                        <td class="text-start">감사실</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div class="chars">
+                    <div class="chars-order">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>전체</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th><button type="button" class="btn btn-sm btn-outline-default">ㄱ</button></th>
+                          </tr>
+                          <tr>
+                            <th><button type="button" class="btn btn-sm btn-outline-default">ㄴ</button></th>
+                          </tr>
+                          <tr>
+                            <th><button type="button" class="btn btn-sm btn-outline-default">ㄷ</button></th>
+                          </tr>
+                          <tr>
+                            <th><button type="button" class="btn btn-sm btn-outline-default">ㄹ</button></th>
+                          </tr>
+                          <tr>
+                            <th><button type="button" class="btn btn-sm btn-outline-default">ㅁ</button></th>
+                          </tr>
+                          <tr>
+                            <th><button type="button" class="btn btn-sm btn-outline-default">ㅂ</button></th>
+                          </tr>
+                          <tr>
+                            <th><button type="button" class="btn btn-sm btn-outline-default">ㅅ</button></th>
+                          </tr>
+                          <tr>
+                            <th><button type="button" class="btn btn-sm btn-outline-default">ㅇ</button></th>
+                          </tr>
+                          <tr>
+                            <th><button type="button" class="btn btn-sm btn-outline-default">ㅈ</button></th>
+                          </tr>
+                          <tr>
+                            <th><button type="button" class="btn btn-sm btn-outline-default">ㅊ</button></th>
+                          </tr>
+                          <tr>
+                            <th><button type="button" class="btn btn-sm btn-outline-default">ㅌ</button></th>
+                          </tr>
+                          <tr>
+                            <th><button type="button" class="btn btn-sm btn-outline-default">ㅋ</button></th>
+                          </tr>
+                          <tr>
+                            <th><button type="button" class="btn btn-sm btn-outline-default">ㅍ</button></th>
+                          </tr>
+                          <tr>
+                            <th><button type="button" class="btn btn-sm btn-outline-default">ㅎ</button></th>
+                          </tr>
+                          <tr>
+                            <th><button type="button" class="btn btn-sm btn-outline-default">0~9</button></th>
+                          </tr>
+                          <tr>
+                            <th><button type="button" class="btn btn-sm btn-outline-default">A~Z</button></th>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="chars-list">
+                      <div class="table-chars-list">
+                        <table class="table table-striped">
+                          <colgroup>
+                            <col width="50px" />
+                            <col width="140px" />
+                            <col width="140px" />
+                            <col width="" />
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>선택</th>
+                              <th>이름</th>
+                              <th>사원번호</th>
+                              <th>부서</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <input type="checkbox" class="form-check-input" />
+                              </td>
+                              <td>감사실</td>
+                              <td>00000</td>
+                              <td class="text-start">감사실</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="checkbox" class="form-check-input" />
+                              </td>
+                              <td>감사실</td>
+                              <td>00000</td>
+                              <td class="text-start">감사실</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="checkbox" class="form-check-input" />
+                              </td>
+                              <td>감사실</td>
+                              <td>00000</td>
+                              <td class="text-start">감사실</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="checkbox" class="form-check-input" />
+                              </td>
+                              <td>감사실</td>
+                              <td>00000</td>
+                              <td class="text-start">감사실</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="checkbox" class="form-check-input" />
+                              </td>
+                              <td>감사실</td>
+                              <td>00000</td>
+                              <td class="text-start">감사실</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="checkbox" class="form-check-input" />
+                              </td>
+                              <td>감사실</td>
+                              <td>00000</td>
+                              <td class="text-start">감사실</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="checkbox" class="form-check-input" />
+                              </td>
+                              <td>감사실</td>
+                              <td>00000</td>
+                              <td class="text-start">감사실</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="checkbox" class="form-check-input" />
+                              </td>
+                              <td>감사실</td>
+                              <td>00000</td>
+                              <td class="text-start">감사실</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="checkbox" class="form-check-input" />
+                              </td>
+                              <td>감사실</td>
+                              <td>00000</td>
+                              <td class="text-start">감사실</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="checkbox" class="form-check-input" />
+                              </td>
+                              <td>감사실</td>
+                              <td>00000</td>
+                              <td class="text-start">감사실</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="checkbox" class="form-check-input" />
+                              </td>
+                              <td>감사실</td>
+                              <td>00000</td>
+                              <td class="text-start">감사실</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="checkbox" class="form-check-input" />
+                              </td>
+                              <td>감사실</td>
+                              <td>00000</td>
+                              <td class="text-start">감사실</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="checkbox" class="form-check-input" />
+                              </td>
+                              <td>감사실</td>
+                              <td>00000</td>
+                              <td class="text-start">감사실</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="checkbox" class="form-check-input" />
+                              </td>
+                              <td>감사실</td>
+                              <td>00000</td>
+                              <td class="text-start">감사실</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="checkbox" class="form-check-input" />
+                              </td>
+                              <td>감사실</td>
+                              <td>00000</td>
+                              <td class="text-start">감사실</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="checkbox" class="form-check-input" />
+                              </td>
+                              <td>감사실</td>
+                              <td>00000</td>
+                              <td class="text-start">감사실</td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <input type="checkbox" class="form-check-input" />
+                              </td>
+                              <td>감사실</td>
+                              <td>00000</td>
+                              <td class="text-start">감사실</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="d-flex flex-column align-items-center gap-1">
                   <button type="button" class="btn btn-outline-default">추가<i class="ri-arrow-right-double-line"></i></button>

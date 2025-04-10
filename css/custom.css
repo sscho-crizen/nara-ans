@@ -1392,6 +1392,29 @@ br.spacer {
   padding-right: 0.5rem;
 }
 
+.chars {
+  display: flex;
+}
+.chars .chars-list {
+  flex: 1 1 0;
+}
+.chars .chars-list .table-chars-list {
+  height: 537px;
+  overflow-y: auto;
+}
+.chars .table {
+  border-top: 0;
+}
+.chars .table thead {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.chars .table thead > tr > th {
+  height: 24px;
+  border-bottom: 0;
+}
+
 /* ---------------------------------------------------------------------- */
 /*  Loader
 /* ---------------------------------------------------------------------- */
