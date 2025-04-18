@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용정보 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="layout-wrapper">    
+  <!-- Header -->
+  <div w3-include-html="../include/header.html"></div>
+  <section class="main-content">
+    <main class="page-content">
+      <div class="container-fixed">
+        <div class="content">
+          <!-- Content -->
+          <h2 class="page-header">환경설정</h2>
+          <ul class="nav nav-tabs nav-dark">
+            <li class="nav-item">
+              <a href="#none" class="nav-link">기본환경설정</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link active">메일수신거부</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link">서명관리</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link">편지함관리</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link">외부메일관리</a>
+            </li>
+          </ul>
+          <div class="setting-box">
+            <div class="setting-icon"><img src="../images/setting2.gif" alt="" /></div>
+            <div class="setting">
+              <h3 class="h3">메일수신거부</h3>
+              <p class="mb-1">
+                특정한 멩리주소로 오는 편지를 거부할 수 있으며 최대 50개까지 등록이 가능합니다.<br />
+                메일주소는 1000개, 도메인 주소는 100개까지 수신거부 리스트에 등록할 수 있습니다.
+              </p>
+              <ul class="text-list">
+                <li>수신거부가 되어있는 메일주소로 오는 편지는 <em class="text-warning">자동으로 보낸 사람에게 반송</em>됩니다.</li>
+                <li>수신 거부된 메일주소로 보내는 편지를 다시 받으시려면 <em class="text-warning">리스트에서 선택하신 후 삭제</em>하세요.</li>
+              </ul>
+              <table class="table table-bordered">
+                <colgroup>
+                  <col width="50%" />
+                  <col width="50%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>메일주소 추가하기</th>
+                    <th>도메인 추가하기</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="text-start p-3">
+                      <div class="mb-2">
+                        예) userid@checkfree.co.kr
+                      </div>
+                      <div class="input-group mb-2">
+                        <input type="text" class="form-control" placeholder="" />
+                        <button type="button" class="btn btn-outline-default">추가<i class="ri-arrow-right-double-line"></i></button>
+                      </div>
+                      <select class="form-select mb-2" multiple>
+                        <option value="" disabled><수신거부된 메일주소></option>
+                      </select>
+                      <button type="button" class="btn btn-outline-default"><i class="ri-arrow-left-double-line"></i>제거</button>
+                    </td>
+                    <td class="text-start p-3">
+                      <div class="mb-2">
+                        예) @domain.com 또는 @domain.co.kr 등 '@'로 시작하세요.
+                      </div>
+                      <div class="input-group mb-2">
+                        <input type="text" class="form-control" placeholder="" />
+                        <button type="button" class="btn btn-outline-default">추가<i class="ri-arrow-right-double-line"></i></button>
+                      </div>
+                      <select class="form-select mb-2" multiple>
+                        <option value="" disabled><수신거부된 메일주소></option>
+                      </select>
+                      <button type="button" class="btn btn-outline-default"><i class="ri-arrow-left-double-line"></i>제거</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="setting-items">
+                <dl>
+                  <dt>추가수신설정</dt>
+                  <dd>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" />수신 거부된 주소를 제외하고 받기(기본)
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="radio" class="form-check-input" />스팸기능을 사용않고 모든 메일 받기
+                      </label>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="text-end">
+            <button type="button" class="btn btn-primary"><i class="ri-check-line"></i>설정저장</button>
+            <button type="button" class="btn btn-outline-default">취소</button>
+          </div>
+          <!-- //Content -->
+        </div>
+        <!-- Quickmenu -->
+        <div w3-include-html="../include/quick_menu.html"></div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fixed">
+        <small class="text-muted">© 2024 - Nara Credit Service Co.,LTD. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </section>
+</div>
+<!-- END layout-wrapper -->
+</body>
+</html>

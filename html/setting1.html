@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용정보 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="layout-wrapper">    
+  <!-- Header -->
+  <div w3-include-html="../include/header.html"></div>
+  <section class="main-content">
+    <main class="page-content">
+      <div class="container-fixed">
+        <div class="content">
+          <!-- Content -->
+          <h2 class="page-header">환경설정</h2>
+          <ul class="nav nav-tabs nav-dark">
+            <li class="nav-item">
+              <a href="#none" class="nav-link active">기본환경설정</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link">메일수신거부</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link">서명관리</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link">편지함관리</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link">외부메일관리</a>
+            </li>
+          </ul>
+          <div class="setting-box">
+            <div class="setting-icon"><img src="../images/setting1.gif" alt="" /></div>
+            <div class="setting">
+              <h3 class="h3">기본환경설정</h3>
+              <p>회원 여러분들의 이용편의에 따라 메일을 편리하게 사용하시기 위해 기본적인 사항을 설정할 수 있습니다.</p>
+              <div class="setting-items">
+                <dl>
+                  <dt>편지발송시 보낸편지함에 저장</dt>
+                  <dd>
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" />보낸편지함에 보관한다.
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" />저장하지 않는다.
+                      </label>
+                    </div>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>편지삭제시 지운편지함으로 이동</dt>
+                  <dd>
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" />휴지통에 보관한다.
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" />완전히 삭제한다.
+                      </label>
+                    </div>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>휴지통 삭제주기설정</dt>
+                  <dd>
+                    <input type="text" class="form-control" style="width:30px;" />
+                    일 후에 자동으로 메일이 삭제 됩니다. (1~5일 까지만 설정가능)
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>페이지 리스트설정</dt>
+                  <dd>
+                    <select class="form-select w-auto">
+                      <option value="">20</option>
+                    </select>
+                    한 페이지에 보여질 편지 리스트 갯수
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>부제중 결재 관리</dt>
+                  <dd>
+                    <div class="d-flex align-items-center">
+                      <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" />부재중.
+                        </label>
+                      </div>
+                      <span class="d-inline-block ms-3 me-2">대리결재자</span>
+                      <div class="d-flex align-items-center gap-1">
+                        <input type="text" class="form-control" style="width:80px;" />
+                        <button type="button" class="btn btn-outline-default"><i class="ri-search-line"></i></button>
+                        <input type="text" class="form-control" style="width:140px;" />
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>읽어온 후 서버의 원본 지움</dt>
+                  <dd>
+                    <div class="d-inline-flex align-items-center gap-2 w-100">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" />
+                      </label>
+                      <span class="w-25 text-end me-5">외부메일가져오기(자동)</span>
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" />
+                      </label>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="text-end">
+            <button type="button" class="btn btn-primary"><i class="ri-check-line"></i>설정저장</button>
+            <button type="button" class="btn btn-outline-default">취소</button>
+          </div>
+          <!-- //Content -->
+        </div>
+        <!-- Quickmenu -->
+        <div w3-include-html="../include/quick_menu.html"></div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fixed">
+        <small class="text-muted">© 2024 - Nara Credit Service Co.,LTD. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </section>
+</div>
+<!-- END layout-wrapper -->
+</body>
+</html>

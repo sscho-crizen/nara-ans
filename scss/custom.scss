@@ -1389,6 +1389,67 @@ br.spacer {
     }
   }
 }
+.setting-box {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--bs-tertiary-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  .setting {
+    flex: 1 1 0;
+    // padding: 1rem;
+    // background-color: white;
+    // border: 1px solid var(--bs-border-color);
+    // border-radius: var(--bs-border-radius);
+    > .h3 {
+      color: var(--bs-secondary);
+      &::before {
+        content: "\ea54";
+        font-family: "remixicon";
+        margin-right: .375rem;
+        background-color: white;
+        border: 1px solid var(--bs-border-color);
+        border-radius: var(--bs-border-radius);
+      }
+    }
+  }
+}
+.setting-items {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-top: 1px solid var(--bs-border-color);
+  > dl {
+    display: table-row-group;
+    border-bottom: 1px solid var(--bs-border-color);
+    > * {
+      display: table-cell;
+      vertical-align: middle;
+      line-height: 1.4;
+      padding: .5rem .5rem;
+    }
+    > dt {
+      
+      width: 15%;
+    }
+    > dd {
+      
+    }
+  }
+}
+.setting-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--bs-tertiary-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+}
 /* ---------------------------------------------------------------------- */
 /*  Loader
 /* ---------------------------------------------------------------------- */

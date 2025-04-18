@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용정보 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="layout-wrapper">    
+  <!-- Header -->
+  <div w3-include-html="../include/header.html"></div>
+  <section class="main-content">
+    <main class="page-content">
+      <div class="container-fixed">
+        <div class="content">
+          <!-- Content -->
+          <h2 class="page-header">환경설정</h2>
+          <ul class="nav nav-tabs nav-dark">
+            <li class="nav-item">
+              <a href="#none" class="nav-link">기본환경설정</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link">메일수신거부</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link">서명관리</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link">편지함관리</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link active">외부메일관리</a>
+            </li>
+          </ul>
+          <div class="setting-box">
+            <div class="setting-icon"><img src="../images/setting6.gif" alt="" /></div>
+            <div class="setting">
+              <h3 class="h3">외부메일(POP) 설정</h3>
+              <p class="mb-1">
+                다른 메일주소의 편지를 편지함으로 가져와 읽을 수 있게 해주며 총3개의 외부메일을 지정할 수 있습니다.
+              </p>
+              <ul class="text-list mb-3">
+                <li>단, <em class="text-warning">POP서비스를 지원하는 회사의 메일만 가능</em>하며 일부 회사에서 제공하는 POP서비스의 경우 보안 정책상 가져오기가 안될 수도 있습니다.</li>
+              </ul>
+              <table class="table table-bordered">
+                <colgroup>
+                  <col width="15%" />
+                  <col width="35%" />
+                  <col width="15%" />
+                  <col width="" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td colspan="4"><strong class="text-secondary">1번째 POP 서버설정</strong></td>
+                  </tr>
+                  <tr>
+                    <th><i class="ri-arrow-right-s-line text-success"></i>POP 서버이름</th>
+                    <td><input type="text" class="form-control" placeholder="" /></td>
+                    <th><i class="ri-arrow-right-s-line text-success"></i>읽어온 후 서버의 원본 지움</th>
+                    <td><input type="checkbox" class="form-check-input" /></td>
+                  </tr>
+                  <tr>
+                    <th><i class="ri-arrow-right-s-line text-success"></i>사용자 아이디</th>
+                    <td><input type="text" class="form-control" placeholder="" /></td>
+                    <th><i class="ri-arrow-right-s-line text-success"></i>비밀번호</th>
+                    <td><input type="text" class="form-control" placeholder="" /></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-bordered">
+                <colgroup>
+                  <col width="15%" />
+                  <col width="35%" />
+                  <col width="15%" />
+                  <col width="" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td colspan="4"><strong class="text-secondary">2번째 POP 서버설정</strong></td>
+                  </tr>
+                  <tr>
+                    <th><i class="ri-arrow-right-s-line text-success"></i>POP 서버이름</th>
+                    <td><input type="text" class="form-control" placeholder="" /></td>
+                    <th><i class="ri-arrow-right-s-line text-success"></i>읽어온 후 서버의 원본 지움</th>
+                    <td><input type="checkbox" class="form-check-input" /></td>
+                  </tr>
+                  <tr>
+                    <th><i class="ri-arrow-right-s-line text-success"></i>사용자 아이디</th>
+                    <td><input type="text" class="form-control" placeholder="" /></td>
+                    <th><i class="ri-arrow-right-s-line text-success"></i>비밀번호</th>
+                    <td><input type="text" class="form-control" placeholder="" /></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-bordered">
+                <colgroup>
+                  <col width="15%" />
+                  <col width="35%" />
+                  <col width="15%" />
+                  <col width="" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td colspan="4"><strong class="text-secondary">3번째 POP 서버설정</strong></td>
+                  </tr>
+                  <tr>
+                    <th><i class="ri-arrow-right-s-line text-success"></i>POP 서버이름</th>
+                    <td><input type="text" class="form-control" placeholder="" /></td>
+                    <th><i class="ri-arrow-right-s-line text-success"></i>읽어온 후 서버의 원본 지움</th>
+                    <td><input type="checkbox" class="form-check-input" /></td>
+                  </tr>
+                  <tr>
+                    <th><i class="ri-arrow-right-s-line text-success"></i>사용자 아이디</th>
+                    <td><input type="text" class="form-control" placeholder="" /></td>
+                    <th><i class="ri-arrow-right-s-line text-success"></i>비밀번호</th>
+                    <td><input type="text" class="form-control" placeholder="" /></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="text-end">
+            <button type="button" class="btn btn-primary"><i class="ri-check-line"></i>설정저장</button>
+            <button type="button" class="btn btn-outline-default">취소</button>
+          </div>
+          <!-- //Content -->
+        </div>
+        <!-- Quickmenu -->
+        <div w3-include-html="../include/quick_menu.html"></div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fixed">
+        <small class="text-muted">© 2024 - Nara Credit Service Co.,LTD. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </section>
+</div>
+<!-- END layout-wrapper -->
+</body>
+</html>

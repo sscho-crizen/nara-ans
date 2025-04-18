@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용정보 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="layout-wrapper">    
+  <!-- Header -->
+  <div w3-include-html="../include/header.html"></div>
+  <section class="main-content">
+    <main class="page-content">
+      <div class="container-fixed">
+        <div class="content">
+          <!-- Content -->
+          <h2 class="page-header">환경설정</h2>
+          <ul class="nav nav-tabs nav-dark">
+            <li class="nav-item">
+              <a href="#none" class="nav-link">기본환경설정</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link">메일수신거부</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link">서명관리</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link active">편지함관리</a>
+            </li>
+            <li class="nav-item">
+              <a href="#none" class="nav-link">외부메일관리</a>
+            </li>
+          </ul>
+          <div class="setting-box">
+            <div class="setting-icon"><img src="../images/setting6.gif" alt="" /></div>
+            <div class="setting">
+              <h3 class="h3">편리함관리</h3>
+              <p class="mb-1">
+                편지함을 새로 만들거나 이미 만들어져 있는 편지함을 삭제할 수 있으며 편지함 이름을 수정할 수 있습니다.<br />
+                또, [비우기]를 클릭하시면 특정 편지함에 있는 메일을 전부 삭제할 수 있습니다.
+              </p>
+              <ul class="text-list mb-3">
+                <li>단, <em class="text-warning">편지함 삭제나 편지함 비우기를 사용하시면 복구가 안되니</em> 신중히 생각하시고 사용하시기 바랍니다.</li>
+              </ul>
+              <table class="table table-bordered">
+                <colgroup>
+                  <col width="50%" />
+                  <col width="50%" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td><strong class="text-secondary">새편지함 만들기</strong></td>
+                    <td><i class="ri-arrow-right-s-line text-success"></i>총 <em class="text-secondary">100MB</em>중 현재 <em class="text-secondary">0.46MB</em> 사용중입니다.</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="d-inline-block me-2"><i class="ri-arrow-right-s-line text-success"></i>편지함 이름</span>
+                      <div class="d-inline-flex align-items-center gap-1">
+                        <input type="text" class="form-control" />
+                        <button type="button" class="btn btn-outline-default">만들기</button>
+                      </div>
+                    </td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="table table-bordered">
+                <colgroup>
+                  <col width="" />
+                  <col width="" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>선택</th>
+                    <th>편지함 이름</th>
+                    <th>사용량</th>
+                    <th>새편지/전체편지</th>
+                    <th>수정/삭제</th>
+                    <th>비우기</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" class="form-check-input" /></td>
+                    <td><i class="ri-arrow-right-s-line text-success"></i>받은편지함</td>
+                    <td>753422.42 KB</td>
+                    <td>0/0</td>
+                    <td>-</td>
+                    <td><button type="button" class="btn btn-outline-default"><i class="ri-delete-bin-line"></i>비우기</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" class="form-check-input" /></td>
+                    <td><i class="ri-arrow-right-s-line text-success"></i>보낸편지함</td>
+                    <td>753422.42 KB</td>
+                    <td>0/0</td>
+                    <td>-</td>
+                    <td><button type="button" class="btn btn-outline-default"><i class="ri-delete-bin-line"></i>비우기</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" class="form-check-input" /></td>
+                    <td><i class="ri-arrow-right-s-line text-success"></i>임시보관함</td>
+                    <td>753422.42 KB</td>
+                    <td>0/0</td>
+                    <td>-</td>
+                    <td><button type="button" class="btn btn-outline-default"><i class="ri-delete-bin-line"></i>비우기</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" class="form-check-input" /></td>
+                    <td><i class="ri-arrow-right-s-line text-success"></i>스팸편지함</td>
+                    <td>753422.42 KB</td>
+                    <td>0/0</td>
+                    <td>-</td>
+                    <td><button type="button" class="btn btn-outline-default"><i class="ri-delete-bin-line"></i>비우기</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" class="form-check-input" /></td>
+                    <td><i class="ri-arrow-right-s-line text-success"></i>휴지통</td>
+                    <td>753422.42 KB</td>
+                    <td>0/0</td>
+                    <td>-</td>
+                    <td><button type="button" class="btn btn-outline-default"><i class="ri-delete-bin-line"></i>비우기</button></td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" class="form-check-input" /></td>
+                    <td><i class="ri-arrow-right-s-line text-success"></i>정말임시</td>
+                    <td>753422.42 KB</td>
+                    <td>0/0</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-default"><i class="ri-edit-line"></i>수정</button>
+                      <button type="button" class="btn btn-outline-default"><i class="ri-close-line"></i>삭제</button>
+                    </td>
+                    <td><button type="button" class="btn btn-outline-default"><i class="ri-delete-bin-line"></i>비우기</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-default">취소</button>
+          </div>
+          <!-- //Content -->
+        </div>
+        <!-- Quickmenu -->
+        <div w3-include-html="../include/quick_menu.html"></div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fixed">
+        <small class="text-muted">© 2024 - Nara Credit Service Co.,LTD. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </section>
+</div>
+<!-- END layout-wrapper -->
+</body>
+</html>
