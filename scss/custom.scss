@@ -95,15 +95,15 @@ br.spacer {
     content: "";
     display: block;
     flex: 1 1 0;
-    border: 1px solid var(--bs-border-color);
+    border: 1px solid var(--bs-border-color-translucent);
     border-radius: var(--bs-border-radius);
   }
   > input[type="file"] {  
     position: absolute;
     z-index: 2;
     width: calc(100% - 68px);
-    padding-top: 6px; 
-    padding-bottom: 6px; 
+    padding-top: 2px; 
+    padding-bottom: 2px; 
     background-color: transparent;
     border-color: transparent;
     &::-webkit-selector-button,
@@ -809,7 +809,7 @@ br.spacer {
 }
 .table-form {
   table-layout: fixed;
-  border-top-color: var(--bs-border-color);
+  border-top-color: var(--bs-table-border-color);
   > tbody > tr > th {
     background-color: #edf3f7;
   }

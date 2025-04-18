@@ -24,8 +24,8 @@
   margin-bottom: $spacer * 1;
   vertical-align: $table-cell-vertical-align;
   border-color: var(--#{$prefix}table-border-color);
-  border-top: 1px solid var(--#{$prefix}border-color);
-  border-bottom: 1px solid var(--#{$prefix}border-color);
+  border-top: 1px solid var(--#{$prefix}table-border-color);
+  border-bottom-width: 1px;
 
   // Target th & td
   // We need the child combinator to prevent styles leaking to nested tables which doesn't have a `.table` class.

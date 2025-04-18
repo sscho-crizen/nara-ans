@@ -546,7 +546,7 @@ $border-widths: (
 ) !default;
 $border-style:                solid !default;
 $border-color:                #eaecef !default;
-$border-color-translucent:    $border-color !default;
+$border-color-translucent:    #c4cbd4 !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
@@ -766,7 +766,7 @@ $table-hover-bg:              rgba(var(--#{$prefix}emphasis-color-rgb), $table-h
 
 $table-border-factor:         .2 !default;
 $table-border-width:          var(--#{$prefix}border-width) !default;
-$table-border-color:          var(--#{$prefix}border-color) !default;
+$table-border-color:          var(--#{$prefix}border-color-translucent) !default;
 
 $table-striped-order:         even !default; /*odd*/
 $table-striped-columns-order: even !default;
@@ -803,7 +803,7 @@ $input-btn-font-family:       null !default;
 $input-btn-font-size:         $font-size-base !default;
 $input-btn-line-height:       $line-height-base !default;
 $input-btn-height:            26px !default;
-$input-btn-border-color:      #e3e6ea !default;
+$input-btn-border-color:      var(--#{$prefix}border-color-translucent) !default;
 
 $input-btn-focus-width:         $focus-ring-width !default;
 $input-btn-focus-color-opacity: $focus-ring-opacity !default;
@@ -1386,7 +1386,7 @@ $card-title-spacer-y:               $spacer * .5 !default;
 $card-title-color:                  null !default;
 $card-subtitle-color:               null !default;
 $card-border-width:                 var(--#{$prefix}border-width) !default;
-$card-border-color:                 var(--#{$prefix}border-color-translucent) !default;
+$card-border-color:                 var(--#{$prefix}border-color) !default;
 $card-border-radius:                var(--#{$prefix}border-radius-lg) !default;
 $card-box-shadow:                   null !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;

@@ -108,8 +108,8 @@
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #eaecef;
-  --bs-border-color-translucent: #eaecef;
-  --bs-input-btn-border-color: #e3e6ea;
+  --bs-border-color-translucent: #c4cbd4;
+  --bs-input-btn-border-color: var(--bs-border-color-translucent);
   --bs-border-radius: 0.25rem;
   --bs-border-radius-sm: 0.125rem;
   --bs-border-radius-lg: 0.5rem;
@@ -1863,7 +1863,7 @@ progress {
   --bs-table-bg-state: initial;
   --bs-table-color: var(--bs-emphasis-color);
   --bs-table-bg: var(--bs-body-bg);
-  --bs-table-border-color: var(--bs-border-color);
+  --bs-table-border-color: var(--bs-border-color-translucent);
   --bs-table-accent-bg: transparent;
   --bs-table-striped-color: var(--bs-emphasis-color);
   --bs-table-striped-bg: var(--bs-bg-color);
@@ -1875,8 +1875,8 @@ progress {
   margin-bottom: 1rem;
   vertical-align: middle;
   border-color: var(--bs-table-border-color);
-  border-top: 1px solid var(--bs-border-color);
-  border-bottom: 1px solid var(--bs-border-color);
+  border-top: 1px solid var(--bs-table-border-color);
+  border-bottom-width: 1px;
   border-top-color: #2b5774;
 }
 .table > :not(caption) > * > * {
@@ -3199,7 +3199,7 @@ textarea.form-control-lg {
 
 .btn-outline-default {
   --bs-btn-color: #000;
-  --bs-btn-border-color: #e3e6ea;
+  --bs-btn-border-color: var(--bs-border-color-translucent);
   --bs-btn-hover-color: #212529;
   --bs-btn-hover-bg: #edf1f5;
   --bs-btn-hover-border-color: #e1e5e9;
@@ -4456,7 +4456,7 @@ textarea.form-control-lg {
   --bs-card-title-color: ;
   --bs-card-subtitle-color: ;
   --bs-card-border-width: var(--bs-border-width);
-  --bs-card-border-color: var(--bs-border-color-translucent);
+  --bs-card-border-color: var(--bs-border-color);
   --bs-card-border-radius: var(--bs-border-radius-lg);
   --bs-card-box-shadow: ;
   --bs-card-inner-border-radius: calc(var(--bs-border-radius-lg) - (var(--bs-border-width)));
