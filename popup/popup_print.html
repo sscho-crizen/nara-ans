@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용정보 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div class="modal modal-popup" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" onclick="window.close();"></button>
+      </div>
+      <div class="modal-body">
+        <!--Content-->
+        <div class="popup-h">
+          <div class="btns">
+            <button type="button" class="btn btn-primary" onclick="window.print();"><i class="ri-printer-line"></i>인쇄하기</button>
+            <button type="button" class="btn btn-secondary" onclick="window.print();"><i class="ri-printer-line"></i>인쇄미리보기</button>
+            <button type="button" class="btn btn-dark" onclick="window.close();"><i class="ri-close-line"></i>닫기</button>
+          </div>
+        </div>
+        <div class="doc-header">
+          <h2>채무자총채권현황</h2>
+          <small>(기준일자 : 2025-04-18)</small>
+        </div>
+        <h3 class="h3">대상자</h3>
+        <table class="table table-form">
+          <colgroup>
+            <col width="15%" />
+            <col width="35%" />
+            <col width="15%" />
+            <col width="35%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>기본정보</th>
+              <td colspan="3">홍길동(순수개인), 실명번호 : 000000-000000, ()</td>
+            </tr>
+            <tr>
+              <th>직장명</th>
+              <td></td>
+              <th>불량내역</th>
+              <td>0건, 0원, ()</td>
+            </tr>
+            <tr>
+              <th>연락처</th>
+              <td colspan="3">핸드폰: 00000000000, 자택번호: 00000000, 기타: , 직장번호:</td>
+            </tr>
+            <tr>
+              <th>DM주소지</th>
+              <td colspan="3">(18551) 경기도 화성시 송산면 송산포도로 000, 1층 (00리 000-1) DM주소최종변경: 자택 (0000-00-00)</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="h3">채무현황</h3>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>인수재단명</th>
+              <th>부서명</th>
+              <th>계좌번호</th>
+              <th>주채무자</th>
+              <th>관계</th>
+              <th>관련</th>
+              <th>대출잔액</th>
+              <th>이자잔액</th>
+              <th>가지급금</th>
+              <th>합계</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>합계</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="h3">재산현황</h3>
+        <table class="table table-bordered mb-1">
+          <thead>
+            <tr>
+              <th>담보</th>
+              <th>법착</th>
+              <th>지적</th>
+              <th>자체</th>
+              <th>금융</th>
+              <th>감사원</th>
+              <th>제공기관</th>
+              <th>재산유형</th>
+              <th>공시시가</th>
+              <th>예상가</th>
+              <th>조사일</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-form table-borderless border-0">
+          <tbody>
+            <tr>
+              <td class="bg-body-secondary">관리번호</td>
+              <td class="bg-body-secondary">제공기관</td>
+              <td class="bg-body-secondary">차수 물건명</td>
+              <td class="bg-body-secondary">공시시가</td>
+              <td class="bg-body-secondary">예상가</td>
+              <td class="bg-body-secondary">조사일</td>
+              <td class="bg-body-secondary">재단명</td>
+              <td class="bg-body-secondary">조사자</td>
+              <td class="bg-body-secondary">관련사건번호</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="h3">담보현황</h3>
+        <table class="table table-bordered mb-1">
+          <thead>
+            <tr>
+              <th>담보</th>
+              <th>기타</th>
+              <th>재산유형</th>
+              <th>감정가</th>
+              <th>설정금액</th>
+              <th>예상담보가</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-form table-borderless border-0 mb-1">
+          <tbody>
+            <tr>
+              <td class="bg-body-secondary">관리번호</td>
+              <td class="bg-body-secondary">재산유형</td>
+              <td class="bg-body-secondary">대지</td>
+              <td class="bg-body-secondary">감정가액</td>
+              <td class="bg-body-secondary">감정일자</td>
+              <td class="bg-body-secondary">설정금액</td>
+              <td class="bg-body-secondary">예상담보가</td>
+              <td class="bg-body-secondary">관련계좌</td>
+              <td class="bg-body-secondary">사건번호</td>
+            </tr>
+            <tr>
+              <td class="bg-body-secondary">구분</td>
+              <td class="bg-body-secondary">소유자</td>
+              <td class="bg-body-secondary">건물</td>
+              <td class="bg-body-secondary">선순위금액</td>
+              <td class="bg-body-secondary">설정순위</td>
+              <td class="bg-body-secondary">소재지</td>
+              <td class="bg-body-secondary"></td>
+              <td class="bg-body-secondary"></td>
+              <td class="bg-body-secondary"></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-form table-borderless border-0">
+          <tbody>
+            <tr>
+              <td class="bg-body-secondary">관리번호</td>
+              <td class="bg-body-secondary">소유자</td>
+              <td class="bg-body-secondary">담보종류</td>
+              <td class="bg-body-secondary">기타담보명</td>
+              <td class="bg-body-secondary">수량</td>
+              <td class="bg-body-secondary">감정가</td>
+              <td class="bg-body-secondary">유효담보가</td>
+              <td class="bg-body-secondary">관련계좌</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="h3">법수현황</h3>
+        <table class="table table-bordered mb-1">
+          <thead>
+            <tr>
+              <th>소송</th>
+              <th>가압류</th>
+              <th>가처분</th>
+              <th>경매</th>
+              <th>회생면책</th>
+              <th>법수구분-세분</th>
+              <th>결과</th>
+              <th>결과일자</th>
+              <th>사건번호</th>
+              <th>법원명</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-form table-borderless border-0">
+          <tbody>
+            <tr>
+              <td class="bg-body-secondary">재단명</td>
+              <td class="bg-body-secondary">법수구분</td>
+              <td class="bg-body-secondary">법수세분</td>
+              <td class="bg-body-secondary">사건번호</td>
+              <td class="bg-body-secondary">법수접수일</td>
+              <td class="bg-body-secondary">법원명</td>
+              <td class="bg-body-secondary">결과</td>
+              <td class="bg-body-secondary">결과일자</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="h3">재산조사의뢰현황</h3>
+        <table class="table table-bordered mb-1">
+          <thead>
+            <tr>
+              <th>의뢰</th>
+              <th>보류</th>
+              <th>제외</th>
+              <th>구분</th>
+              <th>상태일자</th>
+              <th>조사구분</th>
+              <th>차수</th>
+              <th>조치</th>
+              <th>후속업무</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-form table-borderless border-0">
+          <tbody>
+            <tr>
+              <td class="bg-body-secondary">의뢰일자</td>
+              <td class="bg-body-secondary">구분</td>
+              <td class="bg-body-secondary">제목</td>
+              <td class="bg-body-secondary">차수</td>
+              <td class="bg-body-secondary">실명번호</td>
+              <td class="bg-body-secondary">대상자명</td>
+              <td class="bg-body-secondary">제외구분</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="h3">DM현황</h3>
+        <table class="table table-bordered mb-1">
+          <thead>
+            <tr>
+              <th>기준</th>
+              <th>양도</th>
+              <th>수임</th>
+              <th>독촉</th>
+              <th>반송</th>
+              <th>독촉장명</th>
+              <th>상태</th>
+              <th>상태일자</th>
+              <th>반송사유</th>
+              <th>후속업무</th>
+            </tr>
+          </thead>
+        </table>
+        <table class="table table-form table-borderless border-0">
+          <tbody>
+            <tr>
+              <td class="bg-body-secondary">발송일자</td>
+              <td class="bg-body-secondary">발송구분</td>
+              <td class="bg-body-secondary">통지서명</td>
+              <td class="bg-body-secondary">반송일</td>
+              <td class="bg-body-secondary">반송사유</td>
+              <td class="bg-body-secondary">고객(재단)명</td>
+              <td class="bg-body-secondary">채무자</td>
+              <td class="bg-body-secondary">등록자</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="h3">추심활동현황</h3>
+        <table class="table table-bordered mb-1">
+          <thead>
+            <tr>
+              <th>활동방법</th>
+              <th>건수</th>
+              <th>활동일자</th>
+              <th>결과</th>
+              <th>상태</th>
+              <th>후속업무</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>방문</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>전화</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>소재파악</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>재산조사</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>기타</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-form table-borderless border-0">
+          <tbody>
+            <tr>
+              <td class="bg-body-secondary">활동일자</td>
+              <td class="bg-body-secondary">활동방법</td>
+              <td class="bg-body-secondary">처리결과</td>
+              <td class="bg-body-secondary">사후관리내역</td>
+              <td class="bg-body-secondary"></td>
+              <td class="bg-body-secondary"></td>
+              <td class="bg-body-secondary"></td>
+              <td class="bg-body-secondary">고객(재단)명</td>
+              <td class="bg-body-secondary">등록자</td>
+            </tr>
+          </tbody>
+        </table>
+        <!--//Content-->
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
