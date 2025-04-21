@@ -1450,6 +1450,23 @@ br.spacer {
   border: 1px solid var(--bs-border-color);
   border-radius: var(--bs-border-radius);
 }
+.stt-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  > li {
+    display: flex;
+    &:not(:last-child) {
+      &::after {
+        content: "|";
+        font-size: .625rem;
+        color: var(--bs-gray-400);
+        margin-left: .375rem;
+        margin-right: .375rem;
+      }
+    }
+  }
+}
 /* ---------------------------------------------------------------------- */
 /*  Loader
 /* ---------------------------------------------------------------------- */

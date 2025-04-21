@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용정보 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div class="modal modal-popup" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" onclick="window.close();"></button>
+      </div>
+      <div class="modal-body">
+        <!--Content-->
+        <div class="popup-h">
+          <h2 class="popup-title">부서(지사) 총괄현황</h2>
+          <div class="btns">
+            <button type="button" class="btn btn-primary"><i class="ri-search-line"></i>조회</button>
+          </div>
+        </div>
+        <table class="table table-form">
+          <colgroup>
+            <col width="12%" />
+            <col width="38%" />
+            <col width="12%" />
+            <col width="" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>부서명</th>
+              <td>
+                <select class="form-select w-auto">
+                  <option>선택해 주세요</option>
+                </select>
+              </td>
+              <th>기준일</th>
+              <td>
+                <div class="input-group w-date">
+                  <input type="text" class="form-control" placeholder="" />
+                  <button type="button" class="btn btn-outline-default"><i class="ri-calendar-line"></i></button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="row row-cols-2 gx-3">
+          <div class="col-7">
+            <ul class="nav nav-tabs nav-dark mb-2">
+              <li class="nav-item">
+                <a href="#none" class="nav-link active">총괄</a>
+              </li>
+              <li class="nav-item">
+                <a href="#none" class="nav-link">KR&C</a>
+              </li>
+              <li class="nav-item">
+                <a href="#none" class="nav-link">일반추심</a>
+              </li>
+              <li class="nav-item">
+                <a href="#none" class="nav-link">영업매출</a>
+              </li>
+              <li class="nav-item d-flex align-items-center ms-auto">
+                (단위: 백만원)
+              </li>
+            </ul>
+            <table class="table table-bordered">
+              <colgroup>
+                <col width="33%" />
+                <col width="33%33%" />
+                <col width="" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>목표</th>
+                  <th>실적</th>
+                  <th>달성율(%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                  <td>0.0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-5 d-flex align-items-end">
+            <div class="card">
+              <div class="card-body">
+                <ul class="stt-list">
+                  <li>손익현황</li>
+                  <li>회수현황</li>
+                  <li>소송현황</li>
+                  <li>담보물현황</li>
+                  <li>경매진행현황</li>
+                  <li>법조치대상현황</li>
+                  <li>법조치물건현황</li>
+                  <li>추심활동</li>
+                  <li>배정현황</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-7">
+            <ul class="nav nav-tabs nav-dark mb-2">
+              <li class="nav-item">
+                <a href="#none" class="nav-link active">회수현황</a>
+              </li>
+              <li class="nav-item">
+                <a href="#none" class="nav-link">회수예상</a>
+              </li>
+              <li class="nav-item d-flex align-items-center ms-auto">
+                <em class="text-info">※목표달성을 축하합니다.</em>
+              </li>
+            </ul>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>채권구분</th>
+                  <th>회수구분</th>
+                  <th>건수</th>
+                  <th>회수금액</th>
+                  <th>수수료</th>
+                  <th>감면금액</th>
+                  <th>실적반영</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="7">
+                    <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-5">
+            <ul class="nav nav-tabs nav-dark mb-2">
+              <li class="nav-item">
+                <a href="#none" class="nav-link active">시효도래</a>
+              </li>
+              <li class="nav-item">
+                <a href="#none" class="nav-link">제척도래</a>
+              </li>
+              <li class="nav-item">
+                <a href="#none" class="nav-link">계약도래</a>
+              </li>
+            </ul>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>구분</th>
+                  <th>사원명</th>
+                  <th>건수</th>
+                  <th>도래(1-2-3)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="4">
+                    <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-7">
+            <ul class="nav nav-tabs nav-dark mb-2">
+              <li class="nav-item">
+                <a href="#none" class="nav-link active">미승인</a>
+              </li>
+              <li class="nav-item">
+                <a href="#none" class="nav-link">승인현황</a>
+              </li>
+            </ul>
+            <table class="table table-bordered mb-1">
+              <colgroup>
+                <col width="33%" />
+                <col width="33%33%" />
+                <col width="" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>승인구분</th>
+                  <th>건수</th>
+                  <th>최초미승인일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="3">
+                    <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <ul>
+              <li>(주) 해당 리스트를 더블클릭하면 해당 화면으로 바로 이동함</li>
+              <li>(주) <em class="text-info">미승인-승인구분-지결(본사)</em>-월 기준 3개월 이전 부서장승인 건수</li>
+            </ul>
+          </div>
+          <div class="col-5">
+            <ul class="nav nav-tabs nav-dark mb-2">
+              <li class="nav-item">
+                <a href="#none" class="nav-link active">추심활동</a>
+              </li>
+            </ul>
+            <table class="table table-bordered mb-1">
+              <thead>
+                <tr>
+                  <th>사원명</th>
+                  <th>계</th>
+                  <th>법적</th>
+                  <th>방문</th>
+                  <th>DM</th>
+                  <th>반송</th>
+                  <th>SMS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="7">
+                    <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-end">
+              [오늘은 더 이상 이 화면을 열지 않음]
+            </div>
+          </div>
+        </div>
+        <!--//Content-->
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
