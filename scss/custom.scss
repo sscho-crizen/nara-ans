@@ -830,12 +830,61 @@ br.spacer {
 }
 .main-card {
   height: 100%;
+  .card-header {
+    border-bottom: 0;
+    em {
+      font-size: .875rem;
+      color: #333;
+      font-weight: bold;
+      line-height: 32px;
+    }
+    .nav-underline {
+      margin-bottom: -6px;
+    }
+    dl {
+      display: inline-flex;
+      gap: .25rem;
+      margin-left: auto;
+      margin-bottom: 0;
+      > dt {
+        margin-left: .25rem;
+      }
+      > dd {
+        padding: 0rem .5rem;
+        margin-left: .25rem;
+        margin-bottom: 0;
+        background-color: var(--bs-bg-color);
+        border: 1px solid var(--bs-border-color);
+        border-radius: 0.325rem;
+      }
+    }
+    & + .card-body {
+      border-top: 1px solid var(--bs-border-color);
+    }
+  }
   .card-body {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
   .tab-content > .tab-pane {
     padding: 0;
+  }
+  &.main-card-sm {
+    .card-body {
+      min-height: 110px;
+    }
+  }
+  &.main-card-lg {
+    .card-body {
+      min-height: 215px;
+    }
+  }
+}
+.card-title {
+  em {
+    font-size: .875rem;
+    color: #333;
+    font-weight: bold;
   }
 }
 .profile-wrap {
@@ -961,24 +1010,6 @@ br.spacer {
     }
   }
 }
-.card-header {
-  em {
-    font-size: .875rem;
-    color: #333;
-    font-weight: bold;
-    line-height: 32px;
-  }
-  .nav-underline {
-    margin-bottom: -6px;
-  }
-}
-.card-title {
-  em {
-    font-size: .875rem;
-    color: #333;
-    font-weight: bold;
-  }
-}
 .status {
   display: flex;
   gap: .5rem;
@@ -1009,7 +1040,7 @@ br.spacer {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 87px;
+  min-height: 78px;
 }
 .no-data {
   padding-top: 2rem;
