@@ -763,10 +763,10 @@ br.spacer {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: .125rem;
-  height: 108px;
+  height: 150px;
   .btn {
     position: relative;
-    --bs-btn-height: 16px;
+    --bs-btn-height: 23px;
   }
 }
 .quick-nav {
@@ -850,8 +850,8 @@ br.spacer {
     dl {
       display: inline-flex;
       gap: .25rem;
+      margin: .375rem 0;
       margin-left: auto;
-      margin-bottom: 0;
       > dt {
         margin-left: .25rem;
       }
@@ -875,17 +875,25 @@ br.spacer {
     padding: 0;
   }
   &.main-card-sm {
+    height: auto;
     .card-body {
       min-height: 70px;
     }
   }
+  &.main-card-md {
+    height: auto;
+    .card-body {
+      min-height: 108px;
+    }
+  }
   &.main-card-lg {
+    height: auto;
     .card-body {
       min-height: 142px;
     }
   }
   .table-sm > :not(caption) > * > * {
-    height: 19px;
+    height: 25px;
     padding: 0 0.25rem;
   }
 }
