@@ -768,6 +768,7 @@ br.spacer {
 .quick-link {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-content: start;
   gap: 0.125rem;
   height: 150px;
 }
