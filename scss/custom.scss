@@ -252,7 +252,7 @@ br.spacer {
 .dropdown-nav {
   display: none;
   position: absolute;
-  top: 59px;
+  top: 40px;
   left: 1rem;
   min-width: 110px;  
   background-color: white;
@@ -463,11 +463,16 @@ br.spacer {
                     top: 3px;
                     right: 6px;
                   }    
-                  &[aria-expanded=true] {  
-                    &:after {
-                      transform: rotate(90deg);
-                    }
-                  }                    
+                  // &[aria-expanded=true] {  
+                  //   &:after {
+                  //     transform: rotate(90deg);
+                  //   }
+                  // }                    
+                }
+                &:not(.collapsed) {
+                  &::after {
+                    transform: rotate(90deg);
+                  }
                 }
                 &.collapsed {
                   &.active {

@@ -259,7 +259,7 @@ br.spacer {
 .dropdown-nav {
   display: none;
   position: absolute;
-  top: 59px;
+  top: 40px;
   left: 1rem;
   min-width: 110px;
   background-color: white;
@@ -474,7 +474,7 @@ br.spacer {
   top: 3px;
   right: 6px;
 }
-.main-content .page-content .container-fixed .lnb .lnb-inner .lnb-menu > .nav-item > .nav-link[data-bs-toggle=collapse][aria-expanded=true]:after {
+.main-content .page-content .container-fixed .lnb .lnb-inner .lnb-menu > .nav-item > .nav-link:not(.collapsed)::after {
   transform: rotate(90deg);
 }
 .main-content .page-content .container-fixed .lnb .lnb-inner .lnb-menu > .nav-item > .nav-link.collapsed.active::after {
