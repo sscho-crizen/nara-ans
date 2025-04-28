@@ -67,16 +67,18 @@
   --#{$prefix}nav-tabs-link-active-bg: #{$nav-tabs-link-active-bg};
   --#{$prefix}nav-tabs-link-active-border-color: #{$nav-tabs-link-active-border-color};
   // scss-docs-end nav-tabs-css-vars
-
   border-bottom: var(--#{$prefix}nav-tabs-border-width) solid var(--#{$prefix}nav-tabs-border-color);
+  gap: .25rem;
 
   .nav-link {
     margin-bottom: calc(-1 * var(--#{$prefix}nav-tabs-border-width)); // stylelint-disable-line function-disallowed-list
-    border: var(--#{$prefix}nav-tabs-border-width) solid transparent;
+    border: var(--#{$prefix}nav-tabs-border-width) solid var(--#{$prefix}nav-tabs-border-color);
+    border-bottom-color: transparent;
     @include border-top-radius(var(--#{$prefix}nav-tabs-border-radius));
     height: 40px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: .25rem;
 
     &:hover,
