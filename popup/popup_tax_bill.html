@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용정보 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div class="modal modal-popup" tabindex="-1">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" onclick="window.close();"></button>
+      </div>
+      <div class="modal-body">
+        <!--Content-->
+        <div class="popup-h popup-h-divider">
+          <h2 class="popup-title">수정 세금계산서 발행</h2>
+          <div class="btns">
+            <button type="button" class="btn btn-outline-default"><i class="ri-bill-line"></i>매출증빙발행</button>
+            <button type="button" class="btn btn-outline-default"><i class="ri-close-line"></i>닫기</button>
+          </div>
+        </div>
+        <table class="table table-bordered border-danger text-center mb-0">
+          <colgroup>
+            <col width="50%" />
+            <col width="8%" />
+            <col width="13%" />
+            <col width="8%" />
+            <col width="13%" />
+            <col width="8%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <td rowspan="2">수정 전자세금계산서(공급자용)</td>
+              <th class="bg-danger-subtle text-danger">책번호</th>
+              <td>18</td>
+              <th class="bg-danger-subtle text-danger">권</th>
+              <td>0100</td>
+              <th class="bg-danger-subtle text-danger">호</th>
+            </tr>
+            <tr>
+              <th class="bg-danger-subtle text-danger">일련번호</th>
+              <td colspan="4">000000000</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-bordered border-danger text-center mb-0">
+          <colgroup>
+            <col width="2%" />
+            <col width="8%" />
+            <col width="16%" />
+            <col width="8%" />
+            <col width="16%" />
+            <col width="2%" />
+            <col width="8%" />
+            <col width="16%" />
+            <col width="8%" />
+            <col width="16%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th class="bg-danger-subtle text-danger" rowspan="7">공<br />급<br />자</th>
+              <th class="bg-danger-subtle text-danger">등록번호</th>
+              <td>000-00-00000</td>
+              <th class="bg-danger-subtle text-danger">종사업장번호</th>
+              <td>0000</td>
+              <th class="bg-success-subtle text-secondary" rowspan="7">공<br />급<br />받<br />는<br />자</th>
+              <th class="bg-success-subtle text-secondary">등록번호</th>
+              <td>000-00-00000</td>
+              <th class="bg-success-subtle text-secondary">종사업장번호</th>
+              <td>0000</td>
+            </tr>
+            <tr>
+              <th class="bg-danger-subtle text-danger">상호(법인명)</th>
+              <td>나라신용정보(주)</td>
+              <th class="bg-danger-subtle text-danger">대표자명</th>
+              <td>홍길동</td>
+              <th class="bg-success-subtle text-secondary">상호(법인명)</th>
+              <td>나라신용정보(주)</td>
+              <th class="bg-success-subtle text-secondary">대표자명</th>
+              <td>홍길동</td>
+            </tr>
+            <tr>
+              <th class="bg-danger-subtle text-danger">사업장주소</th>
+              <td colspan="3">서울시동작구 사당로 272 삼보빌딩</td>
+              <th class="bg-success-subtle text-secondary">사업장주소</th>
+              <td colspan="3">서울시동작구 사당로 272 삼보빌딩</td>
+            </tr>
+            <tr>
+              <th class="bg-danger-subtle text-danger">업태</th>
+              <td>서비스</td>
+              <th class="bg-danger-subtle text-danger">업종</th>
+              <td>채권추심, 신용조사,민원서류대행</td>
+              <th class="bg-success-subtle text-secondary">업태</th>
+              <td></td>
+              <th class="bg-success-subtle text-secondary">업종</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th class="bg-danger-subtle text-danger">담당부서</th>
+              <td>부산지사</td>
+              <th class="bg-danger-subtle text-danger">성명</th>
+              <td>홍길동</td>
+              <th class="bg-success-subtle text-secondary">담당부서</th>
+              <td></td>
+              <th class="bg-success-subtle text-secondary">성명</th>
+              <td>홍길동</td>
+            </tr>
+            <tr>
+              <th class="bg-danger-subtle text-danger">이메일</th>
+              <td colspan="3">****@naracredit.com</td>
+              <th class="bg-success-subtle text-secondary">이메일</th>
+              <td colspan="3">****@naracredit.com</td>
+            </tr>
+            <tr>
+              <th class="bg-danger-subtle text-danger">이동전화</th>
+              <td colspan="3">010-0000-0000</td>
+              <th class="bg-success-subtle text-secondary">이동전화</th>
+              <td colspan="3"></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-bordered border-danger text-center mb-0">
+          <colgroup>
+            <col width="16%" />
+            <col width="17%" />
+            <col width="17%" />
+            <col width="" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th class="bg-danger-subtle text-danger">작성일자</th>
+              <th class="bg-danger-subtle text-danger">공급가액</th>
+              <th class="bg-danger-subtle text-danger">세액</th>
+              <th class="bg-danger-subtle text-danger">수정사유</th>
+            </tr>
+            <tr>
+              <td>2025-00-00</td>
+              <td>-75,000</td>
+              <td>-7,500</td>
+              <td>계약의 해제</td>
+            </tr>
+            <tr>
+              <th class="bg-danger-subtle text-danger">비고</th>
+              <td colspan="3">홍길동 추심수수료 (2025-00-00)</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-bordered border-danger text-center mb-0">
+          <colgroup>
+            <col width="4%" />
+            <col width="4%" />
+            <col width="" />
+            <col width="10%" />
+            <col width="6%" />
+            <col width="12%" />
+            <col width="12%" />
+            <col width="12%" />
+            <col width="12%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th class="bg-danger-subtle text-danger">월</th>
+              <th class="bg-danger-subtle text-danger">일</th>
+              <th class="bg-danger-subtle text-danger">품목</th>
+              <th class="bg-danger-subtle text-danger">규격</th>
+              <th class="bg-danger-subtle text-danger">수량</th>
+              <th class="bg-danger-subtle text-danger">단가</th>
+              <th class="bg-danger-subtle text-danger">공급가격</th>
+              <th class="bg-danger-subtle text-danger">세액</th>
+              <th class="bg-danger-subtle text-danger">비고</th>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>28</td>
+              <td>채권추심수수료</td>
+              <td></td>
+              <td class="text-end">0</td>
+              <td class="text-end">0</td>
+              <td class="text-end">-75,000</td>
+              <td class="text-end">-7,500</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-bordered border-danger text-center">
+          <colgroup>
+            <col width="10%" />
+            <col width="10%" />
+            <col width="10%" />
+            <col width="10%" />
+            <col width="10%" />
+            <col width="10%" />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th class="bg-danger-subtle text-danger">합계금액</th>
+              <th class="bg-danger-subtle text-danger">현금</th>
+              <th class="bg-danger-subtle text-danger">수표</th>
+              <th class="bg-danger-subtle text-danger">어음</th>
+              <th class="bg-danger-subtle text-danger">외상미수금</th>
+              <th class="bg-danger-subtle text-danger" rowspan="2">
+                이 금액을 
+                <select class="form-select w-auto">
+                  <option value="">청구</option>
+                </select>
+                함
+              </th>
+            </tr>
+            <tr>
+              <td class="text-end">-82,500</td>
+              <td class="text-end"></td>
+              <td class="text-end"></td>
+              <td class="text-end"></td>
+              <td class="text-end"></td>
+            </tr>
+          </tbody>
+        </table>
+        <!--//Content-->
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
