@@ -889,19 +889,22 @@ br.spacer {
   height: auto;
 }
 .main-card.main-card-sm .card-body {
-  min-height: 70px;
+  height: 72px;
+  overflow-y: auto;
 }
 .main-card.main-card-md {
   height: auto;
 }
 .main-card.main-card-md .card-body {
-  min-height: 108px;
+  height: 108px;
+  overflow-y: auto;
 }
 .main-card.main-card-lg {
   height: auto;
 }
 .main-card.main-card-lg .card-body {
-  min-height: 142px;
+  height: 138px;
+  overflow-y: auto;
 }
 .main-card .table-sm > :not(caption) > * > * {
   height: 25px;
