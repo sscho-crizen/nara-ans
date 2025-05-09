@@ -11,7 +11,22 @@
 <!-- JS -->
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/jquery.marquee.min.js"></script>
 <script src="../js/common.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".notice-marquee").marquee({
+    duration: 10000,
+    gap: 0,
+    delayBeforeStart: 0,
+    direction: "up",
+    duplicated: true,
+    pauseOnHover: true,
+    startVisible: true,
+    vertical: true
+  });
+});
+</script>
 </head>
 <body>
 <div id="layout-wrapper">
@@ -77,19 +92,18 @@
             </particle>
             <particle class="card main-card main-card-lg">
               <div class="card-header">
-                <em>결재대기문서</em>
+                <em>오늘게시글</em>
               </div>
-              <div class="card-body overflow-y-auto">
-                <ul class="tab-list">
-                  <li>금일(9월 18:30 ~ 20:30)</li>
-                  <li>금일(9월 18:30 ~ 20:30)</li>
-                  <li>금일(9월 18:30 ~ 20:30)</li>
-                  <li>금일(9월 18:30 ~ 20:30)</li>
-                  <li>금일(9월 18:30 ~ 20:30)</li>
-                  <li>금일(9월 18:30 ~ 20:30)</li>
-                  <li>금일(9월 18:30 ~ 20:30)</li>
-                  <li>금일(9월 18:30 ~ 20:30)</li>
-                </ul>
+              <div class="card-body notice-container">
+                <div class="notice-marquee">
+                  <div class="notice-item">금일(9월 18:30 ~ 20:30)</div>
+                  <div class="notice-item">금일(9월 18:30 ~ 20:30)</div>
+                  <div class="notice-item">금일(9월 18:30 ~ 20:30)</div>
+                  <div class="notice-item">금일(9월 18:30 ~ 20:30)</div>
+                  <div class="notice-item">금일(9월 18:30 ~ 20:30)</div>
+                  <div class="notice-item">금일(9월 18:30 ~ 20:30)</div>
+                  <div class="notice-item">금일(9월 18:30 ~ 20:30)</div>
+                </div>
               </div>
             </particle>
             <particle class="card main-card h-auto">
@@ -125,10 +139,32 @@
                 </div>
               </div>
               <div class="card-body">
+                <div class="carousel slide carousel-fade" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="6000">
+                      <div class="blinker">에스피정보시스템 방화벽 설치(본사)</div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="6000">
+                      <div class="blinker">우리은행 VIN-CMS <br />재설치</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="card-body">
                 <ul class="tab-list">
                   <li>에스피정보시스템 방화벽 설치(본사)</li>
                 </ul>
-              </div>
+              </div> -->
+              <!-- <div class="card-body notice-container">
+                <div class="notice-marquee">
+                  <div class="notice-item">에스피정보시스템 방화벽 설치(본사)</div>
+                  <div class="notice-item">에스피정보시스템 방화벽 설치(본사)</div>
+                  <div class="notice-item">에스피정보시스템 방화벽 설치(본사)</div>
+                  <div class="notice-item">에스피정보시스템 방화벽 설치(본사)</div>
+                  <div class="notice-item">에스피정보시스템 방화벽 설치(본사)</div>
+                  <div class="notice-item">에스피정보시스템 방화벽 설치(본사)</div>
+                </div>
+              </div> -->
             </particle>
           </div>
           <div class="col-6">
