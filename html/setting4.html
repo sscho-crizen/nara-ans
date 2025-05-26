@@ -135,7 +135,7 @@
                     <td>753422.42 KB</td>
                     <td>0/0</td>
                     <td>
-                      <button type="button" class="btn btn-outline-default"><i class="ri-edit-line"></i>수정</button>
+                      <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalMailName"><i class="ri-edit-line"></i>수정</button>
                       <button type="button" class="btn btn-outline-default"><i class="ri-close-line"></i>삭제</button>
                     </td>
                     <td><button type="button" class="btn btn-outline-default"><i class="ri-delete-bin-line"></i>비우기</button></td>
@@ -162,5 +162,30 @@
   </section>
 </div>
 <!-- END layout-wrapper -->
+<!-- 편지함 이름 바꾸기 -->
+<div class="modal fade" tabindex="-1" id="modalMailName">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">편지함 이름 바꾸기</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row mb-2">
+          <label class="col-3 col-form-label">편지함 이름</label>
+          <div class="col-9">
+            <div class="d-inline-flex align-items-center gap-1">
+              <input type="text" class="form-control" />
+              <button type="button" class="btn btn-outline-default">바꾸기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"><i class="ti ti-check"></i>닫기</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
