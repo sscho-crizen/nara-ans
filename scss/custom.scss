@@ -685,6 +685,7 @@ br.spacer {
   gap: .25rem;
 }
 .modal-popup {
+  position: relative;
   display: block;
   opacity: 1;
   .top-menu {

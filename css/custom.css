@@ -684,6 +684,7 @@ br.spacer {
 }
 
 .modal-popup {
+  position: relative;
   display: block;
   opacity: 1;
 }
