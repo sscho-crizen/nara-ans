@@ -151,11 +151,10 @@ br.spacer {
   min-height: 100vh;
 }
 .header {
-  position: relative;
-  // top: 0;
-  // left: 0;
-  // right: 0;
-  z-index: 100;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
   width: 100%;
   bottom: auto;
   margin: 0 auto;
