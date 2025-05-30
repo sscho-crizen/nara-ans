@@ -520,7 +520,6 @@ br.spacer {
       .content {
         flex: 1 1 0;
         padding: 1rem;
-        margin-right: -1rem;
         margin-bottom: 1rem;
         background-color: white;
         border: 1px solid var(--bs-border-color);
@@ -779,7 +778,7 @@ br.spacer {
 .quick-nav {
   position: absolute;
   top: 0px;
-  right: -40px;
+  right: -20px;
   > .btn {
     font-size: 1.25rem;
     width: 28px;

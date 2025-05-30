@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ko" data-layout="horizontal" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable">
+<head>
+<meta charset="utf-8" />
+<title>나라신용정보 - ANS</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<!-- CSS -->
+<link href="../css/bootstrap.custom.css" rel="stylesheet" type="text/css" />
+<link href="../css/app.css" rel="stylesheet" type="text/css" />
+<link href="../css/custom.css" rel="stylesheet" type="text/css" />
+<!-- JS -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/common.js"></script>
+</head>
+<body>
+<div id="layout-wrapper">    
+  <!-- Header -->
+  <div w3-include-html="../include/header.html"></div>
+  <section class="main-content">
+    <main class="page-content">
+      <div class="container-fixed">
+        <div class="content">
+          <!-- Content -->
+          <div class="page-header-wrap">
+            <h2 class="page-header">고객정보관리</h2>
+            <div class="btns">
+              <button type="button" class="btn btn-primary"><i class="ri-search-line"></i>조회</button>
+              <button type="button" class="btn btn-outline-default"><i class="ri-file-excel-2-line"></i>엑셀</button>
+            </div>
+          </div>
+          <table class="table table-form">
+            <colgroup>
+              <col width="10%" />
+              <col width="" />
+              <col width="10%" />
+              <col width="" />
+              <col width="10%" />
+              <col width="" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>부서명</th>
+                <td>
+                  <select class="form-select w-auto">
+                    <option>선택해 주세요</option>
+                  </select>
+                </td>
+                <th>조회구분</th>
+                <td>
+                  <select class="form-select w-auto">
+                    <option>선택해 주세요</option>
+                  </select>
+                </td>
+                <th>최종처리시각</th>
+                <td>
+                  <input type="text" class="form-control w-auto" placeholder="" />
+                </td>
+              </tr>              
+            </tbody>
+          </table>
+          <div class="text-end">
+            <small>(단위: 천원)</small>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <h3 class="h3">1. 부문별 채권잔액</h3>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th rowspan="2">부문별</th>
+                    <th rowspan="2">전일잔액</th>
+                    <th colspan="2">금일실적</th>
+                    <th rowspan="2">금일잔액</th>
+                  </tr>
+                  <tr>
+                    <th>수임액 등</th>
+                    <th>회수액</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>KR&C채권</th>
+                    <td class="text-end">0</td>
+                    <td class="text-end">1,000,000</td>
+                    <td class="text-end">0</td>
+                    <td class="text-end">1,000,000</td>
+                  </tr>
+                  <tr>
+                    <th>KR&C채권</th>
+                    <td class="text-end">0</td>
+                    <td class="text-end">1,000,000</td>
+                    <td class="text-end">0</td>
+                    <td class="text-end">1,000,000</td>
+                  </tr>
+                  <tr>
+                    <th>KR&C채권</th>
+                    <td class="text-end">0</td>
+                    <td class="text-end">1,000,000</td>
+                    <td class="text-end">0</td>
+                    <td class="text-end">1,000,000</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>합계</th>
+                    <td class="text-end">0</td>
+                    <td class="text-end">1,000,000</td>
+                    <td class="text-end">0</td>
+                    <td class="text-end">1,000,000</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <div class="col-6">
+              <h3 class="h3">2. 부문별 매출실적</h3>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th rowspan="2">부문별</th>
+                    <th rowspan="2">금월목표</th>
+                    <th colspan="2">실적</th>
+                    <th rowspan="2">목표달성률(%)</th>
+                  </tr>
+                  <tr>
+                    <th>금일</th>
+                    <th>금월</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>KR&C채권</th>
+                    <td class="text-end">0</td>
+                    <td class="text-end">0</td>
+                    <td class="text-end">0</td>
+                    <td class="text-end">0</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>합계</th>
+                    <td class="text-end">0</td>
+                    <td class="text-end">0</td>
+                    <td class="text-end">0</td>
+                    <td class="text-end">0</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <div class="col-6">
+              <h3 class="h3">주요 증감내역 <small>(원금기준)</small></h3>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>부문별</th>
+                    <th>구분</th>
+                    <th>부서명</th>
+                    <th>고객명</th>
+                    <th>증감액</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th rowspan="3">KR&C채권</th>
+                    <td rowspan="9">증가</td>
+                    <td>공공채권부</td>
+                    <td class="text-start">상호저축은행</td>
+                    <td class="text-end">1,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>공공채권부</td>
+                    <td class="text-start">상호저축은행</td>
+                    <td class="text-end">1,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>공공채권부</td>
+                    <td class="text-start">상호저축은행</td>
+                    <td class="text-end">1,000,000</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="3">캠코채권</th>
+                    <td>공공채권부</td>
+                    <td class="text-start">상호저축은행</td>
+                    <td class="text-end">1,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>공공채권부</td>
+                    <td class="text-start">상호저축은행</td>
+                    <td class="text-end">1,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>공공채권부</td>
+                    <td class="text-start">상호저축은행</td>
+                    <td class="text-end">1,000,000</td>
+                  </tr>
+                  <tr>
+                    <th rowspan="3">일반채권</th>
+                    <td>공공채권부</td>
+                    <td class="text-start">상호저축은행</td>
+                    <td class="text-end">1,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>공공채권부</td>
+                    <td class="text-start">상호저축은행</td>
+                    <td class="text-end">1,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>공공채권부</td>
+                    <td class="text-start">상호저축은행</td>
+                    <td class="text-end">1,000,000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-6">
+              <h3 class="h3">주요 매출내역</h3>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>부문별</th>
+                    <th>부서명</th>
+                    <th>고객명</th>
+                    <th>채무자명</th>
+                    <th>수수료</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="5">
+                      <div class="no-data">해당 데이타가 존재하지 않습니다.</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- //Content -->
+        </div>
+        <!-- Quickmenu -->
+        <div w3-include-html="../include/quick_menu.html"></div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container-fixed">
+        <small class="text-muted">© 2024 - Nara Credit Service Co.,LTD. All Rights Reserved.</small>
+      </div>
+    </footer>
+  </section>
+</div>
+<!-- END layout-wrapper -->
+</body>
+</html>
