@@ -121,10 +121,15 @@
                 <input type="text" class="form-control" placeholder="" />
                 <button type="button" class="btn btn-icon btn-outline-default"><i class="ri-search-line"></i></button>
               </div>
-              <div class="input-group w-lg">
-                <input type="text" class="form-control text-end" placeholder="" />
-                <button type="button" class="btn btn-icon btn-outline-default border-start-0"><i class="ri-close-line"></i></button>
+              <div class="input-group-remove w-lg">
+                <input type="text" class="form-control" placeholder="" value="1,000,000" />
+                <button type="button" class="btn btn-icon"><i class="ri-close-line"></i></button>
               </div>
+              <script type="text/javascript">
+                $(".input-group-remove > .btn-icon").click(function(){
+                  $(this).siblings(".form-control").val("");
+                });
+              </script>
               <div class="d-flex align-items-center gap-1">
                 <div class="input-group w-date">
                   <input type="text" class="form-control" placeholder="" />
