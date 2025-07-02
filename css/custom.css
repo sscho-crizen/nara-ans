@@ -913,6 +913,9 @@ br.spacer {
 .table-form > tbody > tr > th {
   background-color: #edf3f7;
 }
+.table-form > tbody > tr > td p {
+  margin-bottom: 0;
+}
 
 .panel {
   display: block;
