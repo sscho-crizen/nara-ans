@@ -1717,4 +1717,8 @@ br.spacer {
   background-color: var(--bs-secondary-bg);
 }
 
+.table-text-break > :not(caption) > * > * {
+  word-break: break-all;
+}
+
 /*# sourceMappingURL=custom.css.map */
