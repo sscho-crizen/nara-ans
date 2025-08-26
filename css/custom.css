@@ -195,6 +195,7 @@ br.spacer {
 }
 .header .app-top .util .user-info .user {
   font-size: 0.75rem;
+  vertical-align: middle;
   margin-right: 0.25rem;
 }
 .header .container-fixed {
@@ -1359,6 +1360,10 @@ br.spacer {
   .modal-header,
   .popup-h .btn {
     display: none;
+  }
+  .container-fixed {
+    width: auto;
+    min-width: auto;
   }
 }
 .doc-h3 {
