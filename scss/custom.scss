@@ -39,6 +39,13 @@ br.spacer {
   padding-right: 16px;
   margin: 0 auto;
 }
+.container-responsive {
+  position: relative;
+  max-width: 1400px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
 // .form-select {
 //   width: auto;
 // }
@@ -1332,10 +1339,6 @@ br.spacer {
   .modal-header,
   .popup-h .btn {
     display: none;
-  }
-  .container-fixed {
-    width: auto;
-    min-width: auto;
   }
 }
 .doc-h3 {
